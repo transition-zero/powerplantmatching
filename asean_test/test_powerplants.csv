@@ -1,0 +1,1053 @@
+,Name,Fueltype,Technology,Set,Country,Capacity,Efficiency,DateIn,DateRetrofit,DateOut,lat,lon,Duration,Volume_Mm3,DamHeight_m,StorageCapacity_MWh,EIC,projectID
+0,Pagbilao,Hard Coal,Steam Turbine,PP,Philippines,1155.0,,1996.0,,,13.8932,121.745,,0.0,0.0,0.0,"{nan, nan, nan}","{'GCPT': {'G107724', 'G107722', 'G107723'}, 'GGPT': {'L405343'}, 'GEO': {'GEO-41686'}, 'GPD': {'WRI1001869'}}"
+1,Glow Energy Complex,Hard Coal,Steam Turbine,CHP,Thailand,529.0,,1999.0,,,12.675773,101.135243,,0.0,0.0,0.0,"{nan, nan, nan}","{'GCPT': {'G103060', 'G103059', 'G103058'}, 'GGPT': {'L103583'}, 'GEO': {'GEO-45304'}, 'GPD': {'WRI1019457'}}"
+2,Thuan Bac Solar Farm,Solar,Pv,PP,Vietnam,477.0,,2018.0,,,11.6938,109.01795000000001,,0.0,0.0,0.0,"{nan, nan}","{'GSPT': {'G801702', 'G801701'}, 'GWPT': {'G901527', 'G901526', 'G901525'}, 'GPD': {'WKS0072323'}}"
+3,Lumut Gb,Natural Gas,CCGT,PP,Malaysia,640.0,,2001.0,,,4.3923,100.5897,,0.0,0.0,0.0,{nan},"{'GGPT': {'L405304'}, 'GEO': {'GEO-41435'}, 'GPD': {'WRI1000244'}}"
+4,Krabi,Natural Gas,Steam Turbine,PP,Thailand,315.0,,2004.0,,,7.9934,99.0482,,0.0,0.0,0.0,{nan},"{'GGPT': {'L103575'}, 'GEO': {'GEO-41555'}, 'GPD': {'WRI1000163'}}"
+5,Nam Phong,Natural Gas,CCGT,PP,Thailand,710.0,,1992.0,,,16.682,102.7422,,0.0,0.0,0.0,"{nan, nan}","{'GGPT': {'L405405'}, 'GEO': {'GEO-41554'}, 'GPD': {'WRI1000165'}}"
+6,Glow Spp,Natural Gas,CCGT,CHP,Thailand,230.0,,2000.0,2005.0,,13.0074,101.137,,0.0,0.0,0.0,"{nan, nan}","{'GGPT': {'L405379'}, 'GEO': {'GEO-45297', 'GEO-45298'}, 'GPD': {'WRI1019462'}}"
+7,Saha Patana,Natural Gas,CCGT,CHP,Thailand,174.0,,1999.0,,,13.0988,100.9606,,0.0,0.0,0.0,{nan},"{'GGPT': {'L405421'}, 'GEO': {'GEO-45295'}, 'GPD': {'WRI1019493'}}"
+8,Laem Chabang,Natural Gas,CCGT,CHP,Thailand,196.0,,2009.0,,,13.0913,100.8943,,0.0,0.0,0.0,"{nan, nan}","{'GGPT': {'L405402'}, 'GEO': {'GEO-41499'}, 'GPD': {'WRI1019487'}}"
+9,Huay Bong Wind Farm,Wind,Onshore,PP,Thailand,104.0,,2012.0,,,15.2103,101.4635,,0.0,0.0,0.0,{nan},"{'GWPT': {'G900907'}, 'GEO': {'GEO-45333'}, 'GPD': {'WRI1000158'}}"
+10,Wang Noi,Natural Gas,CCGT,PP,Thailand,2660.0,0.16383130807719798,1997.0,2011.0,,14.2324,100.7805,,0.0,0.0,0.0,"{nan, nan, nan, nan}","{'GGPT': {'L405432'}, 'GEO': {'GEO-41491'}, 'GPD': {'WRI1000169'}}"
+11,Rojana,Natural Gas,CCGT,CHP,Thailand,275.0,,2015.0,,,14.3324,100.6382,,0.0,0.0,0.0,{nan},"{'GGPT': {'L405420'}, 'GEO': {'GEO-41548'}, 'GPD': {'WRI1019485'}}"
+12,Gelugor,Natural Gas,CCGT,PP,Malaysia,310.0,,2001.0,,,5.3803,100.3147,,0.0,0.0,0.0,{nan},"{'GGPT': {'L405298'}, 'GEO': {'GEO-41470'}, 'GPD': {'WRI1000231'}}"
+13,Kaeng Khoi,Natural Gas,CCGT,PP,Thailand,1468.0,,2007.0,,,14.605,101.0259,,0.0,0.0,0.0,"{nan, nan}","{'GGPT': {'L405399'}, 'GEO': {'GEO-41495'}, 'GPD': {'WRI1019482'}}"
+14,Kuala Langat,Natural Gas,CCGT,CHP,Malaysia,720.0,,1996.0,,,2.79773,101.649744,,0.0,0.0,0.0,{nan},"{'GGPT': {'L405302'}, 'GEO': {'GEO-41448'}, 'GPD': {'WRI1000248'}}"
+15,Perlis,Natural Gas,CCGT,PP,Malaysia,650.0,,2003.0,,,6.3404,100.1568,,0.0,0.0,0.0,{nan},"{'GGPT': {'L405313'}, 'GEO': {'GEO-41445'}, 'GPD': {'WRI1000228'}}"
+16,Pahlawan,Natural Gas,CCGT,PP,Malaysia,322.0,,1999.0,,,2.2238,102.1519,,0.0,0.0,0.0,{nan},"{'GGPT': {'L405307'}, 'GEO': {'GEO-41415'}, 'GPD': {'WRI1000253'}}"
+17,Lumut Sev,Natural Gas,CCGT,PP,Malaysia,1304.0,,1996.0,,,4.3908,100.5894,,0.0,0.0,0.0,"{nan, nan}","{'GGPT': {'L405318'}, 'GEO': {'GEO-41412'}, 'GPD': {'WRI1000243'}}"
+18,Tuanku Jaafar,Natural Gas,CCGT,PP,Malaysia,1500.0,,2005.0,,,2.533,101.7912,,0.0,0.0,0.0,"{nan, nan}","{'GGPT': {'L405324'}, 'GEO': {'GEO-41468'}, 'GPD': {'WRI1000250', 'WRI1000251'}}"
+19,Hlawga,Natural Gas,CCGT,PP,Myanmar,154.2,,1995.0,,,16.98,96.125,,0.0,0.0,0.0,{nan},"{'GGPT': {'L405330'}, 'GEO': {'GEO-41485'}, 'GPD': {'WRI1061352'}}"
+20,Mon Complex,Natural Gas,Steam Turbine,PP,Vietnam,660.0,,2009.0,,,10.134916,105.669325,,0.0,0.0,0.0,"{nan, nan}","{'GGPT': {'L405444'}, 'GEO': {'GEO-41211'}, 'GPD': {'WRI1030734'}}"
+21,Khanom,Natural Gas,CCGT,PP,Thailand,970.0,,2016.0,,,9.2357,99.8593,,0.0,0.0,0.0,{nan},"{'GGPT': {'L405400'}, 'GEO': {'GEO-41480'}, 'GPD': {'WRI1019468'}}"
+22,Glow Spp,Natural Gas,CCGT,CHP,Thailand,248.0,,1998.0,,,12.695363,101.1288449,,0.0,0.0,0.0,"{nan, nan}","{'GGPT': {'L405378'}, 'GEO': {'GEO-45300'}, 'GPD': {'WRI1019461'}}"
+23,Bac Man Geothermal,Geothermal,Steam Turbine,PP,Philippines,110.0,,1993.0,,,13.0547,123.9678,,0.0,0.0,0.0,"{nan, nan}","{'GGTPT': {'G700011', 'G700010'}, 'GEO': {'GEO-41713'}, 'GPD': {'WRI1001889'}}"
+24,Santa Rita,Natural Gas,CCGT,PP,Philippines,1094.8,,2000.0,,,13.770391,121.035276,,0.0,0.0,0.0,"{nan, nan, nan, nan}","{'GGPT': {'L405348'}, 'GEO': {'GEO-41719'}, 'GPD': {'WRI1001885'}}"
+25,Palinpinon Geothermal,Geothermal,Steam Turbine,PP,Philippines,114.0,,1983.0,,,9.295,123.1723,,0.0,0.0,0.0,"{nan, nan, nan}","{'GGTPT': {'G700224', 'G700226', 'G700225'}, 'GEO': {'GEO-41717'}, 'GPD': {'WRI1001941'}}"
+26,Tiwi Geothermal,Geothermal,Steam Turbine,PP,Philippines,330.0,,1979.0,,,13.4655,123.6486,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan, nan}","{'GGTPT': {'G700290', 'G700291', 'G700294', 'G700293', 'G700292', 'G700295'}, 'GEO': {'GEO-41711'}, 'GPD': {'WRI1001890'}}"
+27,Grati,Natural Gas,CCGT,PP,Indonesia,1356.0,,1997.0,,,-7.651700000000001,113.0244,,0.0,0.0,0.0,"{nan, nan, nan}","{'GGPT': {'L405270'}, 'GEO': {'GEO-41525'}, 'GPD': {'WRI1000829', 'WRI1000875'}}"
+28,Gresik,Natural Gas,Steam Turbine,PP,Indonesia,2178.0,,1980.0,,,-7.1633,112.6615,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan, nan, nan}","{'GGPT': {'L405272'}, 'GEO': {'GEO-41535', 'GEO-41536'}, 'GPD': {'WRI1000830', 'WRI1000876'}}"
+29,Muara Tawar,Natural Gas,Steam Turbine,PP,Indonesia,2804.0,,1997.0,,,-6.0866999999999996,106.9987,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan}","{'GGPT': {'L405284'}, 'GEO': {'GEO-41531'}, 'GPD': {'WRI1000882', 'WRI1000883', 'WRI1000837', 'WRI1000836'}}"
+30,Tambak Lorok,Natural Gas,CCGT,PP,Indonesia,1814.0,,1993.0,,,-6.950500000000001,110.43400000000001,,0.0,0.0,0.0,"{nan, nan, nan}","{'GGPT': {'L405293'}, 'GEO': {'GEO-41530', 'GEO-41529'}, 'GPD': {'WRI1000887'}}"
+31,Ilijan,Natural Gas,CCGT,PP,Philippines,1251.0,,2002.0,,,13.622,121.0795,,0.0,0.0,0.0,"{nan, nan}","{'GGPT': {'L405342'}, 'GEO': {'GEO-41693'}, 'GPD': {'WRI1001886'}}"
+32,Ca Mau,Natural Gas,CCGT,PP,Vietnam,1500.0,,2008.0,,,9.242,105.06,,0.0,0.0,0.0,"{nan, nan}","{'GGPT': {'L405435'}, 'GEO': {'GEO-41181'}, 'GPD': {'WRI1030730'}}"
+33,Glow Ipp,Natural Gas,CCGT,CHP,Thailand,714.0,,2003.0,,,13.0536,101.0857,,0.0,0.0,0.0,"{nan, nan}","{'GGPT': {'L405377'}, 'GEO': {'GEO-41496'}, 'GPD': {'WRI1019459'}}"
+34,Hiep Phuoc,Natural Gas,Steam Turbine,PP,Vietnam,375.0,,1998.0,,,10.6416766,106.7456021,,0.0,0.0,0.0,"{nan, nan, nan}","{'GGPT': {'L405437'}, 'GEO': {'GEO-41208'}, 'GPD': {'WRI1030744'}}"
+35,Nhon Trach,Natural Gas,CCGT,PP,Vietnam,2715.0,0.3580165289256198,2009.0,,,10.6428,106.84,,0.0,0.0,0.0,"{nan, nan, nan, nan}","{'GGPT': {'L405443'}, 'GEO': {'GEO-41207'}, 'GPD': {'WRI1030745'}}"
+36,Phu My,Natural Gas,CCGT,PP,Vietnam,4007.0,,2000.0,,,10.603050883333333,107.03778521666668,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan, nan}","{'GGPT': {'L405446', 'L405448', 'L405447', 'L405449', 'L405445'}, 'GEO': {'GEO-41197', 'GEO-41194', 'GEO-41196', 'GEO-41195'}, 'GPD': {'WRI1030741', 'WRI1030738', 'WRI1030739', 'WRI1030740', 'WRI1030742'}}"
+37,Bang Bo,Natural Gas,CCGT,PP,Thailand,240.0,,2003.0,,,13.492,100.8416,,0.0,0.0,0.0,{nan},"{'GGPT': {'L405361'}, 'GEO': {'GEO-41490'}, 'GPD': {'WRI1019483'}}"
+38,Bang Pakong,Natural Gas,CCGT,PP,Thailand,3898.0,,1991.0,,,13.501,101.0253,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan, nan, nan}","{'GGPT': {'L405362'}, 'GEO': {'GEO-41553', 'GEO-41494'}, 'GPD': {'WRI1000161'}}"
+39,Chana,Natural Gas,CCGT,PP,Thailand,1476.0,0.3035761589403973,2008.0,,,6.9553,100.7076,,0.0,0.0,0.0,"{nan, nan}","{'GGPT': {'L405371'}, 'GEO': {'GEO-41514'}, 'GPD': {'WRI1000167'}}"
+40,Glow Energy Phase,Natural Gas,CCGT,CHP,Thailand,686.0,,1996.0,,,12.688405133333333,101.14187120000001,,0.0,0.0,0.0,"{nan, nan, nan}","{'GGPT': {'L405376', 'L407721', 'L407871'}, 'GEO': {'GEO-45299', 'GEO-45302'}, 'GPD': {'WRI1019479', 'WRI1019460'}}"
+41,Amata Rayong,Natural Gas,CCGT,CHP,Thailand,646.0,,2013.0,,,12.968022,101.118265,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan}","{'GGPT': {'L405358'}, 'GEO': {'GEO-45303'}, 'GPD': {'WRI1019466'}}"
+42,Global Synergy Central Utility,Natural Gas,CCGT,CHP,Thailand,226.0,,2006.0,,,12.7014,101.1258,,0.0,0.0,0.0,{nan},"{'GGPT': {'L405374'}, 'GEO': {'GEO-45308'}, 'GPD': {'WRI1019463'}}"
+43,Global Synergy Central Utility,Natural Gas,CCGT,CHP,Thailand,113.0,,2008.0,,,12.7547,101.1637,,0.0,0.0,0.0,{nan},"{'GGPT': {'L405375'}, 'GEO': {'GEO-45307'}, 'GPD': {'WRI1019464'}}"
+44,Mindanao Steag,Hard Coal,Steam Turbine,PP,Philippines,382.0,,2006.0,,,8.5725,124.7573,,0.0,0.0,0.0,"{nan, nan, nan}","{'GCPT': {'G106932', 'G106931', 'G106933'}, 'GEO': {'GEO-41687'}, 'GPD': {'WRI1001962'}}"
+45,Sual,Hard Coal,Steam Turbine,PP,Philippines,2894.0,,1999.0,,,16.1114,120.09873359999999,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan}","{'GCPT': {'G109644', 'G113917', 'G114305', 'G109643', 'G109645'}, 'GEO': {'GEO-41685'}, 'GPD': {'WRI1001872'}}"
+46,Cam Pha,Hard Coal,Steam Turbine,PP,Vietnam,1120.0,,2011.0,,,21.006288,107.358044,,0.0,0.0,0.0,"{nan, nan, nan, nan}","{'GCPT': {'G101165', 'G101164', 'G101166', 'G101167'}, 'GEO': {'GEO-41184'}, 'GPD': {'WRI1030764'}}"
+47,Cao Ngan,Hard Coal,Steam Turbine,PP,Vietnam,115.0,,2006.0,,,21.612998,105.815102,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G101200', 'G101199'}, 'GEO': {'GEO-41180'}, 'GPD': {'WRI1030774'}}"
+48,Hai Phong,Hard Coal,Steam Turbine,PP,Vietnam,3600.0,,2011.0,,,20.941592149999998,106.75822157500001,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan, nan, nan, nan}","{'GCPT': {'G103551', 'G103548', 'G103546', 'G103550', 'G103553', 'G103547', 'G103552', 'G103549'}, 'GEO': {'GEO-41199'}, 'GPD': {'WRI1030762', 'WRI1030761'}}"
+49,Na Duong,Lignite,Steam Turbine,PP,Vietnam,100.0,,2004.0,,,21.698111,106.975852,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G107152', 'G107151'}, 'GEO': {'GEO-41182'}, 'GPD': {'WRI1030775'}}"
+50,Pha Lai Complex,Hard Coal,Steam Turbine,PP,Vietnam,1700.0,,1983.0,,,21.116941142857144,106.30703357142859,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan, nan, nan}","{'GCPT': {'G107963', 'G107959', 'G107964', 'G107961', 'G107962', 'G107960', 'G114696'}, 'GEO': {'GEO-41201'}, 'GPD': {'WRI1030770', 'WRI1030771'}}"
+51,Quang Ninh,Hard Coal,Steam Turbine,PP,Vietnam,2400.0,,2009.0,,,21.01182,107.12883,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan, nan}","{'GCPT': {'G108385', 'G108384', 'G108388', 'G108386', 'G108389', 'G108387'}, 'GEO': {'GEO-41200'}, 'GPD': {'WRI1030765'}}"
+52,Uong Bi,Hard Coal,Steam Turbine,PP,Vietnam,735.0,,1975.0,,,21.039,106.786,,0.0,0.0,0.0,"{nan, nan, nan, nan}","{'GCPT': {'G110488', 'G110485', 'G110487', 'G110486'}, 'GEO': {'GEO-41183'}, 'GPD': {'WRI1030766'}}"
+53,Gheco One,Hard Coal,Steam Turbine,PP,Thailand,660.0,,2012.0,,,12.6746527,101.134665,,0.0,0.0,0.0,{nan},"{'GCPT': {'G103014'}, 'GEO': {'GEO-45296'}, 'GPD': {'WRI1019478'}}"
+54,Jimah,Hard Coal,Steam Turbine,PP,Malaysia,3400.0,,2009.0,,,2.5913005,101.7279745,,0.0,0.0,0.0,"{nan, nan, nan, nan}","{'GCPT': {'G105184', 'G105181', 'G105182', 'G105183'}, 'GEO': {'GEO-41439'}, 'GPD': {'WRI1000256'}}"
+55,Manjung,Hard Coal,Steam Turbine,PP,Malaysia,4100.0,,2002.0,,,4.1586,100.6423,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan}","{'GCPT': {'G106632', 'G106629', 'G106633', 'G106630', 'G106631'}, 'GEO': {'GEO-41440'}, 'GPD': {'WRI1000255'}}"
+56,Mukah Coal,Hard Coal,Steam Turbine,PP,Malaysia,270.0,,2009.0,,,2.968499,112.323865,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G107089', 'G107090'}, 'GEO': {'GEO-41474'}, 'GPD': {'WRI1000277'}}"
+57,Sultan Aziz,Hard Coal,Steam Turbine,PP,Malaysia,1600.0,,1988.0,,,3.117221,101.320369,,0.0,0.0,0.0,"{nan, nan, nan, nan}","{'GCPT': {'G109683', 'G109681', 'G109682', 'G109684'}, 'GEO': {'GEO-41442'}, 'GPD': {'WRI1075863'}}"
+58,Tanjung Bin,Hard Coal,Steam Turbine,PP,Malaysia,3100.0,,2006.0,,,1.334,103.5422,,0.0,0.0,0.0,"{nan, nan, nan, nan}","{'GCPT': {'G109949', 'G109951', 'G109948', 'G109950'}, 'GEO': {'GEO-41441'}, 'GPD': {'WRI1000285', 'WRI1000254'}}"
+59,Cilacap,Hard Coal,Steam Turbine,PP,Indonesia,7260.0,,2006.0,,,-7.684220377777779,109.11414533333333,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan, nan, nan, nan, nan}","{'GCPT': {'G101589', 'G101581', 'G101583', 'G101584', 'G101585', 'G101587', 'G101586', 'G101588', 'G101582'}, 'GEO': {'GEO-46553'}, 'GPD': {'WRI1075804'}}"
+60,Naga,Hard Coal,Steam Turbine,PP,Philippines,406.0,,2010.0,,,10.21755,123.76058,,0.0,0.0,0.0,"{nan, nan, nan, nan}","{'GCPT': {'G107172', 'G107173', 'G107175', 'G107174'}, 'GEO': {'GEO-41690'}, 'GPD': {'WRI1075847'}}"
+61,Map Ta Phut Blcp,Hard Coal,Steam Turbine,PP,Thailand,1434.0,,2006.0,,,12.6435,101.160536,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G106656', 'G106655'}, 'GEO': {'GEO-41202'}, 'GPD': {'WRI1019458'}}"
+62,Quezon,Hard Coal,Steam Turbine,PP,Philippines,960.0,,2000.0,,,14.2296,121.7558,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G108398', 'G108399'}, 'GEO': {'GEO-41684'}, 'GPD': {'WRI1001873'}}"
+63,Masinloc,Hard Coal,Steam Turbine,PP,Philippines,1625.0,,1998.0,,,15.563929139999999,119.9207167,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan}","{'GCPT': {'G106714', 'G106715', 'G106713', 'G106716', 'G114984'}, 'GEO': {'GEO-41683'}, 'GPD': {'WRI1001871'}}"
+64,North Bangkok,Natural Gas,CCGT,PP,Thailand,1498.0,,2010.0,,,13.8129,100.5092,,0.0,0.0,0.0,"{nan, nan}","{'GGPT': {'L405410'}, 'GEO': {'GEO-41515'}, 'GPD': {'WRI1000162'}}"
+65,Limay,Hard Coal,Steam Turbine,PP,Philippines,900.0,,2017.0,,,14.5204064,120.6026809,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan, nan}","{'GCPT': {'G106294', 'G113791', 'G106293', 'G106295', 'G106297', 'G106296'}, 'GEO': {'GEO-41692'}, 'GPD': {'WRI1075846'}}"
+66,Connaught Bridge,Natural Gas,CCGT,PP,Malaysia,375.0,,2016.0,,,3.0433,101.4696,,0.0,0.0,0.0,{nan},"{'GGPT': {'L405297'}, 'GEO': {'GEO-41469'}, 'GPD': {'WRI1000246'}}"
+67,Paka Ytl,Natural Gas,CCGT,PP,Malaysia,586.0,,1995.0,,,4.6017,103.4495,,0.0,0.0,0.0,"{nan, nan}","{'GGPT': {'L405326'}, 'GEO': {'GEO-41456', 'GEO-41458'}, 'GPD': {'WRI1000257', 'WRI1000258'}}"
+68,Prai Tnb,Natural Gas,CCGT,PP,Malaysia,1422.0,0.34714285714285714,2003.0,,,5.374666666666666,100.3744,,0.0,0.0,0.0,"{nan, nan, nan}","{'GGPT': {'L405315', 'L405314'}, 'GEO': {'GEO-41449'}, 'GPD': {'WRI1000284', 'WRI1000230'}}"
+69,Putrajaya,Natural Gas,Steam Turbine,PP,Malaysia,270.0,,1993.0,,,2.9659,101.6847,,0.0,0.0,0.0,"{nan, nan}","{'GGPT': {'L405316'}, 'GEO': {'GEO-41455'}, 'GPD': {'WRI1000247'}}"
+70,Ahlone Toyo Thai,Natural Gas,CCGT,PP,Myanmar,660.54,,2013.0,,,16.777891133333334,96.13073413333332,,0.0,0.0,0.0,"{nan, nan, nan}","{'GGPT': {'L405328', 'L405327'}, 'GEO': {'GEO-41484'}, 'GPD': {'WRI1061349'}}"
+71,Banten Labuan,Hard Coal,Steam Turbine,PP,Indonesia,600.0,,2009.0,,,-6.3921788,105.8277797,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G100531', 'G100530'}, 'GEO': {'GEO-44939'}, 'GPD': {'WRI1000915'}}"
+72,Banten Lontar,Hard Coal,Steam Turbine,PP,Indonesia,1260.0,,2011.0,,,-6.0588745,106.4643002,,0.0,0.0,0.0,"{nan, nan, nan, nan}","{'GCPT': {'G100535', 'G100533', 'G100532', 'G100534'}, 'GEO': {'GEO-44938'}, 'GPD': {'WRI1000916', 'WRI1000914'}}"
+73,Cirebon,Hard Coal,Steam Turbine,PP,Indonesia,2584.0,,2012.0,,,-6.7702857,108.6148578,,0.0,0.0,0.0,"{nan, nan, nan}","{'GCPT': {'G101590', 'G112733', 'G101591'}, 'GEO': {'GEO-44707'}, 'GPD': {'WRI1000921'}}"
+74,Indramayu,Hard Coal,Steam Turbine,PP,Indonesia,2990.0,,2010.0,,,-6.2747375,107.9704303,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan}","{'GCPT': {'G104852', 'G104856', 'G104853', 'G104855', 'G104854'}, 'GEO': {'GEO-41523'}, 'GPD': {'WRI1000939'}}"
+75,Ombilin,Hard Coal,Steam Turbine,PP,Indonesia,200.0,,1996.0,,,-0.609017,100.753697,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G107625', 'G107624'}, 'GEO': {'GEO-41522'}, 'GPD': {'WRI1000960'}}"
+76,Pacitan,Hard Coal,Steam Turbine,PP,Indonesia,630.0,,2011.0,,,-8.2578176,111.373558,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G107720', 'G107721'}, 'GEO': {'GEO-43060'}, 'GPD': {'WRI1075812'}}"
+77,Paiton,Hard Coal,Steam Turbine,PP,Indonesia,5495.0,,1993.0,,,-7.714123866666666,113.58194211111112,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan, nan, nan, nan, nan}","{'GCPT': {'G108040', 'G107733', 'G108041', 'G107734', 'G107728', 'G107730', 'G107731', 'G107729', 'G107732'}, 'GEO': {'GEO-44936', 'GEO-43059', 'GEO-41519'}, 'GPD': {'WRI1000941'}}"
+78,Pelabuhan Ratu,Hard Coal,Steam Turbine,PP,Indonesia,1050.0,,2013.0,,,-7.0242,106.5464,,0.0,0.0,0.0,"{nan, nan, nan}","{'GCPT': {'G107917', 'G107919', 'G107918'}, 'GEO': {'GEO-44713'}, 'GPD': {'WRI1000938'}}"
+79,Rembang,Hard Coal,Steam Turbine,PP,Indonesia,630.0,,2011.0,,,-6.636,111.4749,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G108527', 'G108526'}, 'GEO': {'GEO-44714'}, 'GPD': {'WRI1000940'}}"
+80,Tanjung Awar,Hard Coal,Steam Turbine,PP,Indonesia,700.0,,2012.0,,,-6.8105242,111.9955033,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G109947', 'G109946'}, 'GEO': {'GEO-44937'}, 'GPD': {'WRI1075817'}}"
+81,Tanjung Jati,Hard Coal,Steam Turbine,PP,Indonesia,4640.0,,2006.0,2009.0,,-6.445756733333333,110.74271666666668,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan, nan}","{'GCPT': {'G109961', 'G109958', 'G109957', 'G109959', 'G109956', 'G109960'}, 'GEO': {'GEO-41518'}, 'GPD': {'WRI1000990', 'WRI1000991'}}"
+82,Calaca,Hard Coal,Steam Turbine,PP,Philippines,1600.0,,1984.0,,,13.932627599999998,120.78968879999998,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan, nan}","{'GCPT': {'G101154', 'G101152', 'G101153', 'G101151', 'G101155', 'G101156'}, 'GEO': {'GEO-41682'}, 'GPD': {'WRI1001870'}}"
+83,Makban Geothermal,Geothermal,Steam Turbine,PP,Philippines,362.0,,1979.0,2003.0,,14.091699999999998,121.2143,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan, nan}","{'GGTPT': {'G700154', 'G700157', 'G700158', 'G700159', 'G700155', 'G700156'}, 'GEO': {'GEO-41712'}, 'GPD': {'WRI1001888'}}"
+84,South Bangkok,Natural Gas,CCGT,PP,Thailand,2492.0,,1998.0,,,13.616999999999999,100.55900000000001,,0.0,0.0,0.0,"{nan, nan, nan}","{'GGPT': {'L405424'}, 'GEO': {'GEO-41552', 'GEO-41551'}, 'GPD': {'WRI1000164'}}"
+85,Sultan Mahmud Kenyir,Hydro,Reservoir,PP,Malaysia,400.0,,1985.0,,,5.024,102.9102,,0.0,0.0,0.0,{nan},"{'GHPT': {'G602482'}, 'GEO': {'GEO-41451'}, 'GPD': {'WRI1000239'}}"
+86,Kamchay,Hydro,Reservoir,PP,Cambodia,194.0,,2011.0,,,10.703,104.1187,,0.0,0.0,0.0,{nan},"{'GHPT': {'G600376'}, 'GEO': {'GEO-43061'}, 'GPD': {'WRI1026835'}}"
+87,Nam Theun,Hydro,Reservoir,PP,Laos,1070.0,,2020.0,,,17.9965,104.9539,,0.0,0.0,0.0,{nan},"{'GHPT': {'G602426'}, 'GEO': {'GEO-41645'}, 'GPD': {'WRI1001053'}}"
+88,Theun Hinboun,Hydro,Run-Of-River,PP,Laos,440.0,,1998.0,2008.0,,18.2605,104.5624,,0.0,0.0,0.0,{nan},"{'GHPT': {'G602431'}, 'GEO': {'GEO-41640'}, 'GPD': {'WRI1001057'}}"
+89,Xeset,Hydro,Run-Of-River,PP,Laos,76.0,,2009.0,,,15.4913,106.2802,,0.0,0.0,0.0,{nan},"{'GHPT': {'G602443'}, 'GEO': {'GEO-41644'}, 'GPD': {'WRI1001058'}}"
+90,Pantabangan,Hydro,Reservoir,PP,Philippines,120.0,,1977.0,,,15.8114,121.1082,,0.0,0.0,0.0,{nan},"{'GHPT': {'G603201'}, 'GEO': {'GEO-41708'}, 'GPD': {'WRI1001901'}}"
+91,Magat,Hydro,Reservoir,PP,Philippines,380.0,,1983.0,,,16.8262,121.4554,,0.0,0.0,0.0,{nan},"{'GHPT': {'G603197'}, 'GEO': {'GEO-41701'}, 'GPD': {'WRI1001897'}}"
+92,Kalayaan,Hydro,Pumped Storage,Store,Philippines,736.0,,1983.0,,,14.3171,121.4737,,0.0,0.0,0.0,"{nan, nan}","{'GHPT': {'G603193', 'G603194'}, 'GEO': {'GEO-41706'}, 'GPD': {'WRI1001896'}}"
+93,Casecnan,Hydro,Run-Of-River,PP,Philippines,150.0,,2001.0,,,15.8398,121.1997,,0.0,0.0,0.0,{nan},"{'GHPT': {'G603184'}, 'GEO': {'GEO-41709'}, 'GPD': {'WRI1001905'}}"
+94,Binga,Hydro,Reservoir,PP,Philippines,140.0,,1960.0,,,16.3903,120.7183,,0.0,0.0,0.0,{nan},"{'GHPT': {'G603179'}, 'GEO': {'GEO-41704'}, 'GPD': {'WRI1001903'}}"
+95,Angat,Hydro,Run-Of-River,PP,Philippines,218.0,,1967.0,,,14.9071,121.1608,,0.0,0.0,0.0,{nan},"{'GHPT': {'G603178'}, 'GEO': {'GEO-41702'}, 'GPD': {'WRI1001900'}}"
+96,Lam Ta Khong,Hydro,Pumped Storage,Store,Thailand,1000.0,,2001.0,,,14.8653,101.5603,,0.0,0.0,0.0,{nan},"{'GHPT': {'G603605'}, 'GEO': {'GEO-45330'}, 'GPD': {'WRI1000170'}}"
+97,San Roque,Hydro,Reservoir,PP,Philippines,435.0,,2003.0,,,16.1497,120.6808,,0.0,0.0,0.0,{nan},"{'GHPT': {'G603205'}, 'GEO': {'GEO-41705'}, 'GPD': {'WRI1001894'}}"
+98,Shweli,Hydro,Reservoir,PP,Myanmar,600.0,,2008.0,,,23.6682,97.4561,,0.0,0.0,0.0,{nan},"{'GHPT': {'G602586'}, 'GEO': {'GEO-40517'}, 'GPD': {'WRI1061367'}}"
+99,Ambuklao,Hydro,Reservoir,PP,Philippines,105.0,,1956.0,,,16.4588,120.7452,,0.0,0.0,0.0,{nan},"{'GHPT': {'G603177'}, 'GEO': {'GEO-41703'}, 'GPD': {'WRI1001902'}}"
+100,Agus,Hydro,Run-Of-River,PP,Philippines,260.0,,1979.0,,,8.02515,124.281,,0.0,0.0,0.0,"{nan, nan}","{'GHPT': {'G603171', 'G603170'}, 'GEO': {'GEO-41694'}, 'GPD': {'WRI1001958'}}"
+101,Agus,Hydro,Run-Of-River,PP,Philippines,158.0,,1985.0,,,8.1339,124.1983,,0.0,0.0,0.0,{nan},"{'GHPT': {'G603173'}, 'GEO': {'GEO-41699'}, 'GPD': {'WRI1001959'}}"
+102,Agus,Hydro,Run-Of-River,PP,Philippines,250.0,,1953.0,,,8.1848,124.1926,,0.0,0.0,0.0,{nan},"{'GHPT': {'G603174'}, 'GEO': {'GEO-41696', 'GEO-41695', 'GEO-41697'}, 'GPD': {'WRI1001960'}}"
+103,Pb Sudirman,Hydro,Reservoir,PP,Indonesia,181.0,,1989.0,,,-7.3927,109.6054,,0.0,0.0,0.0,{nan},"{'GHPT': {'G602163'}, 'GEO': {'GEO-41533'}, 'GPD': {'WRI1000800'}}"
+104,Saguling,Hydro,Reservoir,PP,Indonesia,701.0,,1985.0,,,-6.9122,107.3661,,0.0,0.0,0.0,{nan},"{'GHPT': {'G602168'}, 'GEO': {'GEO-41527'}, 'GPD': {'WRI1001005'}}"
+105,Musi,Hydro,Run-Of-River,PP,Indonesia,210.0,,2006.0,,,-3.8172,102.2873,,0.0,0.0,0.0,{nan},"{'GHPT': {'G602160'}, 'GEO': {'GEO-41534'}, 'GPD': {'WRI1000792'}}"
+106,Jatiluhur,Hydro,Reservoir,PP,Indonesia,187.0,,1967.0,,,-6.5226,107.3892,,0.0,0.0,0.0,{nan},"{'GHPT': {'G602138'}, 'GEO': {'GEO-41528'}, 'GPD': {'WRI1000762'}}"
+107,Nam Ngum,Hydro,Reservoir,PP,Laos,615.0,,2013.0,,,18.753,102.777,,0.0,0.0,0.0,{nan},"{'GHPT': {'G602408'}, 'GEO': {'GEO-41646'}, 'GPD': {'WRI1001059'}}"
+108,Nam Ngum,Hydro,Reservoir,PP,Laos,275.0,,1971.0,,,18.531,102.547,,0.0,0.0,0.0,{nan},"{'GHPT': {'G602407'}, 'GEO': {'GEO-41641'}, 'GPD': {'WRI1001051'}}"
+109,Nam Lik,Hydro,Reservoir,PP,Laos,100.0,,2010.0,,,18.7897,102.1233,,0.0,0.0,0.0,{nan},"{'GHPT': {'G602402'}, 'GEO': {'GEO-41647'}, 'GPD': {'WRI1026796'}}"
+110,Houay Ho,Hydro,Reservoir,PP,Laos,152.0,,1999.0,,,15.0789,106.8293,,0.0,0.0,0.0,{nan},"{'GHPT': {'G602391'}, 'GEO': {'GEO-41643'}, 'GPD': {'WRI1001049'}}"
+111,Ham Thuan,Hydro,Reservoir,PP,Vietnam,300.0,,2001.0,,,11.336,107.9349,,0.0,0.0,0.0,{nan},"{'GHPT': {'G604057'}, 'GEO': {'GEO-41189'}, 'GPD': {'WRI1030778'}}"
+112,Hoa Binh,Hydro,Reservoir,PP,Vietnam,1920.0,,1994.0,,,20.8087,105.3236,,0.0,0.0,0.0,{nan},"{'GHPT': {'G604058'}, 'GEO': {'GEO-41188'}, 'GPD': {'WRI1030881'}}"
+113,Plei Krong,Hydro,Reservoir,PP,Vietnam,100.0,,2009.0,,,14.4083,107.862,,0.0,0.0,0.0,{nan},"{'GHPT': {'G604070'}, 'GEO': {'GEO-41185'}, 'GPD': {'WRI1030838'}}"
+114,Bang Lang,Hydro,Reservoir,PP,Thailand,84.0,,1981.0,,,6.1709,101.3159,,0.0,0.0,0.0,{nan},"{'GHPT': {'G603602'}, 'GEO': {'GEO-41516'}, 'GPD': {'WRI1000179'}}"
+115,Bhumibol,Hydro,Pumped Storage,PP,Thailand,950.0,,1964.0,1992.0,,17.2414,98.9732,,0.0,0.0,0.0,"{nan, nan}","{'GHPT': {'G603603'}, 'GEO': {'GEO-41501'}, 'GPD': {'WRI1000172'}}"
+116,Pak Mun,Hydro,Reservoir,PP,Thailand,136.0,,1994.0,,,15.2826,105.4683,,0.0,0.0,0.0,{nan},"{'GHPT': {'G603606'}, 'GEO': {'GEO-41502'}, 'GPD': {'WRI1000178'}}"
+117,Rajjaprabha,Hydro,Reservoir,PP,Thailand,240.0,,1987.0,,,8.973,98.8066,,0.0,0.0,0.0,{nan},"{'GHPT': {'G603607'}, 'GEO': {'GEO-41513'}, 'GPD': {'WRI1000174'}}"
+118,Sirikit,Hydro,Reservoir,PP,Thailand,500.0,,1974.0,,,17.7648,100.5634,,0.0,0.0,0.0,{nan},"{'GHPT': {'G603608'}, 'GEO': {'GEO-41504'}, 'GPD': {'WRI1000173'}}"
+119,Srinagarind,Hydro,Pumped Storage,PP,Thailand,720.0,,1980.0,,,14.4075,99.1261,,0.0,0.0,0.0,"{nan, nan}","{'GHPT': {'G603609'}, 'GEO': {'GEO-41505'}, 'GPD': {'WRI1000175'}}"
+120,Vajiralongkorn,Hydro,Reservoir,PP,Thailand,300.0,,1984.0,,,14.7998,98.597,,0.0,0.0,0.0,{nan},"{'GHPT': {'G603610'}, 'GEO': {'GEO-41503'}, 'GPD': {'WRI1000177'}}"
+121,Batang Ai,Hydro,Reservoir,PP,Malaysia,108.0,,1985.0,,,1.1472,111.8742,,0.0,0.0,0.0,{nan},"{'GHPT': {'G602468'}, 'GEO': {'GEO-41454'}, 'GPD': {'WRI1000280'}}"
+122,Hulu Terengganu,Hydro,Reservoir,PP,Malaysia,265.0,,2015.0,,,5.1519,102.6075,,0.0,0.0,0.0,{nan},"{'GHPT': {'G602470'}, 'GEO': {'GEO-45981'}, 'GPD': {'WRI1000283'}}"
+123,Kenering,Hydro,Reservoir,PP,Malaysia,120.0,,1984.0,,,5.2157,101.0982,,0.0,0.0,0.0,{nan},"{'GHPT': {'G602471'}, 'GEO': {'GEO-41461'}, 'GPD': {'WRI1000232'}}"
+124,Pulangi,Hydro,Run-Of-River,PP,Philippines,255.0,,1985.0,,,7.7157,125.0237,,0.0,0.0,0.0,{nan},"{'GHPT': {'G603203'}, 'GEO': {'GEO-41700'}, 'GPD': {'WRI1001961'}}"
+125,Pergau,Hydro,Reservoir,PP,Malaysia,600.0,,1997.0,,,5.6235,101.7061,,0.0,0.0,0.0,{nan},"{'GHPT': {'G602479'}, 'GEO': {'GEO-41450'}, 'GPD': {'WRI1000238'}}"
+126,Temenggor,Hydro,Reservoir,PP,Malaysia,348.0,,1977.0,,,5.4056,101.2983,,0.0,0.0,0.0,{nan},"{'GHPT': {'G602486'}, 'GEO': {'GEO-41452'}, 'GPD': {'WRI1000237'}}"
+127,Mone Chaung,Hydro,Run-Of-River,PP,Myanmar,75.0,,2004.0,,,20.4786,94.254,,0.0,0.0,0.0,{nan},"{'GHPT': {'G602572'}, 'GEO': {'GEO-41488'}, 'GPD': {'WRI1061361'}}"
+128,Paung Laung,Hydro,Reservoir,PP,Myanmar,280.0,,2005.0,,,19.785,96.3332,,0.0,0.0,0.0,{nan},"{'GHPT': {'G602582'}, 'GEO': {'GEO-40518'}, 'GPD': {'WRI1061363'}}"
+129,Yeywa,Hydro,Reservoir,PP,Myanmar,790.0,,2010.0,,,21.6742,96.4741,,0.0,0.0,0.0,{nan},"{'GHPT': {'G602601'}, 'GEO': {'GEO-41146'}, 'GPD': {'WRI1061374'}}"
+130,Cirata,Hydro,Reservoir,PP,Indonesia,1008.0,,1986.0,,,-6.6826,107.3483,,0.0,0.0,0.0,{nan},"{'GHPT': {'G602135'}, 'GEO': {'GEO-41524'}, 'GPD': {'WRI1000748'}}"
+131,Ban Ve,Hydro,Reservoir,PP,Vietnam,320.0,,2010.0,,,19.3413,104.4878,,0.0,0.0,0.0,{nan},"{'GHPT': {'G604038'}, 'GEO': {'GEO-41186'}, 'GPD': {'WRI1030872'}}"
+132,Lam Takhong Wind Farm,Wind,Onshore,PP,Thailand,24.0,,2017.0,,,14.815,101.5614,,0.0,0.0,0.0,{nan},"{'GWPT': {'G901031'}, 'GEO': {'GEO-45332'}, 'GPD': {'WRI1000171'}}"
+133,Kalteng Pulang Pisau,Hard Coal,Steam Turbine,PP,Indonesia,120.0,,2015.0,,,-2.8226465,114.2088309,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G105488', 'G105489'}, 'GPD': {'WRI1075805'}}"
+134,Bac Lieu Offshore Wind Farm,Wind,Offshore Hard Mount,PP,Vietnam,241.0,,2013.0,,,9.2321,105.81323333333334,,0.0,0.0,0.0,"{nan, nan, nan}","{'GWPT': {'G901706', 'G901291', 'G901708'}, 'GPD': {'WRI1030729'}}"
+135,Can Tho,Oil,Steam Turbine,PP,Vietnam,189.89877656607635,,,,,10.1,105.718,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan, nan, nan}","{'GEO': {'GEO-41210'}, 'GPD': {'WRI1030733'}}"
+136,Malaya Oil Philippines,Oil,Steam Turbine,PP,Philippines,602.1180720387787,,1995.0,,,14.3959,121.3337,,0.0,0.0,0.0,"{nan, nan}","{'GEO': {'GEO-41718'}, 'GPD': {'WRI1001883'}}"
+137,Leyte Geothermal Philippines,Geothermal,,PP,Philippines,700.9,,1983.0,,,11.13077,124.65532,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan}","{'GEO': {'GEO-41714'}, 'GPD': {'WRI1001943'}}"
+138,Fppc Bauang Diesel Philippines,Oil,,PP,Philippines,223.71002214979237,,1994.0,,,16.4907,120.3261,,0.0,0.0,0.0,{nan},"{'GEO': {'GEO-41720'}, 'GPD': {'WRI1001879'}}"
+139,Cebu Salcon Coal Philippines,Hard Coal,,PP,Philippines,98.46286696094701,,1981.0,,,10.2185,123.7577,,0.0,0.0,0.0,"{nan, nan}","{'GEO': {'GEO-41689'}, 'GPD': {'WRI1001921'}}"
+140,Caliraya Philippines,Hydro,Reservoir,PP,Philippines,22.312101910828027,,1950.0,,,14.2992,121.4705,,0.0,0.0,0.0,{nan},"{'GEO': {'GEO-41707'}, 'GPD': {'WRI1001898'}}"
+141,Agus Philippines,Hydro,Reservoir,PP,Philippines,78.98089171974522,,1992.0,,,8.0046,124.28683,,0.0,0.0,0.0,"{nan, nan}","{'GEO': {'GEO-41698'}, 'GPD': {'WRI1001957'}}"
+142,Bangui Bay Wind Farm,Wind,Onshore,PP,Philippines,44.0,,2005.0,,,18.524549999999998,120.69775000000001,,0.0,0.0,0.0,"{nan, nan}","{'GWPT': {'G901011', 'G901012'}, 'GPD': {'WRI1001906', 'WRI1001907'}}"
+143,Phuong Mai Wind Farm,Wind,Onshore,PP,Vietnam,21.0,,2020.0,,,13.9176,109.245,,0.0,0.0,0.0,{nan},"{'GWPT': {'G900833'}, 'GPD': {'WRI1030755'}}"
+144,Cikarang Babelan,Hard Coal,Steam Turbine,PP,Indonesia,280.0,,2017.0,,,-6.11607,107.05197,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G101580', 'G101579'}, 'GPD': {'WRI1075803'}}"
+145,Calatagan Solar,Solar,Pv,PP,Philippines,63.0,,2016.0,,,13.9155,120.6498,,0.0,0.0,0.0,{nan},"{'GSPT': {'G800993'}, 'GPD': {'WRI1023901'}}"
+146,Cavite Special Economic Zone Solar,Solar,Pv,PP,Philippines,41.0,,2015.0,,,14.417,120.875,,0.0,0.0,0.0,{nan},"{'GSPT': {'G801003'}, 'GPD': {'WKS0061756', 'WKS0065747'}}"
+147,Clark Enfinity Solar,Solar,Pv,PP,Philippines,22.0,,2016.0,,,15.2439,120.5336,,0.0,0.0,0.0,{nan},"{'GSPT': {'G810947'}, 'GPD': {'WRI1023905'}}"
+148,Concepcion Solar Farm,Solar,Pv,PP,Philippines,92.0,,2019.0,,,15.335,120.695,,0.0,0.0,0.0,"{nan, nan}","{'GSPT': {'G801033', 'G801032'}, 'GPD': {'WKS0065447'}}"
+149,Currimao Solar,Solar,Pv,PP,Philippines,20.0,,2016.0,,,18.051,120.4858,,0.0,0.0,0.0,{nan},"{'GSPT': {'G801041'}, 'GPD': {'WRI1023902'}}"
+150,Digos Solar Farm,Solar,Pv,PP,Philippines,29.0,,2016.0,,,6.7796,125.2838,,0.0,0.0,0.0,{nan},"{'GSPT': {'G801076'}, 'GPD': {'WRI1023914'}}"
+151,First Toledo Solar,Solar,Pv,PP,Philippines,60.0,,2017.0,,,10.4157,123.6738,,0.0,0.0,0.0,{nan},"{'GSPT': {'G801104'}, 'GPD': {'WRI1030473'}}"
+152,Islasol Solar,Solar,Pv,PP,Philippines,80.0,,2016.0,,,10.42265,122.9324,,0.0,0.0,0.0,"{nan, nan}","{'GSPT': {'G801177', 'G801178'}, 'GPD': {'WRI1023911', 'WRI1030474'}}"
+153,Bulacansol Solar Farm,Solar,Pv,PP,Philippines,50.0,,2021.0,,,15.1405,120.9771,,0.0,0.0,0.0,{nan},"{'GSPT': {'G800985'}, 'GPD': {'WKS0070647'}}"
+154,Thu Duc Vietnam,Oil,Steam Turbine,PP,Vietnam,238.06822232917864,,,,,10.8284,106.7577,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan, nan}","{'GEO': {'GEO-41209'}, 'GPD': {'WRI1030747'}}"
+155,Chulabhorn Hydroelectricl Thailand,Hydro,Reservoir,PP,Thailand,39.49044585987261,,1972.0,,,16.5362,101.65,,0.0,0.0,0.0,"{nan, nan}","{'GEO': {'GEO-41512'}, 'GPD': {'WRI1000176'}}"
+156,Sirindhorn Thailand,Hydro,Reservoir,PP,Thailand,35.54140127388535,,1971.0,,,15.206340000000003,105.4292,,0.0,0.0,0.0,"{nan, nan, nan}","{'GEO': {'GEO-41507'}, 'GPD': {'WRI1000180'}}"
+157,Tri Energy Ccgt Thailand,Oil,Steam Turbine,PP,Thailand,648.4348468109924,,2000.0,,,13.536,99.743,,0.0,0.0,0.0,"{nan, nan, nan}","{'GEO': {'GEO-41497'}, 'GPD': {'WRI1000156'}}"
+158,Celukan Bawang,Hard Coal,Steam Turbine,PP,Indonesia,1086.0,,2015.0,,,-8.1962945,114.8515677,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan}","{'GCPT': {'G101256', 'G101257', 'G101254', 'G101258', 'G101255'}, 'GPD': {'WRI1075802'}}"
+159,Bukit Asam Muara Enim,Hard Coal,Steam Turbine,PP,Indonesia,260.0,,1987.0,,,-3.7321299,103.797527,,0.0,0.0,0.0,"{nan, nan, nan, nan}","{'GCPT': {'G101097', 'G101099', 'G101100', 'G101098'}, 'GPD': {'WRI1000919', 'WRI1000988'}}"
+160,Batu Hijau,Hard Coal,Steam Turbine,PP,Indonesia,124.0,,1999.0,,,-8.901172,116.738209,,0.0,0.0,0.0,"{nan, nan, nan, nan}","{'GCPT': {'G100665', 'G100662', 'G100663', 'G100664'}, 'GPD': {'WRI1075801'}}"
+161,Barru,Hard Coal,Steam Turbine,PP,Indonesia,200.0,,2013.0,,,-4.29329,119.63135,,0.0,0.0,0.0,"{nan, nan, nan}","{'GCPT': {'G100641', 'G100642', 'G100643'}, 'GPD': {'WRI1000979'}}"
+162,Banten Suralaya,Hard Coal,Steam Turbine,PP,Indonesia,6025.0,,1984.0,,,-5.89110048,106.03124441,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan, nan, nan, nan, nan, nan}","{'GCPT': {'G100539', 'G113472', 'G100543', 'G100545', 'G100542', 'G100538', 'G100537', 'G100541', 'G100540', 'G100544'}, 'GPD': {'WRI1000982'}}"
+163,Banten Serang,Hard Coal,Steam Turbine,PP,Indonesia,1320.0,,2017.0,,,-5.8829716,106.0459286,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G113817', 'G100536'}, 'GPD': {'WRI1075800'}}"
+164,Banjarsari,Hard Coal,Steam Turbine,PP,Indonesia,220.0,,2015.0,,,-3.72507,103.69039,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G100520', 'G100519'}, 'GPD': {'WRI1000913'}}"
+165,Asam,Lignite,Steam Turbine,PP,Indonesia,460.0,,2000.0,,,-3.9265336000000004,115.10580499999999,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan, nan}","{'GCPT': {'G100516', 'G100515', 'G105482', 'G105483', 'G100518', 'G100517'}, 'GPD': {'WRI1000910'}}"
+166,Amurang,Hard Coal,Steam Turbine,PP,Indonesia,120.0,,2012.0,,,1.182502,124.480564,,0.0,0.0,0.0,"{nan, nan, nan, nan}","{'GCPT': {'G113972', 'G100180', 'G100181', 'G113971'}, 'GPD': {'WRI1075799'}}"
+167,Amamapare Port,Hard Coal,Steam Turbine,PP,Indonesia,195.0,,1998.0,,,-4.827752,136.839082,,0.0,0.0,0.0,"{nan, nan, nan}","{'GCPT': {'G100142', 'G100143', 'G100144'}, 'GPD': {'WRI1075798'}}"
+168,Nam Leuk Laos,Hydro,Reservoir,PP,Laos,59.23566878980892,,2000.0,,,18.4375,102.947,,0.0,0.0,0.0,"{nan, nan}","{'GEO': {'GEO-41642'}, 'GPD': {'WRI1001050'}}"
+169,Zawgyi Myanmar,Hydro,Reservoir,PP,Myanmar,29.61783439490446,,1998.0,,,21.5748,96.8726,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan}","{'GEO': {'GEO-41489'}, 'GPD': {'WRI1061377'}}"
+170,Shwedaung Pyay Ocgt Myanmar,Natural Gas,Steam Turbine,PP,Myanmar,70.88323360164225,,1982.0,,,18.7274,95.2285,,0.0,0.0,0.0,"{nan, nan, nan}","{'GEO': {'GEO-41486'}, 'GPD': {'WRI1061365'}}"
+171,Baluchaung Lawpita Myanmar,Hydro,Run-Of-River,PP,Myanmar,144.92559782105445,,1960.0,2001.0,,19.5552,97.3584,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan, nan, nan, nan}","{'GEO': {'GEO-41487'}, 'GPD': {'WRI1061351', 'WRI1061350'}}"
+172,Tawau Serudong Ice Malaysia,Oil,,PP,Malaysia,70.40149765376489,,1990.0,,,4.2826,117.8885,,0.0,0.0,0.0,"{nan, nan}","{'GEO': {'GEO-44271', 'GEO-44272'}, 'GPD': {'WRI1000275'}}"
+173,Sandakan Spc Oil Malaysia,Oil,,PP,Malaysia,31.495406845105343,,1999.0,,,5.8124,118.0646,,0.0,0.0,0.0,{nan},"{'GEO': {'GEO-44274'}, 'GPD': {'WRI1000265'}}"
+174,Melawa Malaysia,Oil,,PP,Malaysia,46.31677477221374,,1995.0,,,6.0887,116.1574,,0.0,0.0,0.0,{nan},"{'GEO': {'GEO-44275'}, 'GPD': {'WRI1000260'}}"
+175,Bintulu Ccgt Tg Kidurong Plants Malaysia,Natural Gas,Steam Turbine,PP,Malaysia,472.554890677615,,1991.0,,,3.288,113.0926,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan, nan, nan, nan, nan}","{'GEO': {'GEO-41473'}, 'GPD': {'WRI1000281'}}"
+176,Bersia Hyroelectric Malaysia,Hydro,Reservoir,PP,Malaysia,71.0828025477707,,1982.0,,,5.4297,101.2092,,0.0,0.0,0.0,"{nan, nan, nan}","{'GEO': {'GEO-41460'}, 'GPD': {'WRI1000233'}}"
+177,Embalut,Hard Coal,Steam Turbine,PP,Indonesia,60.0,,2014.0,,,-0.3730972,117.0624625,,0.0,0.0,0.0,{nan},"{'GCPT': {'G102626'}, 'GPD': {'WRI1000925'}}"
+178,Tangga,Hydro,Reservoir,PP,Indonesia,317.0,,1982.0,,,2.561,99.3097,,0.0,0.0,0.0,{nan},"{'GHPT': {'G602176'}, 'GPD': {'WRI1001024'}}"
+179,Petrosolar,Solar,Pv,PP,Philippines,50.0,,2016.0,,,15.4467,120.618,,0.0,0.0,0.0,{nan},"{'GSPT': {'G801451'}, 'GPD': {'WRI1023898'}}"
+180,Mindanao Geothermal,Geothermal,Steam Turbine,PP,Philippines,106.0,,1997.0,,,7.0127,125.2198,,0.0,0.0,0.0,"{nan, nan}","{'GGTPT': {'G700177', 'G700178'}, 'GEO': {'GEO-41715'}}"
+181,Son Dong,Hard Coal,Steam Turbine,PP,Vietnam,220.0,,2009.0,,,21.179288,106.780143,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G109507', 'G109506'}, 'GPD': {'WRI1030772'}}"
+182,Thai Binh Center,Hard Coal,Steam Turbine,PP,Vietnam,2240.0,,2017.0,,,20.48210578,106.56213788,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan}","{'GCPT': {'G110042', 'G113901', 'G110044', 'G110043', 'G110041'}, 'GPD': {'WRI1075848'}}"
+183,Vinh Tan,Hard Coal,Steam Turbine,PP,Vietnam,6224.0,,2014.0,,,11.317,108.80800000000002,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan, nan, nan, nan, nan, nan}","{'GCPT': {'G110614', 'G110619', 'G110620', 'G110615', 'G110618', 'G110612', 'G110611', 'G110617', 'G110613', 'G110616'}, 'GPD': {'WRI1030751'}}"
+184,Vung Ang,Hard Coal,Steam Turbine,PP,Vietnam,4800.0,,2014.0,,,18.09792,106.38123,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan, nan, nan, nan}","{'GCPT': {'G110671', 'G110672', 'G110673', 'G112738', 'G110669', 'G110668', 'G110670', 'G112739'}, 'GPD': {'WRI1030758'}}"
+185,Tha Tum,Hard Coal,Steam Turbine,PP,Thailand,328.0,,1999.0,,,13.932457,101.587568,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G110038', 'G110037'}, 'GPD': {'WRI1075818'}}"
+186,Sejingkat,Hard Coal,Steam Turbine,PP,Malaysia,210.0,,1997.0,,,1.637733,110.465402,,0.0,0.0,0.0,"{nan, nan, nan, nan}","{'GCPT': {'G108910', 'G108911', 'G108909', 'G108912'}, 'GPD': {'WRI1000279'}}"
+187,Tigyit,Hard Coal,Steam Turbine,PP,Myanmar,120.0,,2004.0,,,20.431292,96.703524,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G110164', 'G110165'}, 'GPD': {'WRI1061372'}}"
+188,Hongsa,Lignite,Steam Turbine,PP,Laos,2504.0,,2015.0,,,19.6912838,101.2782168,,0.0,0.0,0.0,"{nan, nan, nan, nan}","{'GCPT': {'G103946', 'G103947', 'G103949', 'G103948'}, 'GPD': {'WRI1022391'}}"
+189,Sihanoukville Cel,Hard Coal,Steam Turbine,PP,Cambodia,250.0,,2014.0,,,10.7402127,103.58082740000002,,0.0,0.0,0.0,"{nan, nan, nan}","{'GCPT': {'G109368', 'G113072', 'G109369'}, 'GPD': {'WRI1026840'}}"
+190,Sihanoukville Ciidg,Hard Coal,Steam Turbine,PP,Cambodia,1645.0,,2014.0,,,10.73283518888889,103.58628994444445,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan, nan, nan, nan, nan}","{'GCPT': {'G109370', 'G109372', 'G109373', 'G109371', 'G109375', 'G114129', 'G109374', 'G109376', 'G114128'}, 'GPD': {'WRI1075837'}}"
+191,Khon Kaen Sugar,Bioenergy,Steam Turbine,PP,Thailand,30.0,,,,,16.714,102.8454,,0.0,0.0,0.0,{nan},"{'GBPT': {'G200082'}, 'GPD': {'WRI1019450'}}"
+192,Da Mi,Hydro,Reservoir,PP,Vietnam,175.0,,2001.0,,,11.3261,107.9336,,0.0,0.0,0.0,{nan},"{'GHPT': {'G604044'}, 'GEO': {'GEO-41190'}}"
+193,Sultan Yussuf Jor,Hydro,Reservoir,PP,Malaysia,100.0,,1963.0,,,4.3736,101.3364,,0.0,0.0,0.0,{nan},"{'GHPT': {'G602483'}, 'GEO': {'GEO-41472'}}"
+194,Tanjung Priok,Natural Gas,CCGT,PP,Indonesia,2730.0,,1994.0,,,-6.1102,106.8671,,0.0,0.0,0.0,"{nan, nan, nan, nan}","{'GGPT': {'L405294'}, 'GEO': {'GEO-41526'}}"
+195,Ninh Binh,Hard Coal,Steam Turbine,PP,Vietnam,330.0,,,,,20.251963,105.984155,,0.0,0.0,0.0,{nan},"{'GCPT': {'G107489'}, 'GPD': {'WRI1030760'}}"
+196,Kimanis,Natural Gas,CCGT,PP,Malaysia,385.0,,2014.0,,,5.65063875,115.8945905,,0.0,0.0,0.0,"{nan, nan, nan, nan}","{'GGPT': {'L405301', 'L405300'}, 'GEO': {'GEO-45522', 'GEO-45523'}}"
+197,Kulim,Natural Gas,CCGT,PP,Malaysia,220.0,0.1590909090909091,1996.0,,,5.4312,100.6005,,0.0,0.0,0.0,{nan},"{'GGPT': {'L405303'}, 'GEO': {'GEO-41447'}}"
+198,Pasir Gudang Tnb,Natural Gas,CCGT,PP,Malaysia,275.0,,1994.0,,,1.4494,103.8812,,0.0,0.0,0.0,{nan},"{'GGPT': {'L405320'}, 'GEO': {'GEO-41459'}}"
+199,Powertek,Natural Gas,Steam Turbine,PP,Malaysia,440.0,,1995.0,,,2.345586548,102.0505439,,0.0,0.0,0.0,"{nan, nan, nan, nan}","{'GGPT': {'L407900'}, 'GEO': {'GEO-41414', 'GEO-44270', 'GEO-41413'}}"
+200,Jurong Island,Natural Gas,CCGT,PP,Singapore,800.0,,2013.0,,,1.2835014,103.7192302,,0.0,0.0,0.0,"{nan, nan}","{'GGPT': {'L405349'}, 'GEO': {'GEO-45352'}}"
+201,Keppel Merlimau Cogeneration,Natural Gas,CCGT,CHP,Singapore,1300.0,0.16183846153846154,2007.0,2010.0,,1.2824,103.675,,0.0,0.0,0.0,"{nan, nan, nan}","{'GGPT': {'L405350'}, 'GEO': {'GEO-42425'}}"
+202,Pulau Sakra,Natural Gas,CCGT,CHP,Singapore,1189.0,,2001.0,2012.0,,1.2540054,103.7004113,,0.0,0.0,0.0,"{nan, nan}","{'GGPT': {'L405351'}, 'GEO': {'GEO-4959'}}"
+203,Senoko,Natural Gas,CCGT,PP,Singapore,2792.0,,1996.0,2010.0,,1.4655,103.79959999999998,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan, nan, nan}","{'GGPT': {'L405353'}, 'GEO': {'GEO-5331'}}"
+204,Tuas,Natural Gas,CCGT,PP,Singapore,2289.0,,2001.0,,,1.2908815541666667,103.63809408333334,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan, nan}","{'GGPT': {'L405355', 'L405356'}, 'GEO': {'GEO-5795'}}"
+205,Kaltim,Hard Coal,Steam Turbine,PP,Indonesia,200.0,,2020.0,,,-0.365010443,117.0650466,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G105497', 'G105496'}, 'GGPT': {'L405940'}}"
+206,Irpc,Hard Coal,Steam Turbine,CHP,Thailand,307.0,,2012.0,,,12.6553978,101.3118483,,0.0,0.0,0.0,{nan},"{'GCPT': {'G114525'}, 'GGPT': {'L405397'}}"
+207,Adipala,Hard Coal,Steam Turbine,PP,Indonesia,660.0,,2015.0,,,-7.6859423,109.13756,,0.0,0.0,0.0,{nan},"{'GCPT': {'G100040'}, 'GEO': {'GEO-44708'}}"
+208,Mae Moh,Lignite,Steam Turbine,PP,Thailand,3880.0,,1978.0,1997.0,2000.0,18.296,99.752,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan}","{'GCPT': {'G112785', 'G106550', 'G106558', 'G106551', 'G106556', 'G106555', 'G106548', 'G112786', 'G106552', 'G106554', 'G106553', 'G106557', 'G106549', 'G106547', 'G112784'}, 'GEO': {'GEO-41479'}}"
+209,Nong Son,Hard Coal,Steam Turbine,PP,Vietnam,30.0,,2014.0,,,15.716308,108.0310147,,0.0,0.0,0.0,{nan},"{'GCPT': {'G107494'}, 'GPD': {'WRI1030756'}}"
+210,Nghi Son,Hard Coal,Steam Turbine,PP,Vietnam,1920.0,,2013.0,,,19.31581,105.80026,,0.0,0.0,0.0,"{nan, nan, nan, nan}","{'GCPT': {'G107413', 'G107410', 'G107412', 'G107411'}, 'GPD': {'WRI1030759'}}"
+211,Kaltim Teluk Balikpapan,Hard Coal,Steam Turbine,PP,Indonesia,520.0,,2017.0,,,-1.17036,116.78872,,0.0,0.0,0.0,"{nan, nan, nan}","{'GCPT': {'G113833', 'G105492', 'G105493'}, 'GPD': {'WRI1075806'}}"
+212,Tarahan,Hard Coal,Steam Turbine,PP,Indonesia,500.0,,2007.0,,,-5.521207399999999,105.3534773,,0.0,0.0,0.0,"{nan, nan, nan}","{'GCPT': {'G114353', 'G109971', 'G109972'}, 'GPD': {'WRI1000994', 'WRI1000995'}}"
+213,Keban Agung,Hard Coal,Steam Turbine,PP,Indonesia,270.0,,2015.0,,,-3.75149,103.64809,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G105633', 'G105632'}, 'GPD': {'WRI1075807'}}"
+214,Ketapang Smelter,Hard Coal,Steam Turbine,PP,Indonesia,220.0,,2016.0,,,-2.3661823,110.1572717,,0.0,0.0,0.0,"{nan, nan, nan, nan}","{'GCPT': {'G114900', 'G114899', 'G105680', 'G105679'}, 'GPD': {'WRI1075808'}}"
+215,Lampung Sebalang,Hard Coal,Steam Turbine,PP,Indonesia,500.0,,2015.0,,,-5.58594,105.38718999999999,,0.0,0.0,0.0,"{nan, nan, nan}","{'GCPT': {'G106137', 'G114183', 'G106136'}, 'GPD': {'WRI1075809'}}"
+216,Medan Steel Mill,Hard Coal,Steam Turbine,PP,Indonesia,60.0,,2017.0,,,3.6675679,98.6653865,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G113840', 'G113841'}, 'GPD': {'WRI1075810'}}"
+217,Merak,Hard Coal,Steam Turbine,PP,Indonesia,120.0,,2014.0,,,-5.88403,106.06422,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G106865', 'G106864'}, 'GPD': {'WRI1075811'}}"
+218,Nagan Raya,Hard Coal,Steam Turbine,PP,Indonesia,620.0,,2013.0,,,4.1115932685,96.200651415,,0.0,0.0,0.0,"{nan, nan, nan, nan}","{'GCPT': {'G107178', 'G107177', 'G107180', 'G107179'}, 'GPD': {'WRI1000956'}}"
+219,Pangkalan Susu,Hard Coal,Steam Turbine,PP,Indonesia,840.0,,2014.0,,,4.12071,98.25823,,0.0,0.0,0.0,"{nan, nan, nan, nan}","{'GCPT': {'G107756', 'G107757', 'G107758', 'G107759'}, 'GPD': {'WRI1000967'}}"
+220,Pekanbaru Tenayan,Hard Coal,Steam Turbine,PP,Indonesia,220.0,,2016.0,,,0.56437,101.52345,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G107916', 'G107915'}, 'GPD': {'WRI1075813'}}"
+221,Perawang Mill,Hard Coal,Steam Turbine,PP,Indonesia,755.0,,2000.0,,,0.68932,101.61907,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan, nan, nan}","{'GCPT': {'G107928', 'G107926', 'G107927', 'G107932', 'G107930', 'G107929', 'G107931'}, 'GPD': {'WRI1075814'}}"
+222,Purwakarta Indorama,Hard Coal,Steam Turbine,PP,Indonesia,60.0,,2006.0,,,-6.553921,107.413652,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G113843', 'G113844'}, 'GPD': {'WRI1075815'}}"
+223,Sulawesi Mining,Hard Coal,Steam Turbine,PP,Indonesia,2080.0,,2015.0,,,-2.8274646666666663,122.15528005555555,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan, nan, nan, nan, nan}","{'GCPT': {'G109664', 'G113217', 'G109667', 'G114324', 'G109665', 'G109666', 'G115363', 'G109663', 'G114323'}, 'GPD': {'WRI1075816'}}"
+224,Sumbagut Sibolga Baru,Hard Coal,Steam Turbine,PP,Indonesia,230.0,,,,,1.7176,98.7265,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G109690', 'G109689'}, 'GPD': {'WRI1000948'}}"
+225,Tanjung Kasam,Hard Coal,Steam Turbine,PP,Indonesia,130.0,,2012.0,,,1.0441369,104.1357136,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G109963', 'G109962'}, 'GPD': {'WRI1000992'}}"
+226,Teluk Sirih,Hard Coal,Steam Turbine,PP,Indonesia,224.0,,2013.0,,,-1.07655,100.3724,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G109999', 'G109998'}, 'GPD': {'WRI1000980'}}"
+227,Mong Duong,Hard Coal,Steam Turbine,PP,Vietnam,2320.0,,2015.0,,,21.07324,107.34847,,0.0,0.0,0.0,"{nan, nan, nan, nan}","{'GCPT': {'G106994', 'G106993', 'G106996', 'G106995'}, 'GPD': {'WRI1030768', 'WRI1030767'}}"
+228,Balingasag,Hard Coal,Steam Turbine,PP,Philippines,165.0,,2017.0,,,8.766,124.767,,0.0,0.0,0.0,"{nan, nan, nan}","{'GCPT': {'G100479', 'G100480', 'G100478'}, 'GPD': {'WRI1030489'}}"
+229,Bundagul,Hard Coal,Steam Turbine,PP,Philippines,84.0,,2016.0,,,15.2362657,120.6097741,,0.0,0.0,0.0,{nan},"{'GCPT': {'G101109'}, 'GPD': {'WRI1029959'}}"
+230,Davao San Miguel,Hard Coal,Steam Turbine,PP,Philippines,900.0,,2017.0,,,6.39351,125.61684,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan}","{'GCPT': {'G102263', 'G102265', 'G102266', 'G102264', 'G102267'}, 'GPD': {'WRI1029969'}}"
+231,Davao Therma South,Hard Coal,Steam Turbine,PP,Philippines,644.0,,2015.0,,,6.964444,125.479722,,0.0,0.0,0.0,"{nan, nan, nan, nan}","{'GCPT': {'G102271', 'G102269', 'G102270', 'G102268'}, 'GPD': {'WRI1075845'}}"
+232,Mariveles,Hard Coal,Steam Turbine,PP,Philippines,690.0,,2013.0,,,14.4251672,120.5370176,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G106690', 'G106691'}, 'GPD': {'WRI1001875'}}"
+233,Misamis Oriental,Hard Coal,Steam Turbine,PP,Philippines,675.0,,2016.0,,,8.5609664,124.74775819999999,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan}","{'GCPT': {'G114927', 'G106949', 'G114926', 'G106948', 'G106947'}, 'GPD': {'WRI1029968'}}"
+234,Panay,Hard Coal,Steam Turbine,PP,Philippines,314.0,,2010.0,,,10.72444,122.59582,,0.0,0.0,0.0,"{nan, nan, nan}","{'GCPT': {'G107749', 'G107751', 'G107752'}, 'GPD': {'WRI1001923'}}"
+235,Puting Bato,Hard Coal,Steam Turbine,PP,Philippines,270.0,,2015.0,,,13.91933,120.826054,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G108251', 'G108252'}, 'GPD': {'WRI1023889'}}"
+236,United Pulp Paper,Hard Coal,Steam Turbine,PP,Philippines,30.0,,1998.0,,,14.8953458,120.7716722,,0.0,0.0,0.0,{nan},"{'GCPT': {'G114309'}, 'GPD': {'WRI1030480'}}"
+237,An Khanh,Hard Coal,Steam Turbine,PP,Vietnam,400.0,,2015.0,,,21.596912,105.766609,,0.0,0.0,0.0,"{nan, nan, nan, nan}","{'GCPT': {'G100192', 'G100191', 'G100190', 'G100193'}, 'GPD': {'WRI1030773'}}"
+238,Duyen Hai Generation Complex,Hard Coal,Steam Turbine,PP,Vietnam,4378.0,,2015.0,,,9.58517,106.52809,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan, nan, nan}","{'GCPT': {'G102531', 'G102534', 'G102535', 'G102530', 'G114509', 'G102536', 'G102532'}, 'GPD': {'WRI1030731', 'WRI1030732'}}"
+239,Ha Tinh Formosa Plastics Steel Complex,Hard Coal,Steam Turbine,PP,Vietnam,900.0,,2015.0,,,18.02883,106.44554999999998,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan, nan}","{'GCPT': {'G103517', 'G103521', 'G103519', 'G103518', 'G103520', 'G103522'}, 'GPD': {'WRI1030757'}}"
+240,Mao Khe,Hard Coal,Steam Turbine,PP,Vietnam,440.0,,2013.0,,,21.09069,106.57731,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G106640', 'G106641'}, 'GPD': {'WRI1030769'}}"
+241,Santa Barbara Solar,Solar,Pv,PP,Philippines,20.0,,2022.0,,,16.0032,120.4536,,0.0,0.0,0.0,{nan},"{'GSPT': {'G801533'}, 'GPD': {'WKS0070660'}}"
+242,Ranhill Powertron,Natural Gas,CCGT,PP,Malaysia,380.0,,2007.0,,,6.0918,116.163,,0.0,0.0,0.0,"{nan, nan}","{'GGPT': {'L405317'}, 'GPD': {'WRI1000262', 'WRI1000261'}}"
+243,Sacasun Solar,Solar,Pv,PP,Philippines,59.0,,2016.0,,,10.5141,123.4255,,0.0,0.0,0.0,{nan},"{'GSPT': {'G801506'}, 'GPD': {'WKS0064334', 'WKS0064793', 'WRI1023910', 'WRI1001948'}}"
+244,Song Bung,Hydro,Run-Of-River,PP,Vietnam,100.0,,2018.0,,,15.7001,107.4847,,0.0,0.0,0.0,{nan},"{'GHPT': {'G604076'}, 'GPD': {'WRI1030860', 'WRI1030861'}}"
+245,Lai Chau,Hydro,Reservoir,PP,Vietnam,1200.0,,2015.0,,,22.1395,102.9847,,0.0,0.0,0.0,{nan},"{'GHPT': {'G604065'}, 'GPD': {'WRI1030913'}}"
+246,Luoi,Hydro,Reservoir,PP,Vietnam,170.0,,2012.0,,,16.2266,107.2728,,0.0,0.0,0.0,{nan},"{'GHPT': {'G604032'}, 'GPD': {'WRI1030864'}}"
+247,Nam Chien,Hydro,Reservoir,PP,Vietnam,200.0,,2013.0,,,21.5936,104.1442,,0.0,0.0,0.0,{nan},"{'GHPT': {'G604066'}, 'GPD': {'WRI1030947'}}"
+248,Nam Na,Hydro,Reservoir,PP,Vietnam,84.0,,2016.0,,,22.2985,103.1613,,0.0,0.0,0.0,{nan},"{'GHPT': {'G604067'}, 'GPD': {'WRI1030919'}}"
+249,Nho Que,Hydro,Reservoir,PP,Vietnam,110.0,,2012.0,,,23.1432,105.5154,,0.0,0.0,0.0,{nan},"{'GHPT': {'G604068'}, 'GPD': {'WRI1030948'}}"
+250,Se San,Hydro,Reservoir,PP,Vietnam,108.0,,2006.0,,,14.1063,107.6585,,0.0,0.0,0.0,{nan},"{'GHPT': {'G604072'}, 'GPD': {'WRI1030830'}}"
+251,Se San,Hydro,Reservoir,PP,Vietnam,260.0,,2006.0,,,14.2157,107.7219,,0.0,0.0,0.0,{nan},"{'GHPT': {'G604071'}, 'GPD': {'WRI1030834'}}"
+252,Se San,Hydro,Reservoir,PP,Vietnam,360.0,,2010.0,,,13.9686,107.4945,,0.0,0.0,0.0,{nan},"{'GHPT': {'G604073'}, 'GPD': {'WRI1030827'}}"
+253,Son La,Hydro,Reservoir,PP,Vietnam,2400.0,,2010.0,,,21.4984,103.9965,,0.0,0.0,0.0,{nan},"{'GHPT': {'G604074'}, 'GPD': {'WRI1030899'}}"
+254,Song Ba Ha,Hydro,Reservoir,PP,Vietnam,220.0,,2009.0,,,13.023,108.904,,0.0,0.0,0.0,{nan},"{'GHPT': {'G604075'}, 'GPD': {'WRI1030819'}}"
+255,Song Bung,Hydro,Reservoir,PP,Vietnam,156.0,,2014.0,,,15.7258,107.6512,,0.0,0.0,0.0,{nan},"{'GHPT': {'G604077'}, 'GPD': {'WRI1030857'}}"
+256,Song Tranh,Hydro,Run-Of-River,PP,Vietnam,190.0,,2010.0,,,15.3313,108.148,,0.0,0.0,0.0,{nan},"{'GHPT': {'G604078'}, 'GPD': {'WRI1030853'}}"
+257,Huong Dien,Hydro,Reservoir,PP,Vietnam,81.0,,2010.0,,,16.4601,107.4233,,0.0,0.0,0.0,{nan},"{'GHPT': {'G604062'}, 'GPD': {'WRI1030867'}}"
+258,Sre Pok,Hydro,Reservoir,PP,Vietnam,220.0,,2010.0,,,12.7525,107.8768,,0.0,0.0,0.0,{nan},"{'GHPT': {'G604079'}, 'GPD': {'WRI1030814'}}"
+259,Sre Pok,Hydro,Unknown,PP,Vietnam,80.0,,2010.0,,,12.8072,107.8551,,0.0,0.0,0.0,{nan},"{'GHPT': {'G604080'}, 'GPD': {'WRI1030816'}}"
+260,Thac Ba,Hydro,Reservoir,PP,Vietnam,120.0,,1971.0,,,21.7479,105.025,,0.0,0.0,0.0,{nan},"{'GHPT': {'G604081'}, 'GPD': {'WRI1030906'}}"
+261,Thac Mo,Hydro,Reservoir,PP,Vietnam,225.0,,1995.0,,,11.8591,107.0138,,0.0,0.0,0.0,{nan},"{'GHPT': {'G604082'}, 'GPD': {'WRI1030791'}}"
+262,Thuong Kon Tum,Hydro,Reservoir,PP,Vietnam,220.0,,2021.0,,,14.6921,108.2294,,0.0,0.0,0.0,{nan},"{'GHPT': {'G604084'}, 'GPD': {'WRI1030844'}}"
+263,Tri An,Hydro,Reservoir,PP,Vietnam,400.0,,1988.0,,,11.1049,106.9845,,0.0,0.0,0.0,{nan},"{'GHPT': {'G604085'}, 'GPD': {'WRI1030777'}}"
+264,Tuyen Quang,Hydro,Reservoir,PP,Vietnam,342.0,,2008.0,,,22.3602,105.3994,,0.0,0.0,0.0,{nan},"{'GHPT': {'G604087'}, 'GPD': {'WRI1030922'}}"
+265,Vuong,Hydro,Reservoir,PP,Vietnam,210.0,,2008.0,,,15.7998,107.6172,,0.0,0.0,0.0,{nan},"{'GHPT': {'G604033'}, 'GPD': {'WRI1030859'}}"
+266,Tenom Pangi,Hydro,Run-Of-River,PP,Malaysia,75.0,,1984.0,,,5.1156,115.9125,,0.0,0.0,0.0,{nan},"{'GHPT': {'G602487'}, 'GPD': {'WRI1000273'}}"
+267,Dapein,Hydro,Reservoir,PP,Myanmar,240.0,,2011.0,,,24.4042,97.5006,,0.0,0.0,0.0,{nan},"{'GHPT': {'G602550'}, 'GPD': {'WRI1061368'}}"
+268,Shwegyin,Hydro,Run-Of-River,PP,Myanmar,75.0,,2011.0,,,17.9682,96.933,,0.0,0.0,0.0,{nan},"{'GHPT': {'G602585'}, 'GPD': {'WRI1061366'}}"
+269,Ialy,Hydro,Reservoir,PP,Vietnam,360.0,,2000.0,,,14.2222,107.8332,,0.0,0.0,0.0,{nan},"{'GHPT': {'G604063'}, 'GPD': {'WRI1030835'}}"
+270,Huoi Quang,Hydro,Reservoir,PP,Vietnam,520.0,,2016.0,,,21.6954,103.8767,,0.0,0.0,0.0,{nan},"{'GHPT': {'G604061'}, 'GPD': {'WRI1030905'}}"
+271,Silay Solar,Solar,Pv,PP,Philippines,25.0,,2016.0,,,10.8055,122.9925,,0.0,0.0,0.0,{nan},"{'GSPT': {'G801589'}, 'GPD': {'WRI1023912'}}"
+272,Buon Tua Srah,Hydro,Reservoir,PP,Vietnam,86.0,,2009.0,,,12.2852,108.0383,,0.0,0.0,0.0,{nan},"{'GHPT': {'G604040'}, 'GPD': {'WRI1030808'}}"
+273,Balambano,Hydro,Reservoir,PP,Indonesia,140.0,,1999.0,,,-2.6418,121.214,,0.0,0.0,0.0,{nan},"{'GHPT': {'G602129'}, 'GPD': {'WRI1000739'}}"
+274,Koto Panjang,Hydro,Reservoir,PP,Indonesia,114.0,,1996.0,,,0.2188,100.8054,,0.0,0.0,0.0,{nan},"{'GHPT': {'G602147'}, 'GPD': {'WRI1000775'}}"
+275,Larona,Hydro,Reservoir,PP,Indonesia,165.0,,1979.0,,,-2.666,121.2563,,0.0,0.0,0.0,{nan},"{'GHPT': {'G602150'}, 'GPD': {'WRI1000780'}}"
+276,Lau Renun,Hydro,Run-Of-River,PP,Indonesia,82.0,,2006.0,,,2.7865,98.5405,,0.0,0.0,0.0,{nan},"{'GHPT': {'G602151'}, 'GPD': {'WRI1000781'}}"
+277,Singkarak,Hydro,Reservoir,PP,Indonesia,175.0,,1998.0,,,-0.6223,100.349,,0.0,0.0,0.0,{nan},"{'GHPT': {'G602172'}, 'GPD': {'WRI1001017'}}"
+278,Sutami,Hydro,Reservoir,PP,Indonesia,105.0,,1973.0,,,-8.1615,112.4443,,0.0,0.0,0.0,{nan},"{'GHPT': {'G602174'}, 'GPD': {'WRI1001021'}}"
+279,Way Besai,Hydro,Reservoir,PP,Indonesia,90.0,,2001.0,,,-4.9826,104.4797,,0.0,0.0,0.0,{nan},"{'GHPT': {'G602182'}, 'GPD': {'WRI1000744'}}"
+280,An Khe,Hydro,Reservoir,PP,Vietnam,160.0,,2009.0,,,14.0147,108.6797,,0.0,0.0,0.0,{nan},"{'GHPT': {'G604034'}, 'GPD': {'WRI1030828'}}"
+281,Ba Thuoc,Hydro,Run-Of-River,PP,Vietnam,80.0,,2012.0,,,20.321,105.3281,,0.0,0.0,0.0,{nan},"{'GHPT': {'G604035'}, 'GPD': {'WRI1030880'}}"
+282,Ban Chat,Hydro,Reservoir,PP,Vietnam,220.0,,2013.0,,,21.8601,103.8286,,0.0,0.0,0.0,{nan},"{'GHPT': {'G604037'}, 'GPD': {'WRI1030910'}}"
+283,Buon Kuop,Hydro,Reservoir,PP,Vietnam,280.0,,2009.0,,,12.5305,107.9243,,0.0,0.0,0.0,{nan},"{'GHPT': {'G604039'}, 'GPD': {'WRI1030811'}}"
+284,Can Don,Hydro,Unknown,PP,Vietnam,78.0,,2004.0,,,11.9689,106.8435,,0.0,0.0,0.0,{nan},"{'GHPT': {'G604041'}, 'GPD': {'WRI1030798'}}"
+285,Hua Na,Hydro,Reservoir,PP,Vietnam,180.0,,2013.0,,,19.8381,105.0846,,0.0,0.0,0.0,{nan},"{'GHPT': {'G604060'}, 'GPD': {'WRI1030878'}}"
+286,Coc Ly,Hydro,Reservoir,PP,Vietnam,90.0,,2012.0,,,22.506,104.1935,,0.0,0.0,0.0,{nan},"{'GHPT': {'G604042'}, 'GPD': {'WRI1030918'}}"
+287,Cua Dat,Hydro,Reservoir,PP,Vietnam,97.0,,2010.0,,,19.8782,105.2731,,0.0,0.0,0.0,{nan},"{'GHPT': {'G604043'}, 'GPD': {'WRI1030879'}}"
+288,Da Nhim,Hydro,Reservoir,PP,Vietnam,243.0,,1964.0,,,11.8517,108.6126,,0.0,0.0,0.0,{nan},"{'GHPT': {'G604045'}, 'GPD': {'WRI1030790'}}"
+289,Dai Ninh,Hydro,Reservoir,PP,Vietnam,300.0,,2008.0,,,11.6498,108.3203,,0.0,0.0,0.0,{nan},"{'GHPT': {'G604046'}, 'GPD': {'WRI1030781'}}"
+290,Dak Drinh,Hydro,Reservoir,PP,Vietnam,125.0,,2014.0,,,14.9792,108.3016,,0.0,0.0,0.0,{nan},"{'GHPT': {'G604047'}, 'GPD': {'WRI1030850'}}"
+291,Dak Mi,Hydro,Reservoir,PP,Vietnam,148.0,,2012.0,,,15.4441,107.8925,,0.0,0.0,0.0,{nan},"{'GHPT': {'G604049'}, 'GPD': {'WRI1030856', 'WRI1030855'}}"
+292,Dakr Tih,Hydro,Reservoir,PP,Vietnam,82.0,,2011.0,,,11.9922,107.6406,,0.0,0.0,0.0,{nan},"{'GHPT': {'G604051'}, 'GPD': {'WRI1030799'}}"
+293,Dam Bri,Hydro,Run-Of-River,PP,Vietnam,75.0,,2013.0,,,11.5827,107.6726,,0.0,0.0,0.0,{nan},"{'GHPT': {'G604052'}, 'GPD': {'WRI1030780'}}"
+294,Dong Nai,Hydro,Reservoir,PP,Vietnam,340.0,,2011.0,,,11.8846,107.7282,,0.0,0.0,0.0,{nan},"{'GHPT': {'G604054'}, 'GPD': {'WRI1030794'}}"
+295,Dong Nai,Hydro,Reservoir,PP,Vietnam,180.0,,2011.0,,,11.8741,107.8754,,0.0,0.0,0.0,{nan},"{'GHPT': {'G604053'}, 'GPD': {'WRI1030793'}}"
+296,Dong Nai,Hydro,Reservoir,PP,Vietnam,150.0,,2015.0,,,11.7921,107.5538,,0.0,0.0,0.0,{nan},"{'GHPT': {'G604055'}, 'GPD': {'WRI1030785'}}"
+297,Xekaman,Hydro,Reservoir,PP,Laos,250.0,,2013.0,,,15.461,107.268,,0.0,0.0,0.0,{nan},"{'GHPT': {'G602436'}, 'GPD': {'WRI1026805'}}"
+298,Russei Chrum Krom Lower,Hydro,Reservoir,PP,Cambodia,338.0,,2013.0,,,11.840900000000001,103.10585,,0.0,0.0,0.0,"{nan, nan}","{'GHPT': {'G600379', 'G600378'}, 'GPD': {'WRI1026838'}}"
+299,Asahan,Hydro,Run-Of-River,PP,Indonesia,180.0,,2011.0,,,2.5123,99.2628,,0.0,0.0,0.0,{nan},"{'GHPT': {'G602125'}, 'GPD': {'WRI1000737', 'WRI1001014'}}"
+300,Nakornsawan Solar Farm,Solar,Pv,PP,Thailand,126.0,,2013.0,,,15.3637,100.3118,,0.0,0.0,0.0,{nan},"{'GSPT': {'G801362'}, 'GPD': {'WRI1026290'}}"
+301,Surat Thani,Natural Gas,Steam Turbine,PP,Thailand,244.0,,2001.0,,,9.071442,99.225492,,0.0,0.0,0.0,"{nan, nan}","{'GGPT': {'L405428'}, 'GPD': {'WRI1000166'}}"
+302,Miri,Natural Gas,Steam Turbine,PP,Malaysia,104.0,,1972.0,,,4.421462,114.01836,,0.0,0.0,0.0,{nan},"{'GGPT': {'L405306'}, 'GPD': {'WRI1000276'}}"
+303,Bakaru,Hydro,Reservoir,PP,Indonesia,126.0,,1991.0,,,-3.4487,119.6065,,0.0,0.0,0.0,{nan},"{'GHPT': {'G602128'}, 'GPD': {'WRI1000738'}}"
+304,Sepangar Bay Corporation Ipp,Natural Gas,CCGT,PP,Malaysia,113.8,,2006.0,,,6.0909,116.1667,,0.0,0.0,0.0,{nan},"{'GGPT': {'L405319'}, 'GPD': {'WRI1000263'}}"
+305,Mawlamyine,Natural Gas,CCGT,PP,Myanmar,230.0,,2014.0,,,16.46644,97.653662,,0.0,0.0,0.0,{nan},"{'GGPT': {'L405333'}, 'GPD': {'WRI1061360'}}"
+306,Thaketa Energy,Natural Gas,CCGT,PP,Myanmar,106.0,,2018.0,,,16.812192,96.226075,,0.0,0.0,0.0,{nan},"{'GGPT': {'L405337'}, 'GPD': {'WRI1061369'}}"
+307,Thaton,Natural Gas,CCGT,PP,Myanmar,119.0,,2019.0,,,16.964053,97.40665,,0.0,0.0,0.0,{nan},"{'GGPT': {'L405339'}, 'GPD': {'WRI1061371'}}"
+308,Ywama,Natural Gas,Steam Turbine,PP,Myanmar,290.0,,2004.0,,,16.9,96.089,,0.0,0.0,0.0,"{nan, nan, nan}","{'GGPT': {'L405340'}, 'GPD': {'WRI1061375'}}"
+309,Jasin Solar Farm,Solar,Pv,PP,Malaysia,65.0,,2019.0,,,2.3401,102.3499,,0.0,0.0,0.0,{nan},"{'GSPT': {'G801187'}, 'GPD': {'WKS0070609'}}"
+310,Gebeng Solar Farm,Solar,Pv,PP,Malaysia,38.0,,2019.0,,,4.0028,103.3596,,0.0,0.0,0.0,{nan},"{'GSPT': {'G801118'}, 'GPD': {'WRI1026641'}}"
+311,Phitsanulok Solar Farm,Solar,Pv,PP,Thailand,101.0,,,,,17.0784,100.1173,,0.0,0.0,0.0,{nan},"{'GSPT': {'G801454'}, 'GPD': {'WRI1026299'}}"
+312,Lampang Solar Farm,Solar,Pv,PP,Thailand,128.0,,2015.0,,,18.3704,99.4146,,0.0,0.0,0.0,{nan},"{'GSPT': {'G801270'}, 'GPD': {'WRI1026274'}}"
+313,Darajat Geothermal,Geothermal,Steam Turbine,PP,Indonesia,266.0,,1994.0,,,-7.217299999999999,107.7394,,0.0,0.0,0.0,"{nan, nan, nan}","{'GGTPT': {'G700056', 'G700058', 'G700057'}, 'GPD': {'WRI1000751', 'WRI1000750'}}"
+314,Thua Thien Hue Ttc Solar Farm,Solar,Pv,PP,Vietnam,48.0,,2018.0,,,11.446,108.866,,0.0,0.0,0.0,{nan},"{'GSPT': {'G801700'}, 'GPD': {'WKS0073963'}}"
+315,Thuan Nam Solar Farm,Solar,Pv,PP,Vietnam,500.0,,2020.0,,,11.4509,108.8861,,0.0,0.0,0.0,"{nan, nan}","{'GSPT': {'G801704', 'G801705'}, 'GPD': {'WKS0071353'}}"
+316,Ninh Thuan Sunseap Solar Farm,Solar,Pv,PP,Vietnam,168.0,,2019.0,,,11.701,108.901,,0.0,0.0,0.0,{nan},"{'GSPT': {'G801390'}, 'GPD': {'WKS0067920'}}"
+317,Dak Lak Bmt Solar Farm,Solar,Pv,PP,Vietnam,30.0,,2019.0,,,12.779,108.368,,0.0,0.0,0.0,{nan},"{'GSPT': {'G801054'}, 'GPD': {'WKS0073959'}}"
+318,Ham Kiem Solar Farm,Solar,Pv,PP,Vietnam,95.0,,2019.0,,,10.9053,108.01235,,0.0,0.0,0.0,"{nan, nan}","{'GSPT': {'G801139', 'G801138'}, 'GPD': {'WKS0073964'}}"
+319,Dau Tieng Solar Farm,Solar,Pv,PP,Vietnam,420.0,,2019.0,,,11.335,106.275,,0.0,0.0,0.0,"{nan, nan}","{'GSPT': {'G801067', 'G801068'}, 'GPD': {'WKS0072161'}}"
+320,Chau Duc Sh Solar Farm,Solar,Pv,PP,Vietnam,70.0,,2019.0,,,10.578,107.186,,0.0,0.0,0.0,{nan},"{'GSPT': {'G801011'}, 'GPD': {'WKS0073902'}}"
+321,Cam Ranh Solar Farm,Solar,Pv,PP,Vietnam,50.0,,2019.0,,,11.892,109.088,,0.0,0.0,0.0,{nan},"{'GSPT': {'G800998'}, 'GPD': {'WKS0073960', 'WKS0072716'}}"
+322,Cam An Bac Kn Solar Farm,Solar,Pv,PP,Vietnam,100.0,,2019.0,,,11.99035,109.08195,,0.0,0.0,0.0,"{nan, nan}","{'GSPT': {'G800995', 'G800994'}, 'GPD': {'WKS0073163', 'WKS0073161'}}"
+323,Binh Nguyen Solar Farm,Solar,Pv,PP,Vietnam,50.0,,2019.0,,,15.333,108.708,,0.0,0.0,0.0,{nan},"{'GSPT': {'G800971'}, 'GPD': {'WKS0073962'}}"
+324,Tanauan Solar Farm,Solar,Pv,PP,Philippines,50.0,,2020.0,,,14.1401,121.1001,,0.0,0.0,0.0,{nan},"{'GSPT': {'G801674'}, 'GPD': {'WKS0070613'}}"
+325,Sriracha,Natural Gas,CCGT,CHP,Thailand,818.0,,1997.0,,,13.1115921,100.90670835,,0.0,0.0,0.0,"{nan, nan}","{'GGPT': {'L405427', 'L405429'}, 'GPD': {'WRI1019465'}}"
+326,Ratchaburi Rpcl,Natural Gas,CCGT,CHP,Thailand,1400.0,,2008.0,,,13.6068,99.8902,,0.0,0.0,0.0,"{nan, nan}","{'GGPT': {'L405413'}, 'GPD': {'WRI1000155'}}"
+327,Ratchaburi Ratchgen,Natural Gas,CCGT,PP,Thailand,3645.0,,2002.0,,,13.5979,99.8841,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan}","{'GGPT': {'L405412'}, 'GPD': {'WRI1000157'}}"
+328,Nong Saeng,Natural Gas,CCGT,PP,Thailand,1600.0,,2014.0,,,14.4417,100.7756,,0.0,0.0,0.0,"{nan, nan}","{'GGPT': {'L405409'}, 'GPD': {'WRI1019484'}}"
+329,Dieng Geothermal,Geothermal,Steam Turbine,PP,Indonesia,60.0,,1998.0,,,-7.2261,109.8975,,0.0,0.0,0.0,{nan},"{'GGTPT': {'G700061'}, 'GPD': {'WRI1000752'}}"
+330,Gunung Salak Geothermal,Geothermal,Steam Turbine,PP,Indonesia,385.0,,1994.0,,,-6.7415142857142865,106.65157142857142,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan, nan, nan}","{'GGTPT': {'G700092', 'G700090', 'G700247', 'G700088', 'G700091', 'G700087', 'G700089'}, 'GPD': {'WRI1000759'}}"
+331,Kamojang Geothermal,Geothermal,Steam Turbine,PP,Indonesia,235.0,,1983.0,,,-7.2181,107.72830000000002,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan}","{'GGTPT': {'G700120', 'G700121', 'G700123', 'G700122', 'G700119'}, 'GPD': {'WRI1000765', 'WRI1000764'}}"
+332,Ulubelu Geothermal,Geothermal,Steam Turbine,PP,Indonesia,220.0,,2012.0,,,-5.3073,104.575,,0.0,0.0,0.0,"{nan, nan, nan, nan}","{'GGTPT': {'G700309', 'G700307', 'G700308', 'G700306'}, 'GPD': {'WRI1001040'}}"
+333,Wayang Windu Geothermal,Geothermal,Steam Turbine,PP,Indonesia,227.0,,2000.0,,,-7.1966,107.6258,,0.0,0.0,0.0,"{nan, nan}","{'GGTPT': {'G700319', 'G700320'}, 'GPD': {'WRI1001044'}}"
+334,Bavet Solar Farm,Solar,Pv,PP,Cambodia,46.0,,2022.0,,,11.0691,106.1436,,0.0,0.0,0.0,"{nan, nan}","{'GSPT': {'G801652', 'G800963'}, 'GPD': {'WKS0072314'}}"
+335,Merchang Solar Farm,Solar,Pv,PP,Malaysia,66.0,,2019.0,,,4.934,103.336,,0.0,0.0,0.0,{nan},"{'GSPT': {'G801320'}, 'GPD': {'WKS0070611'}}"
+336,Bekasi,Natural Gas,CCGT,PP,Indonesia,130.0,,2013.0,,,-6.269558,107.159678,,0.0,0.0,0.0,{nan},"{'GGPT': {'L405264'}, 'GPD': {'WRI1000870'}}"
+337,Belawan,Natural Gas,Steam Turbine,PP,Indonesia,1077.0,,1984.0,,,3.7731480000000004,98.670029,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan, nan}","{'GGPT': {'L405265'}, 'GPD': {'WRI1000871'}}"
+338,Cilegon,Natural Gas,CCGT,PP,Indonesia,740.0,,2007.0,,,-5.9306,106.1042,,0.0,0.0,0.0,{nan},"{'GGPT': {'L405267'}, 'GPD': {'WRI1000874'}}"
+339,Gilimanuk,Natural Gas,Steam Turbine,PP,Indonesia,134.0,,1997.0,,,-8.175555,114.442718,,0.0,0.0,0.0,{nan},"{'GGPT': {'L405269'}, 'GPD': {'WRI1000825'}}"
+340,Krakatau,Natural Gas,CCGT,PP,Indonesia,120.0,,2015.0,,,-5.9924,105.9849,,0.0,0.0,0.0,{nan},"{'GGPT': {'L405280'}, 'GPD': {'WRI1000835'}}"
+341,Muara Karang,Natural Gas,CCGT,PP,Indonesia,2129.0,,1981.0,,,-6.1087,106.7877,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan}","{'GGPT': {'L405283'}, 'GPD': {'WRI1000881', 'WRI1000880', 'WRI1000879'}}"
+342,North Duri Cogeneration,Natural Gas,Steam Turbine,CHP,Indonesia,300.0,,2000.0,,,1.3721629,101.225118,,0.0,0.0,0.0,"{nan, nan, nan}","{'GGPT': {'L405285'}, 'GPD': {'WRI1000794'}}"
+343,Sengkang,Natural Gas,CCGT,PP,Indonesia,315.0,,1997.0,,,-4.175947,120.072159,,0.0,0.0,0.0,"{nan, nan}","{'GGPT': {'L405289'}, 'GPD': {'WRI1000849', 'WRI1000886'}}"
+344,San Gabriel,Natural Gas,CCGT,PP,Philippines,420.0,,2016.0,,,13.7765285,121.030688,,0.0,0.0,0.0,{nan},"{'GGPT': {'L405345'}, 'GPD': {'WRI1029961'}}"
+345,San Lorenzo,Natural Gas,CCGT,PP,Philippines,550.0,,2002.0,,,13.770403,121.033528,,0.0,0.0,0.0,"{nan, nan}","{'GGPT': {'L405346'}, 'GPD': {'WRI1001887'}}"
+346,Ba Ria,Natural Gas,CCGT,PP,Vietnam,389.0,,1999.0,,,10.489019,107.166468,,0.0,0.0,0.0,{nan},"{'GGPT': {'L405433'}, 'GPD': {'WRI1030736'}}"
+347,Amata Chonburi,Natural Gas,CCGT,CHP,Thailand,732.0,,1998.0,,,13.4191,101.0272,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan}","{'GGPT': {'L405357'}, 'GPD': {'WRI1019486'}}"
+348,Bangkadi Industrial Park,Natural Gas,CCGT,CHP,Thailand,230.0,,2015.0,,,13.9745,100.5649,,0.0,0.0,0.0,"{nan, nan}","{'GGPT': {'L405363'}, 'GPD': {'WRI1019488'}}"
+349,Gulf Crn,Natural Gas,CCGT,CHP,Thailand,125.9,,2013.0,,,14.097682,100.572578,,0.0,0.0,0.0,{nan},"{'GGPT': {'L405383'}, 'GPD': {'WRI1019467'}}"
+350,Hemaraj Industrial Estate,Natural Gas,CCGT,CHP,Thailand,130.0,,2017.0,,,13.0505,101.0859,,0.0,0.0,0.0,{nan},"{'GGPT': {'L405395'}, 'GPD': {'WRI1019490'}}"
+351,Nong Khae,Natural Gas,CCGT,CHP,Thailand,113.0,,2000.0,,,14.378885,100.837149,,0.0,0.0,0.0,{nan},"{'GGPT': {'L405408'}, 'GPD': {'WRI1019481'}}"
+352,Tpi Coal,Hard Coal,Steam Turbine,PP,Thailand,150.0,,2019.0,,,14.645696,101.12726,,0.0,0.0,0.0,{nan},"{'GCPT': {'G113104'}, 'GBPT': {'G200053'}}"
+353,Bukit Asam Coal Indonesia,Oil,,PP,Indonesia,240.84722881551147,,1989.0,,,-3.7316,103.7975,,0.0,0.0,0.0,"{nan, nan, nan, nan}",{'GEO': {'GEO-43057'}}
+354,Cameron Highlands Sultan Abu Bakar Malaysia,Hydro,Reservoir,PP,Malaysia,104.15605095541402,,1963.0,,,4.4229,101.38939999999998,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan, nan}",{'GEO': {'GEO-41471'}}
+355,Chenderoh Malaysia,Hydro,Reservoir,PP,Malaysia,39.98407643312102,,1930.0,,,4.9605,100.9775,,0.0,0.0,0.0,"{nan, nan, nan, nan}",{'GEO': {'GEO-41453'}}
+356,Cilacap Coal Indonesia,Oil,,PP,Indonesia,555.8012972665649,,2006.0,,,-7.68567,109.08957,,0.0,0.0,0.0,"{nan, nan}",{'GEO': {'GEO-41537'}}
+357,Cilegaon Ccgt Indonesia,Oil,Steam Turbine,PP,Indonesia,685.4882666287634,,2006.0,,,-5.9295,106.1098,,0.0,0.0,0.0,"{nan, nan, nan}",{'GEO': {'GEO-41532'}}
+358,Gebeng Gas Malaysia,Natural Gas,Steam Turbine,PP,Malaysia,97.02647945471942,,1999.0,,,3.99,103.369686,,0.0,0.0,0.0,"{nan, nan, nan}",{'GEO': {'GEO-45524'}}
+359,Glow Energy Cfb Thailand,Hard Coal,Steam Turbine,CHP,Thailand,78.36464130786982,,2010.0,,,12.67632,101.13436,,0.0,0.0,0.0,{nan},{'GEO': {'GEO-45305'}}
+360,Glow Energy Phase Ccgt Thailand,Oil,Steam Turbine,PP,Thailand,261.22660971528546,,1996.0,,,12.6943,101.1454,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan, nan}",{'GEO': {'GEO-45301'}}
+361,Independent Gpsc Ipp Ccgt Thailand,Oil,Steam Turbine,PP,Thailand,648.4348468109924,,2000.0,,,13.1128,100.9085,,0.0,0.0,0.0,"{nan, nan, nan}",{'GEO': {'GEO-41498'}}
+362,Kaeng Krachan Thailand,Hydro,Reservoir,PP,Thailand,18.75796178343949,,1974.0,,,12.9158,99.6309,,0.0,0.0,0.0,{nan},{'GEO': {'GEO-45328'}}
+363,Keppel Seghers Tuas Wte Singapore,Waste,Steam Turbine,PP,Singapore,18.844539794594514,,2009.0,,,1.2986787627406,103.62145900726,,0.0,0.0,0.0,{nan},{'GEO': {'GEO-3828'}}
+364,Kerteh Gas Malaysia,Natural Gas,Steam Turbine,PP,Malaysia,194.05295890943884,,1999.0,,,4.5836,103.4445,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan, nan}",{'GEO': {'GEO-45525'}}
+365,Libaran Oil Malaysia,Oil,,PP,Malaysia,55.580129726656494,,1998.0,,,5.85349,118.02594,,0.0,0.0,0.0,{nan},{'GEO': {'GEO-45518'}}
+366,Mae Ngat Somboon Chol Thailand,Hydro,Reservoir,PP,Thailand,8.885350318471337,,1986.0,,,19.162,99.0352,,0.0,0.0,0.0,"{nan, nan}",{'GEO': {'GEO-45329'}}
+367,Mindanao Solar Pv Farm Philippines,Solar,PV,PP,Philippines,1.0,,2004.0,,,7.82,125.14,,0.0,0.0,0.0,{nan},{'GEO': {'GEO-4298'}}
+368,Muara Karang Ccgt Indonesia,Oil,Steam Turbine,PP,Indonesia,722.5416864465344,,1993.0,,,-6.1087,106.7877,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan}",{'GEO': {'GEO-44932'}}
+369,Nam Gnouang Laos,Hydro,Reservoir,PP,Laos,59.23566878980892,,2012.0,,,18.2931,104.6376,,0.0,0.0,0.0,"{nan, nan}",{'GEO': {'GEO-46420'}}
+370,Nam Pung Thailand,Hydro,Reservoir,PP,Thailand,5.923566878980892,,1965.0,,,16.97525,103.98574,,0.0,0.0,0.0,"{nan, nan}",{'GEO': {'GEO-45327'}}
+371,Northern Negros Geothermal Philippines,Geothermal,,PP,Philippines,49.4,,2007.0,,,10.823,123.2053,,0.0,0.0,0.0,{nan},{'GEO': {'GEO-41716'}}
+372,Paiton Coal Indonesia,Oil,,PP,Indonesia,1963.8312503418629,,1993.0,,,-7.714924999999999,113.58315,,0.0,0.0,0.0,"{nan, nan, nan, nan}","{'GEO': {'GEO-41520', 'GEO-41521'}}"
+373,Pasir Panjang Gas Turbine Singapore,Natural Gas,Steam Turbine,PP,Singapore,188.66259893973222,,1982.0,,,1.27154,103.7989,,0.0,0.0,0.0,"{nan, nan}",{'GEO': {'GEO-4720'}}
+374,Petronas Melaka Ccgt Malaysia,Oil,Steam Turbine,CHP,Malaysia,134.31864683941984,,2008.0,,,2.2704,102.1306,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan}",{'GEO': {'GEO-41477'}}
+375,Pha Lai Coal Vietnam,Oil,,PP,Vietnam,555.8012972665649,,2001.0,,,21.1165,106.3068,,0.0,0.0,0.0,"{nan, nan}",{'GEO': {'GEO-41178'}}
+376,Phu My Ccgt Vietnam,Oil,Steam Turbine,PP,Vietnam,1008.7793545388153,,2000.0,,,10.6056,107.0367,,0.0,0.0,0.0,"{nan, nan, nan, nan}",{'GEO': {'GEO-41198'}}
+377,Port Dickson Ocgt Malaysia,Oil,Steam Turbine,PP,Malaysia,407.5876179954809,,1993.0,,,2.5538,101.799,,0.0,0.0,0.0,"{nan, nan, nan, nan}",{'GEO': {'GEO-41446'}}
+378,Powerseraya Pulau Seraya Oil Singapore,Oil,Steam Turbine,PP,Singapore,3755.3640985310903,,1988.0,,,1.2786515789473685,103.72650105263159,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan}","{'GEO': {'GEO-4960', 'GEO-4961', 'GEO-4889'}}"
+379,Ppls Coal Malaysia,Hard Coal,,PP,Malaysia,193.60676087826658,,1997.0,,,1.6395499999999998,110.4667,,0.0,0.0,0.0,"{nan, nan, nan, nan}","{'GEO': {'GEO-41444', 'GEO-41443'}}"
+380,Ranhill Powertron Teluk Salut Ccgt Malaysia,Oil,Steam Turbine,PP,Malaysia,187.11977007974352,,1998.0,,,6.0918,116.163,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan, nan}",{'GEO': {'GEO-41475'}}
+381,Ratchaburi Ccgt Thailand,Oil,Steam Turbine,PP,Thailand,4511.253862813618,,2000.0,,,13.60175882352941,99.88667647058823,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan}","{'GEO': {'GEO-41500', 'GEO-41482', 'GEO-41481'}}"
+382,Sandakan Sesb Ice Malaysia,Oil,,PP,Malaysia,66.69615567198778,,,,,5.8124,118.0642,,0.0,0.0,0.0,{nan},{'GEO': {'GEO-44273'}}
+383,Senoko Singapore,Oil,Steam Turbine,PP,Singapore,1157.9193693053437,,1978.0,,2010.0,1.464,103.79760000000002,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan}",{'GEO': {'GEO-3827'}}
+384,Senoko Wte Incineration Singapore,Waste,Steam Turbine,PP,Singapore,52.76471142486464,,1992.0,,,1.4624,103.79499,,0.0,0.0,0.0,"{nan, nan}",{'GEO': {'GEO-5333'}}
+385,Sepangar Bay Ccgt Malaysia,Oil,Steam Turbine,PP,Malaysia,92.63354954442748,,2006.0,,,6.09086,116.1667,,0.0,0.0,0.0,"{nan, nan, nan}",{'GEO': {'GEO-41476'}}
+386,Suralaya Coal Indonesia,Oil,,PP,Indonesia,3728.5003691632064,,1984.0,,,-5.892,106.03,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan, nan, nan, nan}",{'GEO': {'GEO-41517'}}
+387,Tahyit Takyit Coal Myanmar,Lignite,,PP,Myanmar,110.65678520927978,,2002.0,,,20.4313,96.7034,,0.0,0.0,0.0,"{nan, nan}",{'GEO': {'GEO-41483'}}
+388,Tha Thung Na Thailand,Hydro,Run-Of-River,PP,Thailand,28.097819985714636,,1981.0,,,14.2336,99.2359,,0.0,0.0,0.0,"{nan, nan}",{'GEO': {'GEO-41510'}}
+389,Toledo Coal Philippines,Hard Coal,,PP,Philippines,226.7964913145409,,2010.0,,,10.3871,123.6401,,0.0,0.0,0.0,"{nan, nan, nan}",{'GEO': {'GEO-41688'}}
+390,Tuas Oil Singapore,Oil,Steam Turbine,PP,Singapore,1111.6025945331298,,1999.0,,,1.2896473871407,103.63965511322,,0.0,0.0,0.0,"{nan, nan}",{'GEO': {'GEO-5796'}}
+391,Tuas South Wte Incineration Singapore,Waste,,PP,Singapore,75.37815917837806,,1986.0,,,1.310654006102,103.62771184826,,0.0,0.0,0.0,"{nan, nan}","{'GEO': {'GEO-5798', 'GEO-5797'}}"
+392,Ubolratana Thailand,Hydro,Reservoir,PP,Thailand,24.878980891719742,,1966.0,,,16.775394,102.61832499999998,,0.0,0.0,0.0,"{nan, nan, nan}",{'GEO': {'GEO-41511'}}
+393,Ulu Pandan Wte Incineration Singapore,Waste,Steam Turbine,PP,Singapore,0.0,,1979.0,,2009.0,1.3293,103.7585,,0.0,0.0,0.0,{nan},{'GEO': {'GEO-5840'}}
+394,Ytl Pasir Gudang Malaysia,Natural Gas,Steam Turbine,PP,Malaysia,350.3733980309313,,1994.0,,,1.4504,103.88,,0.0,0.0,0.0,"{nan, nan, nan}",{'GEO': {'GEO-41457'}}
+395,Biscom,Bioenergy,Steam Turbine,PP,Philippines,48.0,,2019.0,,,10.2001,122.8673,,0.0,0.0,0.0,{nan},{'GBPT': {'G200074'}}
+396,Central Azucarera Don Pedro,Bioenergy,Steam Turbine,PP,Philippines,31.0,,2018.0,,,14.0503,120.6662,,0.0,0.0,0.0,{nan},{'GBPT': {'G200073'}}
+397,Industrial Park,Bioenergy,Steam Turbine,PP,Thailand,233.0,,2015.0,,,13.9742,101.628,,0.0,0.0,0.0,"{nan, nan}","{'GBPT': {'G200031', 'G200032'}}"
+398,Mitr Biopower Chaiyaphum,Bioenergy,Steam Turbine,PP,Thailand,103.0,,2004.0,,,16.4822,102.1201,,0.0,0.0,0.0,{nan},{'GBPT': {'G200087'}}
+399,Mitr Biopower Dan Chang,Bioenergy,Steam Turbine,PP,Thailand,73.0,,2004.0,,,14.8399,99.7624,,0.0,0.0,0.0,"{nan, nan}","{'GBPT': {'G200084', 'G200083'}}"
+400,Mitr Biopower Phu Luang,Bioenergy,Steam Turbine,PP,Thailand,41.0,,2014.0,,,17.1915,101.8215,,0.0,0.0,0.0,{nan},{'GBPT': {'G200085'}}
+401,Mitr Kalasin,Bioenergy,Steam Turbine,PP,Thailand,68.0,,,,,16.4658,104.0381,,0.0,0.0,0.0,{nan},{'GBPT': {'G200086'}}
+402,Soc Son Waste To Energy,Bioenergy,Steam Turbine,PP,Vietnam,60.0,,,,,21.3398,105.8357,,0.0,0.0,0.0,"{nan, nan}","{'GBPT': {'G200058', 'G200059'}}"
+403,Sunter Itf Waste To Energy,Bioenergy,Steam Turbine,PP,Indonesia,35.0,,,,,-6.1252,106.8566,,0.0,0.0,0.0,{nan},{'GBPT': {'G200052'}}
+404,Tuas Nexus,Bioenergy,Steam Turbine,PP,Singapore,80.0,,2024.0,,,1.2828,103.6462,,0.0,0.0,0.0,{nan},{'GBPT': {'G200063'}}
+405,Tuas South Waste To Energy,Bioenergy,Steam Turbine,PP,Singapore,200.0,,2000.0,,,1.2976999999999999,103.63810000000001,,0.0,0.0,0.0,"{nan, nan}","{'GBPT': {'G200090', 'G200089'}}"
+406,Urc Sonedco,Bioenergy,Steam Turbine,PP,Philippines,46.0,,2015.0,,,9.9587,122.8034,,0.0,0.0,0.0,{nan},{'GBPT': {'G200075'}}
+407,Alor Gajah Melaka,Natural Gas,CCGT,PP,Malaysia,2242.2,,2021.0,,,2.382211,102.2115611,,0.0,0.0,0.0,"{nan, nan, nan}",{'GGPT': {'L405295'}}
+408,Balikpapan Refinery,Natural Gas,Steam Turbine,PP,Indonesia,224.0,,2024.0,,,1.578726111,114.6087565,,0.0,0.0,0.0,"{nan, nan, nan, nan}",{'GGPT': {'L407608'}}
+409,Bangpa In,Natural Gas,CCGT,CHP,Thailand,234.0,,2013.0,,,14.1980736,100.5821565,,0.0,0.0,0.0,"{nan, nan}",{'GGPT': {'L405364'}}
+410,Bangpoo Cogeneration,Natural Gas,CCGT,CHP,Thailand,240.0,,2016.0,,,13.533183,100.651384,,0.0,0.0,0.0,"{nan, nan}",{'GGPT': {'L405365'}}
+411,Banpong,Natural Gas,CCGT,CHP,Thailand,256.0,,2017.0,,,13.858877,99.855819,,0.0,0.0,0.0,"{nan, nan}",{'GGPT': {'L405366'}}
+412,Batangas Combined Cycle,Natural Gas,CCGT,PP,Philippines,1750.0,,2024.0,,,13.622,121.0795,,0.0,0.0,0.0,"{nan, nan, nan, nan}",{'GGPT': {'L407927'}}
+413,Batubara,Natural Gas,CCGT,PP,Indonesia,1600.0,,2023.0,,,3.285553,99.508176,,0.0,0.0,0.0,"{nan, nan}",{'GGPT': {'L406379'}}
+414,Berkprai Cogeneration,Natural Gas,CCGT,PP,Thailand,99.0,,2019.0,,,13.8461824,99.6535834,,0.0,0.0,0.0,{nan},{'GGPT': {'L405367'}}
+415,Borang,Natural Gas,CCGT,PP,Indonesia,100.0,,,,,-2.92344,104.87107,,0.0,0.0,0.0,{nan},{'GGPT': {'L405266'}}
+416,Chachoengsao Nnk Cogeneration,Natural Gas,CCGT,PP,Thailand,110.0,,2013.0,,,13.736129,101.016325,,0.0,0.0,0.0,{nan},{'GGPT': {'L405369'}}
+417,Chaiyo,Natural Gas,CCGT,CHP,Thailand,123.0,,2016.0,,,14.6933502,100.4584153,,0.0,0.0,0.0,{nan},{'GGPT': {'L405370'}}
+418,Chonburi Ng,Natural Gas,CCGT,PP,Thailand,2500.0,,2021.0,,,13.049968,101.193335,,0.0,0.0,0.0,"{nan, nan, nan, nan}",{'GGPT': {'L405372'}}
+419,Citeureup Cement Works,Natural Gas,Steam Turbine,PP,Indonesia,82.0,,,,,-6.480331,106.899002,,0.0,0.0,0.0,{nan},{'GGPT': {'L405268'}}
+420,Egco Cogeneration Rayong,Natural Gas,CCGT,CHP,Thailand,117.0,,2003.0,,,12.794063,101.199347,,0.0,0.0,0.0,{nan},{'GGPT': {'L405373'}}
+421,Gorontalo,Natural Gas,Steam Turbine,PP,Indonesia,100.0,,2016.0,,,0.466894,122.006257,,0.0,0.0,0.0,{nan},{'GGPT': {'L405936'}}
+422,Gresik Akr Estate,Natural Gas,Steam Turbine,PP,Indonesia,500.0,,2020.0,,,-7.089043,112.606961,,0.0,0.0,0.0,{nan},{'GGPT': {'L405271'}}
+423,Gulf Bl,Natural Gas,CCGT,CHP,Thailand,254.0,,2018.0,,,14.253049,100.59581700000001,,0.0,0.0,0.0,"{nan, nan}","{'GGPT': {'L405381', 'L405382'}}"
+424,Gulf Kp,Natural Gas,CCGT,CHP,Thailand,220.0,,2013.0,,,14.3874658,100.9091859,,0.0,0.0,0.0,"{nan, nan}",{'GGPT': {'L405384'}}
+425,Gulf Nc,Natural Gas,CCGT,CHP,Thailand,126.5,,2018.0,,,14.032236,101.7109982,,0.0,0.0,0.0,{nan},{'GGPT': {'L405385'}}
+426,Gulf Nk,Natural Gas,CCGT,CHP,Thailand,268.0,,2013.0,,,14.367262499999999,100.8361055,,0.0,0.0,0.0,"{nan, nan}","{'GGPT': {'L405386', 'L405389'}}"
+427,Gulf Nll,Natural Gas,CCGT,CHP,Thailand,250.0,,2013.0,,,12.825592,101.248684,,0.0,0.0,0.0,"{nan, nan}",{'GGPT': {'L405387'}}
+428,Gulf Nrv,Natural Gas,CCGT,CHP,Thailand,256.0,,2019.0,,,14.928799,102.177099,,0.0,0.0,0.0,"{nan, nan}",{'GGPT': {'L405390'}}
+429,Gulf Tasit,Natural Gas,CCGT,CHP,Thailand,260.0,,2017.0,,,13.0648859,101.1851982,,0.0,0.0,0.0,"{nan, nan}",{'GGPT': {'L405393'}}
+430,Gulf Tasit,Natural Gas,CCGT,CHP,Thailand,276.6,,2017.0,,,13.0173851,101.1927332,,0.0,0.0,0.0,"{nan, nan}",{'GGPT': {'L405392'}}
+431,Gulf Tlc,Natural Gas,CCGT,CHP,Thailand,114.0,,2013.0,,,14.558472,100.964577,,0.0,0.0,0.0,{nan},{'GGPT': {'L405391'}}
+432,Gulf Vtp,Natural Gas,CCGT,CHP,Thailand,137.0,,2017.0,,,13.003965,101.172476,,0.0,0.0,0.0,{nan},{'GGPT': {'L405394'}}
+433,Gunung Megang,Natural Gas,CCGT,PP,Indonesia,110.0,,2014.0,,,-3.50702,103.800147,,0.0,0.0,0.0,{nan},{'GGPT': {'L405273'}}
+434,Hin Kong,Natural Gas,CCGT,PP,Thailand,1400.0,,2024.0,,,13.536,99.743,,0.0,0.0,0.0,"{nan, nan}",{'GGPT': {'L407498'}}
+435,Indralaya,Natural Gas,CCGT,PP,Indonesia,124.0,,2008.0,,,-3.206744,104.656385,,0.0,0.0,0.0,{nan},{'GGPT': {'L405274'}}
+436,Jababeka Industrial Estate,Natural Gas,CCGT,PP,Indonesia,864.0,,1993.0,,,-6.2907737,107.120446,,0.0,0.0,0.0,"{nan, nan}",{'GGPT': {'L405275'}}
+437,Karpowership Indonesia Onur Sultan,Natural Gas,CCGT,PP,Indonesia,240.0,,2016.0,,,3.775582,98.669767,,0.0,0.0,0.0,{nan},{'GGPT': {'L407148'}}
+438,Karpowership Indonesia Zeynep Sultan,Natural Gas,CCGT,PP,Indonesia,125.0,,2016.0,,,1.187715,124.478541,,0.0,0.0,0.0,{nan},{'GGPT': {'L407149'}}
+439,Keramasan Asta,Natural Gas,CCGT,PP,Indonesia,145.0,,2010.0,,,-3.0302613,104.7419807,,0.0,0.0,0.0,{nan},{'GGPT': {'L405278'}}
+440,Keramasan Pln,Natural Gas,CCGT,PP,Indonesia,160.0,,2015.0,,,-3.031835,104.745957,,0.0,0.0,0.0,{nan},{'GGPT': {'L405279'}}
+441,Klong Luang,Natural Gas,CCGT,CHP,Thailand,122.0,,2017.0,,,14.022191,100.614683,,0.0,0.0,0.0,{nan},{'GGPT': {'L405401'}}
+442,Koh Khanun,Natural Gas,not found,CHP,Thailand,114.0,,2017.0,,,13.6933649,101.417971,,0.0,0.0,0.0,{nan},{'GGPT': {'L407520'}}
+443,Kyaukphu Powerchina,Natural Gas,CCGT,PP,Myanmar,135.0,,2022.0,,,19.4221552,93.5264824,,0.0,0.0,0.0,{nan},{'GGPT': {'L405332'}}
+444,Lat Krabang,Natural Gas,CCGT,CHP,Thailand,120.0,,2016.0,,,13.759803,100.789088,,0.0,0.0,0.0,{nan},{'GGPT': {'L405403'}}
+445,Lombok Peaker,Natural Gas,CCGT,PP,Indonesia,135.0,,2020.0,,,-8.58958,116.074409,,0.0,0.0,0.0,{nan},{'GGPT': {'L405942'}}
+446,Map Ta Phut Bkk,Natural Gas,CCGT,CHP,Thailand,112.0,,1998.0,,,12.706285,101.151363,,0.0,0.0,0.0,{nan},{'GGPT': {'L405404'}}
+447,Melaka Refinery,Natural Gas,CCGT,CHP,Malaysia,150.0,,2008.0,,,2.2704,102.1306,,0.0,0.0,0.0,{nan},{'GGPT': {'L405305'}}
+448,Myingyan,Natural Gas,CCGT,PP,Myanmar,225.0,,2018.0,,,21.386872,95.376656,,0.0,0.0,0.0,{nan},{'GGPT': {'L405336'}}
+449,Nava Nakorn,Natural Gas,CCGT,CHP,Thailand,199.0,,2016.0,,,14.129484,100.596772,,0.0,0.0,0.0,"{nan, nan}",{'GGPT': {'L405406'}}
+450,Nexif Rayong,Natural Gas,CCGT,CHP,Thailand,92.0,,2022.0,,,12.791122,101.246287,,0.0,0.0,0.0,{nan},{'GGPT': {'L405407'}}
+451,Palembang Timur,Natural Gas,CCGT,PP,Indonesia,150.0,,2004.0,,,-2.9268174,104.8676653,,0.0,0.0,0.0,{nan},{'GGPT': {'L405286'}}
+452,Palua Indah,Natural Gas,CCGT,PP,Malaysia,1200.0,,2024.0,,,2.9402188,101.2621084,,0.0,0.0,0.0,"{nan, nan}",{'GGPT': {'L405308'}}
+453,Pasir Gudang Sipp,Natural Gas,CCGT,PP,Malaysia,1440.0,,2021.0,,,1.4471111,103.8831446,,0.0,0.0,0.0,"{nan, nan}",{'GGPT': {'L405309'}}
+454,Patau,Natural Gas,CCGT,PP,Malaysia,112.0,,1992.0,,,5.3169395,115.1427989,,0.0,0.0,0.0,{nan},{'GGPT': {'L405311'}}
+455,Pengerang Co Generation,Natural Gas,CCGT,CHP,Malaysia,1900.0,,2017.0,,,1.3769654,104.1743964,,0.0,0.0,0.0,"{nan, nan}",{'GGPT': {'L405312'}}
+456,Perak,Natural Gas,Steam Turbine,PP,Indonesia,100.0,,1978.0,,,-7.209975,112.723895,,0.0,0.0,0.0,"{nan, nan}",{'GGPT': {'L405287'}}
+457,Pltgu Jawa,Natural Gas,CCGT,PP,Indonesia,1760.0,,2022.0,,,-6.244232,107.588132,,0.0,0.0,0.0,"{nan, nan}",{'GGPT': {'L405276'}}
+458,Pulau Seraya,Natural Gas,CCGT,CHP,Singapore,1540.0,,2002.0,,,1.279379,103.727125,,0.0,0.0,0.0,"{nan, nan, nan, nan}",{'GGPT': {'L405352'}}
+459,Ratchaburi Grimm,Natural Gas,CCGT,CHP,Thailand,280.0,,2023.0,,,13.5472038,99.3380064,,0.0,0.0,0.0,"{nan, nan}",{'GGPT': {'L405411'}}
+460,Ratchaburi World Cogeneration,Natural Gas,CCGT,CHP,Thailand,234.0,,2015.0,,,13.650941,99.846812,,0.0,0.0,0.0,{nan},{'GGPT': {'L405414'}}
+461,Rayong Gulf Pd,Natural Gas,CCGT,PP,Thailand,2500.0,,2023.0,,,12.950169,101.156081,,0.0,0.0,0.0,"{nan, nan, nan, nan}",{'GGPT': {'L405416'}}
+462,Rayong Sipco,Natural Gas,CCGT,PP,Thailand,160.0,,2007.0,,,12.790557,101.24586,,0.0,0.0,0.0,{nan},{'GGPT': {'L405417'}}
+463,Riau Mrpr,Natural Gas,CCGT,PP,Indonesia,275.0,,2022.0,,,0.53913824,101.520131,,0.0,0.0,0.0,{nan},{'GGPT': {'L405288'}}
+464,Samutprakarn,Natural Gas,CCGT,CHP,Thailand,220.0,,2017.0,,,13.5384295,100.6372148,,0.0,0.0,0.0,{nan},{'GGPT': {'L405422'}}
+465,Senipah,Natural Gas,CCGT,PP,Indonesia,117.0,,2017.0,,,-0.987643,117.135578,,0.0,0.0,0.0,{nan},{'GGPT': {'L405949'}}
+466,Siam Pure Rice Combined Cycle,Natural Gas,CCGT,CHP,Thailand,120.0,,2016.0,,,14.84907778,100.4447935,,0.0,0.0,0.0,{nan},{'GGPT': {'L407980'}}
+467,Singapore Chemical,Natural Gas,CCGT,CHP,Singapore,444.0,,2017.0,,,1.2680014,103.6889801,,0.0,0.0,0.0,"{nan, nan}",{'GGPT': {'L405354'}}
+468,South Bangkok International Airport Sbia,Natural Gas,CCGT,CHP,Thailand,55.0,,2006.0,,,13.6940905,100.7327317,,0.0,0.0,0.0,{nan},{'GGPT': {'L405423'}}
+469,Sriracha Thai Oil Company,Natural Gas,CCGT,CHP,Thailand,239.0,,2016.0,,,13.1673169,100.9071881,,0.0,0.0,0.0,"{nan, nan}",{'GGPT': {'L405426'}}
+470,Sultan Aziz,Natural Gas,Steam Turbine,PP,Malaysia,564.0,,1985.0,,,3.1167,101.3217,,0.0,0.0,0.0,"{nan, nan}",{'GGPT': {'L103024'}}
+471,Tanjung Batu,Natural Gas,CCGT,PP,Indonesia,60.0,,1997.0,,,-0.381356,117.051316,,0.0,0.0,0.0,{nan},{'GGPT': {'L405952'}}
+472,Tanjung Kidurong,Natural Gas,CCGT,PP,Malaysia,1159.0,,2010.0,,,3.2899,113.0942,,0.0,0.0,0.0,"{nan, nan, nan}",{'GGPT': {'L405321'}}
+473,Tanjunguncang,Natural Gas,CCGT,PP,Indonesia,120.0,,2019.0,,,1.090272045,103.9014815,,0.0,0.0,0.0,{nan},{'GGPT': {'L407611'}}
+474,Telok Gong,Natural Gas,CCGT,PP,Malaysia,720.0,,2002.0,,,2.346181,102.050754,,0.0,0.0,0.0,{nan},{'GGPT': {'L405323'}}
+475,Thai,Natural Gas,CCGT,PP,Thailand,1600.0,,2016.0,,,14.331653,100.69591,,0.0,0.0,0.0,"{nan, nan}",{'GGPT': {'L405431'}}
+476,Thaketa,Natural Gas,CCGT,PP,Myanmar,569.0,,1997.0,,,16.817362775,96.22522502,,0.0,0.0,0.0,"{nan, nan}","{'GGPT': {'L407849', 'L405338'}}"
+477,Thilawa,Natural Gas,CCGT,PP,Myanmar,50.0,,2016.0,,,16.6642564,96.2647368,,0.0,0.0,0.0,{nan},{'GGPT': {'L405957'}}
+478,Adaro East Kalimantan,Hard Coal,Steam Turbine,,Indonesia,600.0,,,,,0.1,116.4,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G100038', 'G100037'}}"
+479,Ambon,Hard Coal,Steam Turbine,,Indonesia,100.0,,,,,-3.5865159,128.1711112,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G100152', 'G100153'}}"
+480,Amman Mineral,Hard Coal,Steam Turbine,,Indonesia,300.0,,,,,-8.9012149,116.7392996,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G114510', 'G114260'}}"
+481,An Khanh Bac Giang,Hard Coal,Steam Turbine,,Vietnam,650.0,,2023.0,,,21.23238,106.35375,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G100189', 'G100188'}}"
+482,Andalas Cement,Hard Coal,Steam Turbine,,Indonesia,30.0,,2007.0,,,5.45346494,95.24653272,,0.0,0.0,0.0,{nan},{'GCPT': {'G114216'}}
+483,Asahimas Chemical,Hard Coal,Steam Turbine,,Indonesia,300.0,,2022.0,,,-6.024754483,105.9426353,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G112731', 'G100367'}}"
+484,Astratel,Hard Coal,Steam Turbine,,Indonesia,100.0,,,,,-2.75,103.833333,,0.0,0.0,0.0,{nan},{'GCPT': {'G100391'}}
+485,Atimonan,Hard Coal,Steam Turbine,,Philippines,1200.0,,2025.0,,,14.0569,121.86168,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G100399', 'G100400'}}"
+486,Bakrie Sangatta,Hard Coal,Steam Turbine,,Indonesia,600.0,,,,,0.605,117.481,,0.0,0.0,0.0,"{nan, nan, nan, nan}","{'GCPT': {'G100455', 'G114814', 'G100456', 'G114815'}}"
+487,Bali,Hard Coal,Steam Turbine,,Indonesia,135.0,,,,,-8.4476016,115.122206,,0.0,0.0,0.0,{nan},{'GCPT': {'G113818'}}
+488,Balingian New,Hard Coal,Steam Turbine,,Malaysia,300.0,,,,,2.7408969,112.4729203,,0.0,0.0,0.0,{nan},{'GCPT': {'G100483'}}
+489,Balingian New,Lignite,Steam Turbine,,Malaysia,600.0,,2019.0,,,2.7408969,112.4729203,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G100481', 'G100482'}}"
+490,Bamnet Narong,Hard Coal,Steam Turbine,,Thailand,56.0,,,,,15.500278,101.686389,,0.0,0.0,0.0,{nan},{'GCPT': {'G100488'}}
+491,Bandung Indosyntec,Hard Coal,Steam Turbine,,Indonesia,30.0,,2004.0,,,-6.9705007,107.6057823,,0.0,0.0,0.0,{nan},{'GCPT': {'G100505'}}
+492,Bangka,Hard Coal,Steam Turbine,,Indonesia,400.0,,2027.0,,,-2.133333,106.116667,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G112734', 'G112735'}}"
+493,Bangka,Hard Coal,Steam Turbine,,Indonesia,160.0,,2014.0,,,-2.0792451,106.1496166,,0.0,0.0,0.0,"{nan, nan, nan, nan}","{'GCPT': {'G114203', 'G114204', 'G100508', 'G100509'}}"
+494,Bangko Tengah,Hard Coal,Steam Turbine,,Indonesia,1200.0,,2023.0,,,-3.838679,103.804133,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G100510', 'G100511'}}"
+495,Bangko Tengah,Hard Coal,Steam Turbine,,Indonesia,1320.0,,,,,-3.734,103.759,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G100513', 'G100512'}}"
+496,Bangkok Hsfc,Hard Coal,Steam Turbine,,Thailand,36.0,,2008.0,,,13.75,100.466667,,0.0,0.0,0.0,{nan},{'GCPT': {'G100514'}}
+497,Banten Bse,Hard Coal,Steam Turbine,,Indonesia,600.0,,2023.0,,,-6.485765,106.038128,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G114350', 'G114349'}}"
+498,Banyuasin,Hard Coal,Steam Turbine,,Indonesia,240.0,,2021.0,,,-3.347874,103.900474,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G114171', 'G100548'}}"
+499,Bao Dai,Hard Coal,Steam Turbine,,Vietnam,600.0,,,,,21.331452,106.36189,,0.0,0.0,0.0,{nan},{'GCPT': {'G115262'}}
+500,Baquioen,Hard Coal,Steam Turbine,,Philippines,900.0,,,,,16.091,120.096,,0.0,0.0,0.0,"{nan, nan, nan}","{'GCPT': {'G114099', 'G100583', 'G114100'}}"
+501,Basilan,Hard Coal,Steam Turbine,,Philippines,58.0,,,,,6.5432509,122.0229291,,0.0,0.0,0.0,{nan},{'GCPT': {'G114101'}}
+502,Batangas,Hard Coal,Steam Turbine,,Philippines,600.0,,,,,13.68388,121.05208,,0.0,0.0,0.0,"{nan, nan, nan, nan}","{'GCPT': {'G100657', 'G100656', 'G100655', 'G100658'}}"
+503,Bau,Hard Coal,Steam Turbine,,Indonesia,60.0,,2024.0,,,-5.4594235,122.6059492,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G113822', 'G113823'}}"
+504,Bengkayang,Hard Coal,Steam Turbine,,Indonesia,100.0,,2018.0,,,0.835110393,108.8736755,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G115058', 'G115057'}}"
+505,Bengkulu,Hard Coal,Steam Turbine,,Indonesia,200.0,,2019.0,,,-3.9123478,102.2703754,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G112736', 'G100757'}}"
+506,Binh Dinh,Hard Coal,Steam Turbine,,Vietnam,3200.0,,,,,14.079,109.205,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G100888', 'G100887'}}"
+507,Bintan,Hard Coal,Steam Turbine,,Indonesia,200.0,,2023.0,,,0.899668,104.617247,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G114197', 'G114196'}}"
+508,Bojonegara Serang,Hard Coal,Steam Turbine,,Indonesia,750.0,,,,,-5.971,106.094,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G100989', 'G100988'}}"
+509,Botum Sakor,Hard Coal,Steam Turbine,,Cambodia,700.0,,2025.0,,,10.892928,103.389776,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G111973', 'G114298'}}"
+510,Boualapha,Hard Coal,Steam Turbine,,Laos,2000.0,,2024.0,,,17.561016,105.736571,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G115025', 'G115024'}}"
+511,Btn Dumai,Hard Coal,Steam Turbine,,Indonesia,450.0,,,,,1.5889999999999997,101.63799999999999,,0.0,0.0,0.0,"{nan, nan, nan}","{'GCPT': {'G101078', 'G101077', 'G101079'}}"
+512,Bukit Asam Minemouth,Hard Coal,Steam Turbine,,Myanmar,600.0,,,,,19.0734647,96.6710399,,0.0,0.0,0.0,"{nan, nan, nan, nan}","{'GCPT': {'G112794', 'G112795', 'G112793', 'G112796'}}"
+513,Cadiz City,Hard Coal,Steam Turbine,,Philippines,300.0,,,,,10.95246,123.33157,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G101149', 'G101148'}}"
+514,Can Duoc Kepco Vinakobalt,Hard Coal,Steam Turbine,,Vietnam,1600.0,,,,,10.539167,106.609167,,0.0,0.0,0.0,{nan},{'GCPT': {'G101180'}}
+515,Cebu Energy,Lignite,Steam Turbine,,Philippines,246.0,,2010.0,,,10.38715752,123.6410229,,0.0,0.0,0.0,"{nan, nan, nan}","{'GCPT': {'G110219', 'G110218', 'G110220'}}"
+516,Cemindo Gemilang,Hard Coal,Steam Turbine,,Indonesia,60.0,,2016.0,,,-6.950808,106.2501579,,0.0,0.0,0.0,{nan},{'GCPT': {'G114188'}}
+517,Central Java,Hard Coal,Steam Turbine,,Indonesia,1900.0,,2022.0,,,-6.9008284,109.8036853,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G101261', 'G101262'}}"
+518,Chmc Sekong,Hard Coal,Steam Turbine,,Laos,600.0,,2025.0,,,15.7166,106.65,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G114888', 'G114493'}}"
+519,Cilegon Ptip,Hard Coal,Steam Turbine,,Indonesia,40.0,,2017.0,,,-6.0238894,105.9501269,,0.0,0.0,0.0,{nan},{'GCPT': {'G113842'}}
+520,Concepcion Semirara,Hard Coal,Steam Turbine,,Philippines,360.0,,2016.0,,,11.197998160000001,123.10972416,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan}","{'GCPT': {'G114476', 'G101687', 'G114478', 'G101688', 'G114477'}}"
+521,Cong Thanh,Hard Coal,Steam Turbine,,Vietnam,660.0,,,,,19.358,105.779,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G101696', 'G101695'}}"
+522,Dawei,Hard Coal,Steam Turbine,,Myanmar,4450.0,,,,,14.0833,98.2,,0.0,0.0,0.0,"{nan, nan, nan, nan}","{'GCPT': {'G102281', 'G102280', 'G102278', 'G102279'}}"
+523,Delong Nickel Phase,Hard Coal,Steam Turbine,,Indonesia,530.0,,2018.0,,,-3.907537,122.419265,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan, nan, nan, nan}","{'GCPT': {'G114341', 'G114346', 'G114347', 'G114348', 'G114342', 'G114345', 'G114344', 'G114343'}}"
+524,Delong Nickel Phase,Hard Coal,Steam Turbine,,Indonesia,2295.0,,2021.0,,,-2.00887994325,121.4346655,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan}","{'GCPT': {'G115106', 'G115111', 'G115110', 'G115351', 'G115350', 'G115108', 'G115353', 'G115107', 'G115352', 'G115349', 'G115105', 'G115109'}}"
+525,Delong Nickel Phase,Hard Coal,Steam Turbine,,Indonesia,2220.0,,2020.0,,,-3.8279292733636363,122.46602378181818,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan}","{'GCPT': {'G114333', 'G114332', 'G114334', 'G114338', 'G114340', 'G114331', 'G114339', 'G114336', 'G115354', 'G114335', 'G114337'}}"
+526,Dinginin,Hard Coal,Steam Turbine,,Philippines,1336.0,,2022.0,,,14.424599,120.540992,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G106688', 'G106687'}}"
+527,Dss Serang,Hard Coal,Steam Turbine,,Indonesia,175.0,,,,,-6.12543501,106.2892051,,0.0,0.0,0.0,"{nan, nan, nan, nan}","{'GCPT': {'G115073', 'G115074', 'G115075', 'G115076'}}"
+528,Duc Giang Lao Cai Chemical,Hard Coal,Steam Turbine,,Vietnam,100.0,,,,,22.30505805,104.14576654999999,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G102474', 'G112740'}}"
+529,Dung Quat,Hard Coal,Steam Turbine,,Vietnam,5600.0,,2028.0,,,15.333,108.667,,0.0,0.0,0.0,"{nan, nan, nan, nan}","{'GCPT': {'G113084', 'G113083', 'G102487', 'G102488'}}"
+530,East Halmahera,Hard Coal,Steam Turbine,,Indonesia,150.0,,2023.0,,,0.8325084,128.2852732,,0.0,0.0,0.0,"{nan, nan, nan}","{'GCPT': {'G113973', 'G114210', 'G113974'}}"
+531,Fajar,Hard Coal,Steam Turbine,,Indonesia,55.0,,2017.0,,,-6.272645592,107.1240192,,0.0,0.0,0.0,{nan},{'GCPT': {'G115737'}}
+532,Ganh Dau,Hard Coal,Steam Turbine,,Vietnam,200.0,,,,,10.228889,103.957222,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G102925', 'G102926'}}"
+533,General Santos,Hard Coal,Steam Turbine,,Philippines,300.0,,,,,6.116667,125.166667,,0.0,0.0,0.0,{nan},{'GCPT': {'G102980'}}
+534,Gresik Akr,Hard Coal,Steam Turbine,,Indonesia,660.0,,,,,-7.159,112.642,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G103135', 'G103134'}}"
+535,Hai Duong,Hard Coal,Steam Turbine,,Vietnam,1200.0,,2020.0,,,21.0335,106.41218,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G103541', 'G103540'}}"
+536,Hai Ha Chp,Hard Coal,Steam Turbine,,Vietnam,2100.0,,,,,21.4154607,107.7430017,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan}","{'GCPT': {'G113719', 'G103545', 'G113720', 'G113715', 'G103544', 'G113722', 'G113716', 'G113718', 'G113721', 'G103542', 'G103543', 'G113717'}}"
+537,Haltim,Hard Coal,Steam Turbine,,Indonesia,200.0,,2024.0,,,1.018017438,128.2660599,,0.0,0.0,0.0,{nan},{'GCPT': {'G115072'}}
+538,Han Seng,Hard Coal,Steam Turbine,,Cambodia,265.0,,2022.0,,,14.23008,104.26931,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G114299', 'G114300'}}"
+539,Hanjo,Hard Coal,Steam Turbine,,Philippines,600.0,,,,,14.65211,120.45292,,0.0,0.0,0.0,{nan},{'GCPT': {'G114097'}}
+540,Hau Giang Lee Man,Hard Coal,Steam Turbine,,Vietnam,125.0,,2018.0,,,9.944849,105.8745208,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G114159', 'G114158'}}"
+541,Hoa Dau Long Son,Hard Coal,Steam Turbine,,Vietnam,225.0,,,,,10.590556,107.04805600000002,,0.0,0.0,0.0,"{nan, nan, nan}","{'GCPT': {'G103904', 'G103906', 'G103905'}}"
+542,Hon Chong,Hard Coal,Steam Turbine,,Vietnam,1000.0,,,,,10.15735,104.62847,,0.0,0.0,0.0,{nan},{'GCPT': {'G114166'}}
+543,Houaphanh,Hard Coal,Steam Turbine,,Laos,650.0,,2026.0,,,20.3333,103.833,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G111972', 'G114830'}}"
+544,Hpa An,Hard Coal,Steam Turbine,,Myanmar,1280.0,,2023.0,,,16.890556,97.633333,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G113378', 'G113377'}}"
+545,Htantabin,Hard Coal,Steam Turbine,,Myanmar,270.0,,,,,17.1333,95.91667,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G103990', 'G103991'}}"
+546,Hua Sai Coal,Hard Coal,Steam Turbine,,Thailand,800.0,,2020.0,,,8.0444501,100.2836172,,0.0,0.0,0.0,{nan},{'GCPT': {'G103992'}}
+547,Indarung Cement,Hard Coal,Steam Turbine,,Indonesia,100.0,,,,,-0.9500593,100.4695415,,0.0,0.0,0.0,{nan},{'GCPT': {'G104834'}}
+548,Indo Bharat Rayon,Hard Coal,Steam Turbine,,Indonesia,36.6,,2008.0,,,-6.4858007,107.3852029,,0.0,0.0,0.0,{nan},{'GCPT': {'G114215'}}
+549,Inn Din,Hard Coal,Steam Turbine,,Myanmar,1280.0,,,,,15.3,97.966667,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G104862', 'G104863'}}"
+550,Isabel Copper,Hard Coal,Steam Turbine,,Philippines,200.0,,,,,10.8945865,124.4360876,,0.0,0.0,0.0,{nan},{'GCPT': {'G104907'}}
+551,Isabela,Hard Coal,Steam Turbine,,Philippines,100.0,,,,,16.94,121.77,,0.0,0.0,0.0,{nan},{'GCPT': {'G104908'}}
+552,Jababeka Kip,Hard Coal,Steam Turbine,,Indonesia,660.0,,,,,-6.8957523,110.2402496,,0.0,0.0,0.0,{nan},{'GCPT': {'G104935'}}
+553,Jambi,Hard Coal,Steam Turbine,,Indonesia,1300.0,,2026.0,,,-1.925582,103.1948865,,0.0,0.0,0.0,"{nan, nan, nan, nan}","{'GCPT': {'G108039', 'G113202', 'G108038', 'G113203'}}"
+554,Jambi Tebo,Hard Coal,Steam Turbine,,Indonesia,400.0,,,,,-1.39,102.42,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G104954', 'G104953'}}"
+555,Jawa,Hard Coal,Steam Turbine,,Indonesia,1982.0,,2019.0,,,-5.9916943,106.1008005,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G104986', 'G104987'}}"
+556,Jawa,Hard Coal,Steam Turbine,,Indonesia,4600.0,,2026.0,,,-7.26,110.66,,0.0,0.0,0.0,"{nan, nan, nan, nan}","{'GCPT': {'G104978', 'G104977', 'G104976', 'G104979'}}"
+557,Jawa,Hard Coal,Steam Turbine,,Indonesia,4600.0,,2023.0,,,-5.935064,107.03018200000001,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan, nan}","{'GCPT': {'G104937', 'G104984', 'G104985', 'G104936', 'G104982', 'G104983'}}"
+558,Jayapura,Hard Coal,Steam Turbine,,Indonesia,150.0,,2025.0,,,-2.60839,140.807479,,0.0,0.0,0.0,"{nan, nan, nan}","{'GCPT': {'G105006', 'G114193', 'G105005'}}"
+559,Jinchuan Group Wp Rka,Hard Coal,Steam Turbine,,Indonesia,150.0,,2019.0,,,-1.56606,127.415933,,0.0,0.0,0.0,"{nan, nan, nan}","{'GCPT': {'G114327', 'G114328', 'G114326'}}"
+560,Jolo,Hard Coal,Steam Turbine,,Philippines,58.0,,,,,6.0402879,121.0049282,,0.0,0.0,0.0,{nan},{'GCPT': {'G114102'}}
+561,Jose Panganiban,Hard Coal,Steam Turbine,,Philippines,700.0,,2026.0,,,14.3378,122.673511,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G105362', 'G105363'}}"
+562,Kabil Pkb,Hard Coal,Steam Turbine,,Indonesia,120.0,,,,,1.589,101.638,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G105408', 'G105407'}}"
+563,Kalbar,Hard Coal,Steam Turbine,,Indonesia,200.0,,2021.0,,,-0.6783899,109.25354,,0.0,0.0,0.0,{nan},{'GCPT': {'G105467'}}
+564,Kalbar,Hard Coal,Steam Turbine,,Indonesia,200.0,,2020.0,,,0.816151886,108.8461264,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G113441', 'G105465'}}"
+565,Kalbar,Hard Coal,Steam Turbine,,Indonesia,200.0,,2024.0,,,-0.276265,109.2795913,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G105466', 'G113442'}}"
+566,Kalbar,Hard Coal,Steam Turbine,,Indonesia,200.0,,2027.0,,,0.3419891,108.9403069,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G105469', 'G105468'}}"
+567,Kalbar,Hard Coal,Steam Turbine,,Indonesia,200.0,,2028.0,,,1.227,114.577,,0.0,0.0,0.0,{nan},{'GCPT': {'G105470'}}
+568,Kalewa,Hard Coal,Steam Turbine,,Myanmar,540.0,,,,,21.5,95.6178,,0.0,0.0,0.0,"{nan, nan, nan, nan}","{'GCPT': {'G105472', 'G105474', 'G105473', 'G105471'}}"
+569,Kalimantan Cement Works,Hard Coal,Steam Turbine,,Indonesia,55.0,,1998.0,,,-3.272913188,116.1058856,,0.0,0.0,0.0,{nan},{'GCPT': {'G105475'}}
+570,Kalselteng,Hard Coal,Steam Turbine,,Indonesia,200.0,,2026.0,,,1.034129,108.972598,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G114187', 'G114186'}}"
+571,Kalselteng,Hard Coal,Steam Turbine,,Indonesia,200.0,,2020.0,,,-1.370796,113.567203,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G105485', 'G105484'}}"
+572,Kalselteng,Hard Coal,Steam Turbine,,Indonesia,400.0,,2024.0,,,-2.8086279,111.6430664,,0.0,0.0,0.0,"{nan, nan, nan, nan}","{'GCPT': {'G113819', 'G113820', 'G105487', 'G105486'}}"
+573,Kaltim,Hard Coal,Steam Turbine,,Indonesia,200.0,,2025.0,,,0.1356981,116.2207238,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G105494', 'G105495'}}"
+574,Kaltim,Hard Coal,Steam Turbine,,Indonesia,200.0,,2027.0,,,-0.9118267,117.195282,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G105499', 'G105498'}}"
+575,Kaltim Ftp,Hard Coal,Steam Turbine,,Indonesia,200.0,,2019.0,,,0.0551785,117.4945887,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G105491', 'G105490'}}"
+576,Kaltimra,Hard Coal,Steam Turbine,,Indonesia,600.0,,2028.0,,,1.227,114.577,,0.0,0.0,0.0,"{nan, nan, nan}","{'GCPT': {'G113215', 'G105500', 'G113214'}}"
+577,Kamanga,Hard Coal,Steam Turbine,,Philippines,210.0,,2016.0,,,5.86868,125.079818,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G105514', 'G105513'}}"
+578,Kampot,Hard Coal,Steam Turbine,,Cambodia,540.0,,,,,10.788192,103.7621174,,0.0,0.0,0.0,"{nan, nan, nan, nan}","{'GCPT': {'G114894', 'G114891', 'G114892', 'G114893'}}"
+579,Kao Hin Son,Hard Coal,Steam Turbine,,Thailand,600.0,,,,,13.744722,101.347222,,0.0,0.0,0.0,"{nan, nan, nan, nan}","{'GCPT': {'G105552', 'G105550', 'G105551', 'G105553'}}"
+580,Karang Asem,Hard Coal,Steam Turbine,,Indonesia,200.0,,,,,-8.366667,115.516667,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G105584', 'G105583'}}"
+581,Kendari,Hard Coal,Steam Turbine,,Indonesia,100.0,,2019.0,,,-4.0512916,122.6534484,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G105670', 'G105669'}}"
+582,Kengtung,Hard Coal,Steam Turbine,,Myanmar,660.0,,,,,21.291667,99.608333,,0.0,0.0,0.0,{nan},{'GCPT': {'G105671'}}
+583,Kepco Subic Bay,Hard Coal,Steam Turbine,,Philippines,200.0,,,,,14.850474,120.205317,,0.0,0.0,0.0,{nan},{'GCPT': {'G105677'}}
+584,Kien Luong,Hard Coal,Steam Turbine,,Vietnam,4400.0,,,,,10.3,104.661,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan, nan}","{'GCPT': {'G105737', 'G105736', 'G105740', 'G105739', 'G105735', 'G105738'}}"
+585,King,Hard Coal,Steam Turbine,,Philippines,160.0,,,,,7.176,125.972,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G105754', 'G105753'}}"
+586,Kipi,Hard Coal,Steam Turbine,,Indonesia,600.0,,,,,0.815946,117.930767,,0.0,0.0,0.0,"{nan, nan, nan}","{'GCPT': {'G114816', 'G114924', 'G114817'}}"
+587,Koh Kong,Hard Coal,Steam Turbine,,Cambodia,2400.0,,,,,11.399167,103.494722,,0.0,0.0,0.0,{nan},{'GCPT': {'G105808'}}
+588,Komering Agung,Hard Coal,Steam Turbine,,Indonesia,60.0,,,,,-4.9764676,105.1856787,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G113838', 'G113839'}}"
+589,Krabi Coal,Hard Coal,Steam Turbine,,Thailand,870.0,,,,,8.059167,98.918889,,0.0,0.0,0.0,{nan},{'GCPT': {'G105929'}}
+590,Kuala Tanjung,Hard Coal,Steam Turbine,,Indonesia,1670.0,,2023.0,,,3.366814983333333,99.4415331,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan, nan}","{'GCPT': {'G105998', 'G105997', 'G105996', 'G105993', 'G105994', 'G105995'}}"
+591,Kulon Progo,Hard Coal,Steam Turbine,,Indonesia,100.0,,,,,-7.813903,110.1750229,,0.0,0.0,0.0,{nan},{'GCPT': {'G114178'}}
+592,Kungyan Gone,Hard Coal,Steam Turbine,,Myanmar,3270.0,,,,,16.434434,95.98484509999999,,0.0,0.0,0.0,"{nan, nan, nan}","{'GCPT': {'G106022', 'G106023', 'G106021'}}"
+593,Kyaukphyu,Hard Coal,Steam Turbine,,Myanmar,1320.0,,,,,19.433333,93.55,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G106057', 'G106058'}}"
+594,Kyauktan,Hard Coal,Steam Turbine,,Myanmar,500.0,,,,,16.638056,96.322778,,0.0,0.0,0.0,{nan},{'GCPT': {'G106059'}}
+595,La Union,Hard Coal,Steam Turbine,,Philippines,670.0,,,,,16.835881,120.342465,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G106078', 'G106079'}}"
+596,Labuhan Angin,Lignite,Steam Turbine,,Indonesia,345.0,,2008.0,,,1.7518985666666669,98.7310288,,0.0,0.0,0.0,"{nan, nan, nan}","{'GCPT': {'G106086', 'G106084', 'G106085'}}"
+597,Lahad Datu,Hard Coal,Steam Turbine,,Malaysia,300.0,,2011.0,,,5.1205505,119.1833568,,0.0,0.0,0.0,"{nan, nan, nan, nan}","{'GCPT': {'G114170', 'G114169', 'G106103', 'G114168'}}"
+598,Lamhotma,Hard Coal,Steam Turbine,,Indonesia,200.0,,,,,3.3753976,99.4418049,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G106134', 'G106135'}}"
+599,Lanao Kauswagan,Hard Coal,Steam Turbine,,Philippines,552.0,,2019.0,,,8.18691,124.11545,,0.0,0.0,0.0,"{nan, nan, nan, nan}","{'GCPT': {'G106142', 'G106143', 'G106141', 'G106144'}}"
+600,Launglon,Hard Coal,Steam Turbine,,Myanmar,500.0,,,,,13.7926555,98.1065798,,0.0,0.0,0.0,{nan},{'GCPT': {'G106190'}}
+601,Lombok,Hard Coal,Steam Turbine,,Indonesia,100.0,,2028.0,,,-8.573277,116.351124,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G114195', 'G114194'}}"
+602,Lombok,Hard Coal,Steam Turbine,,Indonesia,100.0,,2026.0,,,-8.285204,116.603164,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G106386', 'G106387'}}"
+603,Lombok,Hard Coal,Steam Turbine,,Indonesia,100.0,,2023.0,,,-8.3480333,116.7171683,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G106385', 'G106384'}}"
+604,Lombok Ftp,Hard Coal,Steam Turbine,,Indonesia,100.0,,2022.0,,,-8.4220565,116.7096294,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G106389', 'G106388'}}"
+605,Long An,Hard Coal,Steam Turbine,,Vietnam,2800.0,,2026.0,,,10.5716,106.73406,,0.0,0.0,0.0,"{nan, nan, nan, nan}","{'GCPT': {'G106391', 'G106392', 'G106394', 'G106393'}}"
+606,Long Phu Centre,Hard Coal,Steam Turbine,,Vietnam,4320.0,,,,,9.70894,106.08183,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan, nan, nan}","{'GCPT': {'G106400', 'G106395', 'G106396', 'G106397', 'G112737', 'G106398', 'G106399'}}"
+607,Ludo,Hard Coal,Steam Turbine,,Philippines,300.0,,,,,10.29003,123.88897,,0.0,0.0,0.0,{nan},{'GCPT': {'G106455'}}
+608,Lumiere Ibabang,Lignite,Steam Turbine,,Philippines,710.0,,2025.0,,,13.9194082,121.741002,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G114764', 'G114765'}}"
+609,Mabalacat Mill,Hard Coal,Steam Turbine,,Philippines,52.0,,2006.0,,,15.235598,120.6105592,,0.0,0.0,0.0,{nan},{'GCPT': {'G106538'}}
+610,Madura Ptba,Hard Coal,Steam Turbine,,Indonesia,450.0,,,,,-7.077733,113.287085,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G106545', 'G106546'}}"
+611,Mai Khot,Hard Coal,Steam Turbine,,Myanmar,405.0,,,,,21.5,98.0,,0.0,0.0,0.0,{nan},{'GCPT': {'G106581'}}
+612,Malabuyoc,Hard Coal,Steam Turbine,,Philippines,300.0,,,,,9.6641941,123.3516008,,0.0,0.0,0.0,{nan},{'GCPT': {'G106608'}}
+613,Mandalay,Hard Coal,Steam Turbine,,Myanmar,500.0,,,,,21.0,95.75,,0.0,0.0,0.0,{nan},{'GCPT': {'G106623'}}
+614,Mawlamyine Cement,Hard Coal,Steam Turbine,,Myanmar,40.0,,2017.0,,,16.365184,97.832431,,0.0,0.0,0.0,{nan},{'GCPT': {'G106759'}}
+615,Merit Pila,Hard Coal,Steam Turbine,,Malaysia,300.0,,,,,2.016667,112.9333,,0.0,0.0,0.0,{nan},{'GCPT': {'G106878'}}
+616,Mesuji,Hard Coal,Steam Turbine,,Indonesia,700.0,,,,,-4.0127763,105.4629564,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G106887', 'G106888'}}"
+617,Mien Bac,Hard Coal,Steam Turbine,,Vietnam,2000.0,,,,,20.2,105.69,,0.0,0.0,0.0,{nan},{'GCPT': {'G106908'}}
+618,Msp Pulau Obi,Hard Coal,Steam Turbine,,Indonesia,114.0,,2016.0,,,-1.5306415,127.4191151,,0.0,0.0,0.0,"{nan, nan, nan}","{'GCPT': {'G114179', 'G114181', 'G114180'}}"
+619,Mukah West,Hard Coal,Steam Turbine,,Malaysia,1200.0,,,,,2.896111,112.078611,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G107092', 'G107091'}}"
+620,Mulut Tambang,Hard Coal,Steam Turbine,,Indonesia,1200.0,,2020.0,,,-2.618,103.127,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G107096', 'G107095'}}"
+621,Myainggalay Cement,Hard Coal,Steam Turbine,,Myanmar,30.0,,2018.0,,,16.876601,97.585428,,0.0,0.0,0.0,{nan},{'GCPT': {'G115063'}}
+622,Myeik,Hard Coal,Steam Turbine,,Myanmar,2690.0,,2020.0,,,12.433333,98.6,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G107147', 'G107146'}}"
+623,Na Duong,Hard Coal,Steam Turbine,,Vietnam,110.0,,,,,21.6975,106.9765,,0.0,0.0,0.0,{nan},{'GCPT': {'G107153'}}
+624,Naga,Lignite,Steam Turbine,,Philippines,105.0,,1981.0,,2015.0,10.21755,123.76058,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G107171', 'G107170'}}"
+625,Nalco East Kutai,Hard Coal,Steam Turbine,,Indonesia,1250.0,,,,,1.254,116.68199999999999,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan}","{'GCPT': {'G107202', 'G107203', 'G107201', 'G107204', 'G107205'}}"
+626,Nam Dinh,Hard Coal,Steam Turbine,,Vietnam,2400.0,,2026.0,,,20.1012,106.21355,,0.0,0.0,0.0,"{nan, nan, nan, nan}","{'GCPT': {'G107207', 'G107209', 'G107208', 'G107206'}}"
+627,Nam Phan,Hard Coal,Steam Turbine,,Laos,660.0,,2025.0,,,19.44,103.58,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G115306', 'G115307'}}"
+628,Nanshan Industrial Park,Hard Coal,Steam Turbine,,Indonesia,2880.0,,2021.0,,,0.9123303566250001,104.6511566,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan}","{'GCPT': {'G114904', 'G114913', 'G114489', 'G114915', 'G114909', 'G114914', 'G114918', 'G114905', 'G114912', 'G114921', 'G114916', 'G114910', 'G114919', 'G114906', 'G114901', 'G114352', 'G114908', 'G114907', 'G114903', 'G114902', 'G114920', 'G114911', 'G114917', 'G114488'}}"
+629,Nga Yoke Kaung,Hard Coal,Steam Turbine,,Myanmar,300.0,,,,,16.537778,94.693611,,0.0,0.0,0.0,{nan},{'GCPT': {'G107408'}}
+630,Nhon Trach Formosa,Hard Coal,Steam Turbine,,Vietnam,450.0,,2004.0,,,10.732639999999998,106.9354,,0.0,0.0,0.0,"{nan, nan, nan}","{'GCPT': {'G113233', 'G107414', 'G113234'}}"
+631,Oyon Bay,Hard Coal,Steam Turbine,,Philippines,150.0,,,,,15.533333,119.95,,0.0,0.0,0.0,{nan},{'GCPT': {'G107711'}}
+632,Ozamiz,Hard Coal,Steam Turbine,,Philippines,300.0,,2023.0,,,8.123151,123.817026,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G113872', 'G113873'}}"
+633,Pailin,Hard Coal,Steam Turbine,,Cambodia,200.0,,,,,12.850556,102.609444,,0.0,0.0,0.0,{nan},{'GCPT': {'G107727'}}
+634,Palangkaraya,Hard Coal,Steam Turbine,,Indonesia,300.0,,,,,-1.769,113.654,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G107736', 'G107737'}}"
+635,Palu,Hard Coal,Steam Turbine,,Indonesia,100.0,,2023.0,,,-0.7332027,119.8559205,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G113216', 'G107744'}}"
+636,Panare,Hard Coal,Steam Turbine,,Thailand,1000.0,,2034.0,,,6.86,101.491389,,0.0,0.0,0.0,{nan},{'GCPT': {'G107748'}}
+637,Panay Kepco,Hard Coal,Steam Turbine,,Philippines,100.0,,,,,10.920334,122.6726105,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G114104', 'G107750'}}"
+638,Parit Baru,Hard Coal,Steam Turbine,,Indonesia,200.0,,2018.0,,,0.05798,109.20362,,0.0,0.0,0.0,"{nan, nan, nan, nan}","{'GCPT': {'G107834', 'G107836', 'G107837', 'G107835'}}"
+639,Pathein,Hard Coal,Steam Turbine,,Myanmar,660.0,,2020.0,,,16.518722,94.301304,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G107858', 'G107857'}}"
+640,Pati Intp,Hard Coal,Steam Turbine,,Indonesia,60.0,,,,,-6.708777,111.0201145,,0.0,0.0,0.0,{nan},{'GCPT': {'G114182'}}
+641,Phonesack Xekong,Hard Coal,Steam Turbine,,Laos,1800.0,,2025.0,,,15.7166,106.65000000000002,,0.0,0.0,0.0,"{nan, nan, nan}","{'GCPT': {'G114490', 'G114491', 'G114492'}}"
+642,Phu Tho,Hard Coal,Steam Turbine,,Vietnam,600.0,,,,,21.302,105.255,,0.0,0.0,0.0,{nan},{'GCPT': {'G107970'}}
+643,Phu Yen,Hard Coal,Steam Turbine,,Vietnam,2400.0,,,,,13.201,109.167,,0.0,0.0,0.0,"{nan, nan, nan, nan}","{'GCPT': {'G107974', 'G107973', 'G107972', 'G107971'}}"
+644,Pindo Deli,Hard Coal,Steam Turbine,,Indonesia,50.0,,2007.0,,,-6.385474,107.343624,,0.0,0.0,0.0,{nan},{'GCPT': {'G107980'}}
+645,Pomalaa Nickel,Hard Coal,Steam Turbine,,Indonesia,60.0,,2016.0,,,-4.179864999,121.5929346,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G108076', 'G108075'}}"
+646,Pt Halmahera Persada Lygend Nickel Smelter,Hard Coal,Steam Turbine,,Indonesia,2240.0,,2020.0,,,-1.554537728,127.41966496363635,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan}","{'GCPT': {'G115067', 'G115357', 'G115069', 'G115127', 'G115068', 'G115355', 'G115359', 'G115126', 'G115358', 'G115356', 'G115070'}}"
+647,Pulupandan,Lignite,Steam Turbine,,Philippines,80.0,,,,,10.519715,122.797098,,0.0,0.0,0.0,{nan},{'GCPT': {'G114479'}}
+648,Punagaya,Hard Coal,Steam Turbine,,Indonesia,520.0,,2011.0,,,-5.617881,119.5511895,,0.0,0.0,0.0,"{nan, nan, nan, nan}","{'GCPT': {'G108235', 'G108236', 'G108234', 'G108237'}}"
+649,Qingdao Zhongsheng Captive,Hard Coal,Steam Turbine,,Indonesia,390.0,,2022.0,,,-3.040350155,122.2615589,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan, nan}","{'GCPT': {'G114330', 'G115122', 'G114329', 'G115119', 'G115120', 'G115121'}}"
+650,Quang Trach Center,Hard Coal,Steam Turbine,,Vietnam,2400.0,,2025.0,,,17.9504,106.50425,,0.0,0.0,0.0,"{nan, nan, nan, nan}","{'GCPT': {'G108391', 'G108390', 'G108393', 'G108392'}}"
+651,Quang Tri,Hard Coal,Steam Turbine,,Vietnam,2400.0,,2028.0,,,16.75658,107.36713,,0.0,0.0,0.0,"{nan, nan, nan, nan}","{'GCPT': {'G108394', 'G108395', 'G113292', 'G113291'}}"
+652,Quynh Lap,Hard Coal,Steam Turbine,,Vietnam,2400.0,,,,,19.27563,105.78019,,0.0,0.0,0.0,"{nan, nan, nan, nan}","{'GCPT': {'G108412', 'G108409', 'G108411', 'G108410'}}"
+653,Rang Dong Chp,Hard Coal,Steam Turbine,,Vietnam,100.0,,2025.0,,,19.986,106.18,,0.0,0.0,0.0,{nan},{'GCPT': {'G108478'}}
+654,Riau,Lignite,Steam Turbine,,Indonesia,600.0,,2028.0,,,-0.35,102.533056,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G100952', 'G100953'}}"
+655,Riau Kemitraan,Hard Coal,Steam Turbine,,Indonesia,1200.0,,,,,-0.5262206,101.9690037,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G108563', 'G108562'}}"
+656,San Carlos,Hard Coal,Steam Turbine,,Philippines,300.0,,,,,10.4826992,123.413725,,0.0,0.0,0.0,{nan},{'GCPT': {'G113919'}}
+657,Santa Cruz Philippines,Hard Coal,Steam Turbine,,Philippines,82.0,,,,,6.847904,125.418141,,0.0,0.0,0.0,{nan},{'GCPT': {'G115112'}}
+658,Sariaya,Hard Coal,Steam Turbine,,Philippines,600.0,,,,,13.9147376,121.572078,,0.0,0.0,0.0,{nan},{'GCPT': {'G114306'}}
+659,Sekong Epic,Lignite,Steam Turbine,,Laos,1000.0,,2027.0,,,15.7166,106.65,,0.0,0.0,0.0,{nan},{'GCPT': {'G114889'}}
+660,Semirara,Hard Coal,Steam Turbine,,Philippines,50.0,,,,,12.0481039,121.3978504,,0.0,0.0,0.0,{nan},{'GCPT': {'G113315'}}
+661,Shenhua Guohua,Lignite,Steam Turbine,,Indonesia,300.0,,2011.0,,,-3.4013806,104.1186327,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G109398', 'G109397'}}"
+662,Sibuguey,Hard Coal,Steam Turbine,,Philippines,100.0,,2016.0,,,7.616,123.0,,0.0,0.0,0.0,{nan},{'GCPT': {'G109344'}}
+663,Sihanoukville Csg,Hard Coal,Steam Turbine,,Cambodia,1200.0,,,,,10.6333,103.5,,0.0,0.0,0.0,"{nan, nan, nan, nan}","{'GCPT': {'G109379', 'G109378', 'G109377', 'G109380'}}"
+664,Sihanoukville Sez,Hard Coal,Steam Turbine,,Cambodia,100.0,,2021.0,,,10.62902,103.63363,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G114895', 'G115158'}}"
+665,Sinar Mas Jambi,Hard Coal,Steam Turbine,,Indonesia,400.0,,,,,-1.61,101.91,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G109403', 'G109402'}}"
+666,Sinar Mas Jambi Lontar,Hard Coal,Steam Turbine,,Indonesia,211.0,,1994.0,,,-1.0069,103.0821,,0.0,0.0,0.0,"{nan, nan, nan, nan}","{'GCPT': {'G109399', 'G109400', 'G114325', 'G109401'}}"
+667,Sinar Mas Oki Paper Mill,Hard Coal,Steam Turbine,,Indonesia,500.0,,,,,-2.758,105.434,,0.0,0.0,0.0,"{nan, nan, nan, nan}","{'GCPT': {'G109406', 'G109404', 'G109407', 'G109405'}}"
+668,Skip,Hard Coal,Steam Turbine,,Indonesia,30.0,,,,,3.3502712,117.6018258,,0.0,0.0,0.0,{nan},{'GCPT': {'G114189'}}
+669,Smc Ibabang,Hard Coal,Steam Turbine,,Philippines,1420.0,,2025.0,,,13.9194082,121.741002,,0.0,0.0,0.0,"{nan, nan, nan, nan}","{'GCPT': {'G112247', 'G112245', 'G112246', 'G112244'}}"
+670,Smc Mariveles,Hard Coal,Steam Turbine,,Philippines,1200.0,,2023.0,,,14.4493543,120.4322832,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan, nan, nan, nan}","{'GCPT': {'G115298', 'G115299', 'G114046', 'G114517', 'G114516', 'G115300', 'G115301', 'G114518'}}"
+671,Son My,Hard Coal,Steam Turbine,,Vietnam,3600.0,,,,,10.75,107.66699999999999,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan, nan}","{'GCPT': {'G109513', 'G109512', 'G109511', 'G109510', 'G109509', 'G109508'}}"
+672,Song Hau,Hard Coal,Steam Turbine,,Vietnam,5200.0,,2021.0,,,9.95266,105.86071,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan, nan}","{'GCPT': {'G109515', 'G109519', 'G109518', 'G109516', 'G109517', 'G109514'}}"
+673,Sorong,Hard Coal,Steam Turbine,,Indonesia,1050.0,,,,,-0.866667,131.25,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G109529', 'G109528'}}"
+674,Subic,Hard Coal,Steam Turbine,,Philippines,600.0,,2021.0,,,14.76744,120.19429,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G109647', 'G109646'}}"
+675,Sulawesi Labota,Hard Coal,Steam Turbine,,Indonesia,3360.0,,,,,-2.8685752233333335,122.17274903333333,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan, nan, nan, nan, nan}","{'GCPT': {'G115259', 'G115362', 'G115361', 'G115360', 'G115125', 'G115261', 'G115260', 'G115124', 'G115123'}}"
+676,Sulawesi Star,Hard Coal,Steam Turbine,,Indonesia,200.0,,,,,-4.8,119.9,,0.0,0.0,0.0,{nan},{'GCPT': {'G109668'}}
+677,Sulbagsel,Hard Coal,Steam Turbine,,Indonesia,400.0,,2023.0,,,-3.814451,122.447753,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G114192', 'G114191'}}"
+678,Sulbagsel,Hard Coal,Steam Turbine,,Indonesia,400.0,,2023.0,,,-3.8215009,121.9720969,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G114190', 'G113831'}}"
+679,Sulbagut,Hard Coal,Steam Turbine,,Indonesia,100.0,,2024.0,,,0.8687014,123.9643104,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G109674', 'G109675'}}"
+680,Sulbagut,Hard Coal,Steam Turbine,,Indonesia,100.0,,2022.0,,,0.9426981,122.9415754,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G109671', 'G109670'}}"
+681,Sulbagut,Hard Coal,Steam Turbine,,Indonesia,200.0,,2027.0,,,1.1857086,124.474885,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G109672', 'G109673'}}"
+682,Sulsel,Hard Coal,Steam Turbine,,Indonesia,400.0,,,,,-5.7000798,119.7257667,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G109679', 'G109680'}}"
+683,Sultan Kudarat,Hard Coal,Steam Turbine,,Philippines,200.0,,,,,6.55,124.283333,,0.0,0.0,0.0,{nan},{'GCPT': {'G109685'}}
+684,Sulut,Hard Coal,Steam Turbine,,Indonesia,100.0,,2021.0,,,1.37433108,125.0854546,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G109688', 'G109687'}}"
+685,Sulut,Hard Coal,Steam Turbine,,Indonesia,100.0,,2023.0,,,0.890184,123.470106,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G113218', 'G109686'}}"
+686,Sumbagsel,Hard Coal,Steam Turbine,,Indonesia,300.0,,2024.0,,,-5.057428,103.830676,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G114208', 'G114207'}}"
+687,Sumbawa,Hard Coal,Steam Turbine,,Indonesia,100.0,,2023.0,,,-8.7479812,117.9576538,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G109691', 'G109692'}}"
+688,Sumsel,Hard Coal,Steam Turbine,,Indonesia,300.0,,,,,-2.604,103.914,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G109704', 'G109705'}}"
+689,Sumsel,Hard Coal,Steam Turbine,,Indonesia,600.0,,2027.0,,,-2.355761,103.44339,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G109703', 'G109702'}}"
+690,Sumsel,Hard Coal,Steam Turbine,,Indonesia,650.0,,2016.0,,,-2.1562529,103.7552716,,0.0,0.0,0.0,"{nan, nan, nan}","{'GCPT': {'G109701', 'G113832', 'G109700'}}"
+691,Sumsel,Hard Coal,Steam Turbine,,Indonesia,600.0,,,,,-2.75,103.833333,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G109699', 'G109698'}}"
+692,Sumsel,Hard Coal,Steam Turbine,,Indonesia,600.0,,2023.0,,,-3.47666667,103.9991667,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G109696', 'G109697'}}"
+693,Sumut,Hard Coal,Steam Turbine,,Indonesia,300.0,,2023.0,,,3.7802498,98.6369399,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G109707', 'G109706'}}"
+694,Tabalong,Lignite,Steam Turbine,,Indonesia,200.0,,2019.0,,,-2.16342691,115.4408138,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G109791', 'G109790'}}"
+695,Tabalong Wisesa,Hard Coal,Steam Turbine,,Indonesia,60.0,,2013.0,,,-2.158586,115.445925,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G109793', 'G109792'}}"
+696,Tagkawayan,Hard Coal,Steam Turbine,,Philippines,1200.0,,2024.0,,,14.0372735,122.3082583,,0.0,0.0,0.0,{nan},{'GCPT': {'G113918'}}
+697,Takalar,Hard Coal,Steam Turbine,,Indonesia,200.0,,2017.0,,,-5.6236347,119.550822,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G109863', 'G109864'}}"
+698,Tan Phuoc,Hard Coal,Steam Turbine,,Vietnam,2400.0,,,,,10.448,106.709,,0.0,0.0,0.0,"{nan, nan, nan, nan}","{'GCPT': {'G109918', 'G109917', 'G109916', 'G109919'}}"
+699,Tan Thanh,Hard Coal,Steam Turbine,,Vietnam,2400.0,,,,,10.590556,107.048056,,0.0,0.0,0.0,"{nan, nan, nan, nan}","{'GCPT': {'G109920', 'G109923', 'G109921', 'G109922'}}"
+700,Tanintharyi,Hard Coal,Steam Turbine,,Myanmar,2000.0,,,,,12.433333,98.6,,0.0,0.0,0.0,{nan},{'GCPT': {'G109945'}}
+701,Tanjung Jati,Hard Coal,Steam Turbine,,Indonesia,1320.0,,2025.0,,,-6.768519,108.6451913,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G109954', 'G109955'}}"
+702,Tanjung Pasir,Hard Coal,Steam Turbine,,Indonesia,400.0,,,,,4.110192,98.219131,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G109965', 'G109964'}}"
+703,Tarakan,Hard Coal,Steam Turbine,,Indonesia,200.0,,,,,3.3,117.633333,,0.0,0.0,0.0,{nan},{'GCPT': {'G109973'}}
+704,Tawi,Hard Coal,Steam Turbine,,Philippines,58.0,,,,,5.035054,119.9575492,,0.0,0.0,0.0,{nan},{'GCPT': {'G114103'}}
+705,Than An Giang,Hard Coal,Steam Turbine,,Vietnam,2000.0,,2029.0,,,10.5,105.166667,,0.0,0.0,0.0,{nan},{'GCPT': {'G110050'}}
+706,Than Bac Lieu,Hard Coal,Steam Turbine,,Vietnam,1200.0,,2029.0,,,9.148,105.535,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G110051', 'G110052'}}"
+707,Than Bauxit,Hard Coal,Steam Turbine,,Vietnam,30.0,,2012.0,,,11.6576687,107.7968938,,0.0,0.0,0.0,{nan},{'GCPT': {'G114167'}}
+708,Thang Long,Hard Coal,Steam Turbine,,Vietnam,600.0,,2018.0,,,21.02184,107.04815,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G110054', 'G110055'}}"
+709,Thap Sakae,Hard Coal,Steam Turbine,,Thailand,3200.0,,2019.0,,,11.5,99.621667,,0.0,0.0,0.0,"{nan, nan, nan, nan}","{'GCPT': {'G110056', 'G110057', 'G110059', 'G110058'}}"
+710,Thepha,Hard Coal,Steam Turbine,,Thailand,2200.0,,,,,6.828333,100.965,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G110079', 'G110078'}}"
+711,Therma Visayas Energy,Hard Coal,Steam Turbine,,Philippines,340.0,,2019.0,,,10.3497211,123.6035599,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G110080', 'G110081'}}"
+712,Timah South Sumatra,Hard Coal,Steam Turbine,,Indonesia,300.0,,,,,-3.5394819,103.7548438,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G110175', 'G110176'}}"
+713,Timor,Hard Coal,Steam Turbine,,Indonesia,200.0,,2022.0,,,-10.354672650000001,123.45959585,,0.0,0.0,0.0,"{nan, nan, nan, nan}","{'GCPT': {'G110178', 'G110180', 'G110181', 'G110179'}}"
+714,Tjiwa Kimia Paper Mill,Hard Coal,Steam Turbine,,Indonesia,230.0,,1992.0,,,7.436835413,112.4688023,,0.0,0.0,0.0,"{nan, nan, nan, nan}","{'GCPT': {'G114982', 'G114983', 'G114981', 'G114980'}}"
+715,Toledo City,Lignite,Steam Turbine,,Philippines,174.0,,1983.0,,,10.387293173333333,123.64154653333333,,0.0,0.0,0.0,"{nan, nan, nan}","{'GCPT': {'G110217', 'G110221', 'G114993'}}"
+716,Tonasa Cement,Hard Coal,Steam Turbine,,Indonesia,70.0,,2013.0,,,-4.816710845,119.5016842,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G110241', 'G110240'}}"
+717,Tpt Petrochemical,Hard Coal,Steam Turbine,,Thailand,55.0,,1995.0,,,12.683805,101.147078,,0.0,0.0,0.0,{nan},{'GCPT': {'G115159'}}
+718,Unnamed Malaysia Coal Projects,Hard Coal,Steam Turbine,,Malaysia,2800.0,,2031.0,,,1.88,111.58,,0.0,0.0,0.0,"{nan, nan, nan, nan}","{'GCPT': {'G115140', 'G115139', 'G115138', 'G115137'}}"
+719,Unnamed Thailand Coal Plants,Hard Coal,Steam Turbine,,Thailand,2000.0,,2033.0,,,13.75,100.483333,,0.0,0.0,0.0,{nan},{'GCPT': {'G110484'}}
+720,Van Phong,Hard Coal,Steam Turbine,,Vietnam,2640.0,,2023.0,,,12.47704,109.29244,,0.0,0.0,0.0,"{nan, nan, nan, nan}","{'GCPT': {'G110553', 'G110554', 'G110552', 'G110555'}}"
+721,Vedan Vietnam Cogeneration,Hard Coal,Steam Turbine,,Vietnam,60.0,,2015.0,,,10.66075,107.02451,,0.0,0.0,0.0,{nan},{'GCPT': {'G110053'}}
+722,Wang Sala Mill,Hard Coal,Steam Turbine,,Thailand,34.0,,1996.0,,,13.944207,99.711134,,0.0,0.0,0.0,{nan},{'GCPT': {'G110714'}}
+723,Wanxiang Nickel Indonesia,Hard Coal,Steam Turbine,,Indonesia,130.0,,2022.0,,,-2.730952,122.030621,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G115128', 'G115129'}}"
+724,Weda Bay,Hard Coal,Steam Turbine,,Indonesia,3780.0,,2020.0,,,0.47821073175,127.99019127499999,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan}","{'GCPT': {'G115272', 'G114317', 'G114896', 'G115271', 'G115269', 'G114314', 'G115364', 'G115270', 'G115273', 'G114315', 'G114316', 'G115268'}}"
+725,Xinxing Ductile Iron Pipes Co Captive,Hard Coal,Steam Turbine,,Indonesia,244.0,,2017.0,,,-1.530514,127.418975,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan}","{'GCPT': {'G114318', 'G114319', 'G114320', 'G114321', 'G114322'}}"
+726,Zamboanga,Hard Coal,Steam Turbine,,Philippines,120.0,,2026.0,,,7.003675,121.9237,,0.0,0.0,0.0,{nan},{'GCPT': {'G111523'}}
+727,Zest,Hard Coal,Steam Turbine,,Philippines,1200.0,,,,,16.0,121.0,,0.0,0.0,0.0,"{nan, nan}","{'GCPT': {'G112248', 'G112249'}}"
+728,Blawan Ijen Geothermal,Geothermal,Steam Turbine,PP,Indonesia,110.0,,2024.0,,,-7.975149999999999,114.17955,,0.0,0.0,0.0,"{nan, nan}","{'GGTPT': {'G700022', 'G700023'}}"
+729,Hululais Geothermal,Geothermal,Steam Turbine,PP,Indonesia,55.0,,,,,-3.2413,102.2782,,0.0,0.0,0.0,{nan},{'GGTPT': {'G700108'}}
+730,Karaha Geothermal,Geothermal,Steam Turbine,PP,Indonesia,30.0,,2018.0,,,-7.1477,108.0848,,0.0,0.0,0.0,{nan},{'GGTPT': {'G700124'}}
+731,Lumut Balai Geothermal,Geothermal,Steam Turbine,PP,Indonesia,110.0,,2019.0,,,-4.1943,103.6403,,0.0,0.0,0.0,"{nan, nan}","{'GGTPT': {'G700148', 'G700149'}}"
+732,Mahanagdong Geothermal Facility,Geothermal,Steam Turbine,PP,Philippines,180.0,,1997.0,,,11.130900000000002,124.66950000000001,,0.0,0.0,0.0,"{nan, nan, nan}","{'GGTPT': {'G700152', 'G700150', 'G700151'}}"
+733,Malitbog Geothermal,Geothermal,Steam Turbine,PP,Philippines,234.0,,1996.0,,,11.152499999999998,124.6492,,0.0,0.0,0.0,"{nan, nan, nan}","{'GGTPT': {'G700160', 'G700162', 'G700161'}}"
+734,Muarah Laboh Geothermal,Geothermal,Steam Turbine,PP,Indonesia,160.0,,2019.0,,,-1.6268,101.1296,,0.0,0.0,0.0,"{nan, nan}","{'GGTPT': {'G700189', 'G700188'}}"
+735,Nasulo Geothermal,Geothermal,Steam Turbine,PP,Philippines,40.0,,2014.0,,,9.2805,123.1531,,0.0,0.0,0.0,{nan},{'GGTPT': {'G700191'}}
+736,Patuha Geothermal,Geothermal,Steam Turbine,PP,Indonesia,110.0,,2014.0,,,-7.1838,107.4215,,0.0,0.0,0.0,"{nan, nan}","{'GGTPT': {'G700230', 'G700229'}}"
+737,Rantau Dedep Geothermal,Geothermal,Steam Turbine,PP,Indonesia,91.0,,2021.0,,,-4.2069,103.3857,,0.0,0.0,0.0,{nan},{'GGTPT': {'G700240'}}
+738,Sarulla Geothermal,Geothermal,Steam Turbine,PP,Indonesia,330.0,,2017.0,,,1.8202,99.0885,,0.0,0.0,0.0,"{nan, nan, nan}","{'GGTPT': {'G700258', 'G700257', 'G700256'}}"
+739,Sorik Marapi Geothermal,Geothermal,Steam Turbine,PP,Indonesia,90.0,,2019.0,,,0.7475,99.5751,,0.0,0.0,0.0,"{nan, nan}","{'GGTPT': {'G700262', 'G700261'}}"
+740,Tongonan Geothermal,Geothermal,Steam Turbine,PP,Philippines,114.0,,1983.0,,,11.1612,124.63709999999999,,0.0,0.0,0.0,"{nan, nan, nan}","{'GGTPT': {'G700296', 'G700297', 'G700298'}}"
+741,Alaminos Solar,Solar,PV,PP,Philippines,120.0,,2022.0,,,14.065,121.2464,,0.0,0.0,0.0,{nan},{'GSPT': {'G800918'}}
+742,Amphur Banglen Solar Farm,Solar,PV,PP,Thailand,60.0,,,,,13.9115,100.1664,,0.0,0.0,0.0,{nan},{'GSPT': {'G800921'}}
+743,An Giang Sao Mai Solar Farm,Solar,PV,PP,Vietnam,210.0,,2019.0,,,10.5579,104.9915,,0.0,0.0,0.0,"{nan, nan}","{'GSPT': {'G800922', 'G800923'}}"
+744,Arayat Mexico Solar Farm,Solar,PV,PP,Philippines,72.0,,2022.0,,,15.1655,120.6822,,0.0,0.0,0.0,{nan},{'GSPT': {'G800928'}}
+745,Bach Khoa Chua Solar Farm,Solar,PV,PP,Vietnam,30.0,,2020.0,,,11.5548,106.2512,,0.0,0.0,0.0,{nan},{'GSPT': {'G800939'}}
+746,Bang Pa In Solar Farm,Solar,PV,PP,Thailand,38.0,,2019.0,,,14.2394,100.5845,,0.0,0.0,0.0,{nan},{'GSPT': {'G800950'}}
+747,Banteay Meanchey Solar Farm,Solar,PV,PP,Cambodia,30.0,,2020.0,,,13.6304,103.0717,,0.0,0.0,0.0,{nan},{'GSPT': {'G810867'}}
+748,Baras Global Solar Farm,Solar,PV,PP,Philippines,115.0,,2022.0,,,14.5367,121.2742,,0.0,0.0,0.0,{nan},{'GSPT': {'G810938'}}
+749,Bataan Solar,Solar,PV,PP,Philippines,100.0,,2021.0,,,14.8302,120.5086,,0.0,0.0,0.0,"{nan, nan, nan}","{'GSPT': {'G800956', 'G800955', 'G800954'}}"
+750,Battambang Solar Farm,Solar,PV,PP,Cambodia,60.0,,2021.0,,,13.2601,103.0876,,0.0,0.0,0.0,{nan},{'GSPT': {'G800960'}}
+751,Bau Ngu Lake Solar Farm,Solar,PV,PP,Vietnam,63.0,,2019.0,,,11.8422,108.9035,,0.0,0.0,0.0,{nan},{'GSPT': {'G800961'}}
+752,Bau Zon Solar Farm,Solar,PV,PP,Vietnam,25.0,,2020.0,,,11.5624,108.8804,,0.0,0.0,0.0,{nan},{'GSPT': {'G800962'}}
+753,Binh An Solar Farm,Solar,PV,PP,Vietnam,50.0,,2019.0,,,11.2637,108.3599,,0.0,0.0,0.0,{nan},{'GSPT': {'G800970'}}
+754,Binh Thuan Solar Farm,Solar,PV,PP,Vietnam,33.0,,2019.0,,,11.2938,108.7199,,0.0,0.0,0.0,{nan},{'GSPT': {'G800972'}}
+755,Bp Solar Farm,Solar,PV,PP,Vietnam,49.0,,2019.0,,,11.5624,108.8804,,0.0,0.0,0.0,{nan},{'GSPT': {'G800979'}}
+756,Bukit Selambau Solar Farm,Solar,PV,PP,Malaysia,50.0,,2020.0,,,5.67235,100.624,,0.0,0.0,0.0,"{nan, nan}","{'GSPT': {'G801295', 'G800981'}}"
+757,Bulacan Solar,Solar,PV,PP,Philippines,22.0,,2022.0,,,15.072,120.9496,,0.0,0.0,0.0,{nan},{'GSPT': {'G800984'}}
+758,Cadiz Solar,Solar,PV,PP,Philippines,132.0,,2016.0,,,10.9247,123.2973,,0.0,0.0,0.0,{nan},{'GSPT': {'G800989'}}
+759,Cam Hoa Solar Farm,Solar,PV,PP,Vietnam,79.0,,2019.0,,,18.1901,106.0101,,0.0,0.0,0.0,"{nan, nan}","{'GSPT': {'G800996', 'G800997'}}"
+760,Cambodia National Solar Park,Solar,PV,PP,Cambodia,60.0,,2022.0,,,11.7916,104.4047,,0.0,0.0,0.0,{nan},{'GSPT': {'G800999'}}
+761,Cat Hiep Solar Farm,Solar,PV,PP,Vietnam,50.0,,2019.0,,,14.0617,109.067,,0.0,0.0,0.0,{nan},{'GSPT': {'G801002'}}
+762,Cayanga Bugallon Solar,Solar,PV,PP,Philippines,94.0,,2022.0,,,16.0257,120.1465,,0.0,0.0,0.0,{nan},{'GSPT': {'G801004'}}
+763,Chau Duc Industrial Park Solar Farm,Solar,PV,PP,Vietnam,100.0,,,,,10.5536,107.3279,,0.0,0.0,0.0,{nan},{'GSPT': {'G811079'}}
+764,Chu Ngoc Solar Farm,Solar,PV,PP,Vietnam,32.0,,2022.0,,,13.1727,108.7243,,0.0,0.0,0.0,{nan},{'GSPT': {'G801021'}}
+765,Chuping Hanwha Solar Farm,Solar,PV,PP,Malaysia,30.0,,2020.0,,,6.5415,100.2967,,0.0,0.0,0.0,{nan},{'GSPT': {'G801025'}}
+766,Cirata Reservoir Solar Farm,Solar,PV,PP,Indonesia,145.0,,2022.0,,,-6.4511,108.1781,,0.0,0.0,0.0,{nan},{'GSPT': {'G801026'}}
+767,Coara Marang Solar Farm,Solar,PV,PP,Malaysia,116.0,,2022.0,,,4.9776,103.3195,,0.0,0.0,0.0,{nan},{'GSPT': {'G801031'}}
+768,Cu Jut Solar Farm,Solar,PV,PP,Vietnam,63.0,,2019.0,,,12.5796,107.893,,0.0,0.0,0.0,{nan},{'GSPT': {'G801040'}}
+769,Da Bac Solar Farm,Solar,PV,PP,Vietnam,220.0,,2019.0,,,10.5802,107.277,,0.0,0.0,0.0,"{nan, nan, nan, nan}","{'GSPT': {'G801046', 'G801045', 'G801043', 'G801044'}}"
+770,Da Mi Solar Farm,Solar,PV,PP,Vietnam,59.0,,2019.0,,,11.2494,107.8434,,0.0,0.0,0.0,{nan},{'GSPT': {'G801047'}}
+771,Dam Tra Solar Farm,Solar,PV,PP,Vietnam,50.0,,2020.0,,,14.2907,109.1276,,0.0,0.0,0.0,{nan},{'GSPT': {'G801055'}}
+772,Dau Tieng Solar Farm,Solar,PV,PP,Vietnam,60.0,,2019.0,,,11.4804,106.1793,,0.0,0.0,0.0,{nan},{'GSPT': {'G801066'}}
+773,Dau Tieng Solar Farm,Solar,PV,PP,Vietnam,60.0,,2019.0,,,11.4493,106.2328,,0.0,0.0,0.0,{nan},{'GSPT': {'G801065'}}
+774,Dien Luc Mien Trung Solar Farm,Solar,PV,PP,Vietnam,75.0,,2020.0,,,12.0743,109.073,,0.0,0.0,0.0,"{nan, nan}","{'GSPT': {'G801075', 'G801722'}}"
+775,Duc Hue Solar Farm,Solar,PV,PP,Vietnam,49.0,,2022.0,,,10.7529,106.0586,,0.0,0.0,0.0,{nan},{'GSPT': {'G811085'}}
+776,Duc Hue Ttc Solar Farm,Solar,PV,PP,Vietnam,49.0,,2019.0,,,10.9147,106.2701,,0.0,0.0,0.0,{nan},{'GSPT': {'G801083'}}
+777,Duyen Hai Tra Vinh Solar Farm,Solar,PV,PP,Vietnam,140.0,,2019.0,,,9.5901,106.5046,,0.0,0.0,0.0,{nan},{'GSPT': {'G801084'}}
+778,Ea Sup Xuan Thien Solar Farm,Solar,PV,PP,Vietnam,831.0,,2020.0,,,13.2988,107.7299,,0.0,0.0,0.0,{nan},{'GSPT': {'G801085'}}
+779,Eco Seido Solar Farm,Solar,PV,PP,Vietnam,100.0,,,,,11.2311,108.6784,,0.0,0.0,0.0,"{nan, nan, nan}","{'GSPT': {'G801089', 'G801091', 'G801090'}}"
+780,Fujiwara Solar Farm,Solar,PV,PP,Vietnam,50.0,,2019.0,,,13.7761,109.2325,,0.0,0.0,0.0,{nan},{'GSPT': {'G801106'}}
+781,Gia Hoet Lake Solar Farm,Solar,PV,PP,Vietnam,35.0,,2021.0,,,10.698,107.2793,,0.0,0.0,0.0,{nan},{'GSPT': {'G801122'}}
+782,Gigasol Solar,Solar,PV,PP,Philippines,63.0,,2022.0,,,15.4412,119.9851,,0.0,0.0,0.0,{nan},{'GSPT': {'G801123'}}
+783,Gio Hai Solar Farm,Solar,PV,PP,Vietnam,50.0,,2019.0,,,16.7442,106.9291,,0.0,0.0,0.0,{nan},{'GSPT': {'G801124'}}
+784,Gio Thanh Solar Farm,Solar,PV,PP,Vietnam,100.0,,2019.0,,,16.9122,107.045,,0.0,0.0,0.0,"{nan, nan}","{'GSPT': {'G801487', 'G801125'}}"
+785,Gio Thanh Solar Farm,Solar,PV,PP,Vietnam,50.0,,2020.0,,,16.9238,107.155,,0.0,0.0,0.0,{nan},{'GSPT': {'G801126'}}
+786,Gurun Solar Farm,Solar,PV,PP,Malaysia,65.0,,2018.0,,,5.8642,100.5352,,0.0,0.0,0.0,{nan},{'GSPT': {'G801132'}}
+787,Ha Tinh Solar Farm,Solar,PV,PP,Vietnam,50.0,,2021.0,,,18.3825,105.9234,,0.0,0.0,0.0,{nan},{'GSPT': {'G811088'}}
+788,Hacom Solar Farm,Solar,PV,PP,Vietnam,308.0,,2019.0,,,11.451033333333335,108.88691666666666,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan, nan}","{'GSPT': {'G801135', 'G801698', 'G801136', 'G801468', 'G801374', 'G801466'}}"
+789,Ham Phu Solar Farm,Solar,PV,PP,Vietnam,49.0,,2019.0,,,11.0151,108.1607,,0.0,0.0,0.0,{nan},{'GSPT': {'G801140'}}
+790,Hau Giang Solar Farm,Solar,PV,PP,Vietnam,29.0,,2021.0,,,9.7605,105.6199,,0.0,0.0,0.0,{nan},{'GSPT': {'G801143'}}
+791,Hoa Hoi Solar Farm,Solar,PV,PP,Vietnam,268.0,,2020.0,,,13.0698,109.0998,,0.0,0.0,0.0,{nan},{'GSPT': {'G801154'}}
+792,Hong Liem Solar Farm,Solar,PV,PP,Vietnam,50.0,,2020.0,,,11.1551,108.1005,,0.0,0.0,0.0,{nan},{'GSPT': {'G801156'}}
+793,Hong Phong Solar Farm,Solar,PV,PP,Vietnam,396.0,,2019.0,,,11.2637,108.3599,,0.0,0.0,0.0,"{nan, nan, nan, nan}","{'GSPT': {'G801158', 'G801160', 'G801159', 'G801161'}}"
+794,Jang Pong Solar Farm,Solar,PV,PP,Vietnam,20.0,,,,,12.8789,107.7124,,0.0,0.0,0.0,{nan},{'GSPT': {'G801186'}}
+795,Kampong Speu Solar Farm,Solar,PV,PP,Cambodia,100.0,,2020.0,,,11.8245,104.7411,,0.0,0.0,0.0,"{nan, nan}","{'GSPT': {'G801201', 'G801200'}}"
+796,Khanh Hoa Ami Solar Farm,Solar,PV,PP,Vietnam,50.0,,2019.0,,,12.0743,109.073,,0.0,0.0,0.0,{nan},{'GSPT': {'G801223'}}
+797,Kn Ia Ly Gia Lai Solar,Solar,PV,PP,Vietnam,500.0,,2023.0,,,14.2317,107.8389,,0.0,0.0,0.0,{nan},{'GSPT': {'G811091'}}
+798,Kn Serepok Floating Solar,Solar,PV,PP,Vietnam,380.0,,,,,12.7238,107.9203,,0.0,0.0,0.0,"{nan, nan}","{'GSPT': {'G811093', 'G811094'}}"
+799,Krong Buk Ha Solar,Solar,PV,PP,Vietnam,30.0,,2019.0,,,12.7098,108.3093,,0.0,0.0,0.0,{nan},{'GSPT': {'G801241'}}
+800,Krong Pa Solar Farm,Solar,PV,PP,Vietnam,110.0,,2018.0,,,13.23255,108.66905,,0.0,0.0,0.0,"{nan, nan}","{'GSPT': {'G801243', 'G801242'}}"
+801,Kuala Ketil Solar Farm,Solar,PV,PP,Malaysia,50.0,,2019.0,,,5.5888,100.6487,,0.0,0.0,0.0,{nan},{'GSPT': {'G801244'}}
+802,Le Thuy Dohwa Solar Farm,Solar,PV,PP,Vietnam,50.0,,2020.0,,,17.2349,106.8668,,0.0,0.0,0.0,{nan},{'GSPT': {'G801275'}}
+803,Loc Ninh Solar Farm,Solar,PV,PP,Vietnam,1350.0,,2020.0,,,11.823299999999998,106.60520000000001,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan, nan}","{'GSPT': {'G801281', 'G801279', 'G801282', 'G801773', 'G801278', 'G801280'}}"
+804,Long An Bcg Cme Solar Farm,Solar,PV,PP,Vietnam,208.0,,2019.0,,,10.9287,106.8773,,0.0,0.0,0.0,"{nan, nan, nan}","{'GSPT': {'G801285', 'G801284', 'G800949'}}"
+805,Long An Europlast Solar Farm,Solar,PV,PP,Vietnam,50.0,,2019.0,,,10.9399,106.2528,,0.0,0.0,0.0,{nan},{'GSPT': {'G801286'}}
+806,Long Son Solar Farm,Solar,PV,PP,Vietnam,170.0,,2021.0,,,12.5481,109.0621,,0.0,0.0,0.0,{nan},{'GSPT': {'G801287'}}
+807,Lumbangan Ground Mounted Solar,Solar,PV,PP,Philippines,72.0,,2022.0,,,14.0518,120.6676,,0.0,0.0,0.0,{nan},{'GSPT': {'G801297'}}
+808,Machang Solar Farm,Solar,PV,PP,Malaysia,45.0,,2022.0,,,5.979,100.5529,,0.0,0.0,0.0,{nan},{'GSPT': {'G810911'}}
+809,Minbu Solar Farm,Solar,PV,PP,Myanmar,150.0,,2019.0,,,20.049866666666667,94.68453333333333,,0.0,0.0,0.0,"{nan, nan, nan}","{'GSPT': {'G801324', 'G801325', 'G801326'}}"
+810,Minut Solar Farm,Solar,PV,PP,Indonesia,21.0,,2019.0,,,1.6587,125.0964,,0.0,0.0,0.0,{nan},{'GSPT': {'G810872'}}
+811,Mitsui Solar Farm,Solar,PV,PP,Philippines,115.0,,2022.0,,,8.6566,123.4217,,0.0,0.0,0.0,{nan},{'GSPT': {'G801332'}}
+812,Monorom Solar Farm,Solar,PV,PP,Cambodia,20.0,,2022.0,,,11.0488,105.8806,,0.0,0.0,0.0,{nan},{'GSPT': {'G801343'}}
+813,Mui Ne Solar Farm,Solar,PV,PP,Vietnam,40.0,,2019.0,,,10.8143,107.895,,0.0,0.0,0.0,{nan},{'GSPT': {'G801345'}}
+814,Mukim Tanjung Solar Farm,Solar,PV,PP,Malaysia,50.0,,2018.0,,,2.7814,101.6111,,0.0,0.0,0.0,{nan},{'GSPT': {'G801347'}}
+815,My Son Solar Farm,Solar,PV,PP,Vietnam,113.0,,2020.0,,,11.7107,108.8009,,0.0,0.0,0.0,"{nan, nan}","{'GSPT': {'G801350', 'G801351'}}"
+816,Naic Solar Farm,Solar,PV,PP,Philippines,25.0,,,,,14.3318,120.7703,,0.0,0.0,0.0,{nan},{'GSPT': {'G801361'}}
+817,Ngoc Lac Solar Farm,Solar,PV,PP,Vietnam,90.0,,2022.0,,,19.9665,105.3981,,0.0,0.0,0.0,{nan},{'GSPT': {'G801373'}}
+818,Nhon Hai Solar Farm,Solar,PV,PP,Vietnam,35.0,,2020.0,,,11.6054,109.0957,,0.0,0.0,0.0,{nan},{'GSPT': {'G801375'}}
+819,Ninh Phuoc Ha Do Solar Farm,Solar,PV,PP,Vietnam,50.0,,2020.0,,,11.5624,108.8804,,0.0,0.0,0.0,{nan},{'GSPT': {'G801381'}}
+820,Ninh Phuoc Solar Farm,Solar,PV,PP,Vietnam,50.0,,2019.0,,,11.5624,108.8804,,0.0,0.0,0.0,{nan},{'GSPT': {'G801380'}}
+821,Ninh Thuan Bim Solar Farm,Solar,PV,PP,Vietnam,434.0,,2019.0,,,11.6063,109.1463,,0.0,0.0,0.0,"{nan, nan, nan, nan}","{'GSPT': {'G801384', 'G801385', 'G801383', 'G801387'}}"
+822,Ninh Thuan Gelex Solar Farm,Solar,PV,PP,Vietnam,50.0,,2019.0,,,11.4509,108.8861,,0.0,0.0,0.0,{nan},{'GSPT': {'G801386'}}
+823,Ninh Thuan Sinenergy Solar Farm,Solar,PV,PP,Vietnam,50.0,,2019.0,,,11.5624,108.8804,,0.0,0.0,0.0,{nan},{'GSPT': {'G801389'}}
+824,Ninh Thuan Tasco Solar Farm,Solar,PV,PP,Vietnam,111.0,,2019.0,,,16.4648,107.5903,,0.0,0.0,0.0,"{nan, nan}","{'GSPT': {'G801382', 'G801691'}}"
+825,Nueva Ecija Solar Farm,Solar,PV,PP,Philippines,50.0,,2022.0,,,15.3766,121.0147,,0.0,0.0,0.0,{nan},{'GSPT': {'G810970'}}
+826,Nui Mot Lake Solar Farm,Solar,PV,PP,Vietnam,50.0,,2020.0,,,11.4509,108.8861,,0.0,0.0,0.0,{nan},{'GSPT': {'G801399'}}
+827,Ormoc Solar,Solar,PV,PP,Philippines,30.0,,2015.0,,,11.0868,124.6342,,0.0,0.0,0.0,{nan},{'GSPT': {'G801416'}}
+828,Palo Solar,Solar,PV,PP,Philippines,50.0,,2016.0,,,11.1368,124.9173,,0.0,0.0,0.0,{nan},{'GSPT': {'G801435'}}
+829,Pekan Hanwha Energy Solar Farm,Solar,PV,PP,Malaysia,145.0,,,,,3.5429,103.3984,,0.0,0.0,0.0,"{nan, nan}","{'GSPT': {'G801448', 'G801450'}}"
+830,Phan Lam Solar Farm,Solar,PV,PP,Vietnam,96.0,,,,,11.2637,108.3599,,0.0,0.0,0.0,"{nan, nan}","{'GSPT': {'G801453', 'G801626'}}"
+831,Phan Lam Solar Farm,Solar,PV,PP,Vietnam,37.0,,2019.0,,,11.411,108.3625,,0.0,0.0,0.0,{nan},{'GSPT': {'G801452'}}
+832,Phong Dien Solar Farm,Solar,PV,PP,Vietnam,50.0,,2020.0,,,16.6115,107.3998,,0.0,0.0,0.0,{nan},{'GSPT': {'G801457'}}
+833,Phong Dien Solar Farm,Solar,PV,PP,Vietnam,48.0,,2018.0,,,16.4283,107.564,,0.0,0.0,0.0,{nan},{'GSPT': {'G801458'}}
+834,Phong Dien Ttc Solar Farm,Solar,PV,PP,Vietnam,35.0,,2018.0,,,16.3011,107.7974,,0.0,0.0,0.0,{nan},{'GSPT': {'G801455'}}
+835,Phong Phu Solar Farm,Solar,PV,PP,Vietnam,42.0,,2019.0,,,11.3405,108.7446,,0.0,0.0,0.0,{nan},{'GSPT': {'G801459'}}
+836,Phu My Solar Farm,Solar,PV,PP,Vietnam,476.0,,2020.0,,,14.2449,109.1018,,0.0,0.0,0.0,"{nan, nan, nan, nan}","{'GSPT': {'G801461', 'G801348', 'G801460', 'G811106'}}"
+837,Phu Yen Europlast Solar Farm,Solar,PV,PP,Vietnam,50.0,,2019.0,,,12.9163,109.1637,,0.0,0.0,0.0,{nan},{'GSPT': {'G801462'}}
+838,Phu Yen Solar Farm,Solar,PV,PP,Vietnam,257.0,,2020.0,,,13.0615,109.0961,,0.0,0.0,0.0,{nan},{'GSPT': {'G801463'}}
+839,Phuoc Thai Solar Farm,Solar,PV,PP,Vietnam,280.0,,2019.0,,,11.5624,108.88039999999998,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan}","{'GSPT': {'G801464', 'G801471', 'G801469', 'G801470', 'G801465'}}"
+840,Phuoc Trung Solar Farm,Solar,PV,PP,Vietnam,40.0,,,,,11.594,108.7987,,0.0,0.0,0.0,{nan},{'GSPT': {'G811110'}}
+841,Pulau Burung Solar Farm,Solar,PV,PP,Malaysia,20.0,,2018.0,,,5.196,100.4285,,0.0,0.0,0.0,{nan},{'GSPT': {'G801479'}}
+842,Pursat Solar Farm,Solar,PV,PP,Cambodia,60.0,,2020.0,,,12.5287,104.2101,,0.0,0.0,0.0,"{nan, nan}","{'GSPT': {'G801481', 'G801480'}}"
+843,Redsol Solar Farm,Solar,PV,PP,Malaysia,47.0,,2020.0,,,5.0477,100.647,,0.0,0.0,0.0,{nan},{'GSPT': {'G801492'}}
+844,San Carlos Solar,Solar,PV,PP,Philippines,45.0,,2014.0,,,10.49855,123.42865,,0.0,0.0,0.0,"{nan, nan}","{'GSPT': {'G801517', 'G801518'}}"
+845,San Marcelino Solar,Solar,PV,PP,Philippines,400.0,,2025.0,,,15.0279,120.2781,,0.0,0.0,0.0,{nan},{'GSPT': {'G810988'}}
+846,Santa Rita Solar,Solar,PV,PP,Philippines,62.0,,,,,14.824,120.3625,,0.0,0.0,0.0,{nan},{'GSPT': {'G810990'}}
+847,Santa Rosa Solar,Solar,PV,PP,Philippines,60.0,,,,,15.3403,120.6764,,0.0,0.0,0.0,{nan},{'GSPT': {'G801537'}}
+848,Santos Solar,Solar,PV,PP,Philippines,25.0,,2019.0,,,6.0839,125.1533,,0.0,0.0,0.0,{nan},{'GSPT': {'G801540'}}
+849,Sapp Solar Farm,Solar,PV,PP,Laos,64.0,,2023.0,,,14.9457,106.4725,,0.0,0.0,0.0,{nan},{'GSPT': {'G801541'}}
+850,Se San Solar,Solar,PV,PP,Vietnam,49.0,,2020.0,,,14.0422,107.4616,,0.0,0.0,0.0,{nan},{'GSPT': {'G811111'}}
+851,Se San Solar Farm,Solar,PV,PP,Vietnam,49.0,,2020.0,,,14.3615,108.0039,,0.0,0.0,0.0,{nan},{'GSPT': {'G801550'}}
+852,Serie Saophoan Solar Farm,Solar,PV,PP,Cambodia,39.0,,2020.0,,,13.6304,103.0717,,0.0,0.0,0.0,{nan},{'GSPT': {'G801557'}}
+853,Sermsang Solar Farm,Solar,PV,PP,Thailand,40.0,,2015.0,,,15.0265,100.8089,,0.0,0.0,0.0,{nan},{'GSPT': {'G801558'}}
+854,Sik Solar Farm,Solar,PV,PP,Malaysia,30.0,,2020.0,,,5.8189,100.7443,,0.0,0.0,0.0,{nan},{'GSPT': {'G801588'}}
+855,Sirindhorn Reservoir Solar Farm,Solar,PV,PP,Thailand,45.0,,2021.0,,,15.1997,105.4437,,0.0,0.0,0.0,{nan},{'GSPT': {'G801594'}}
+856,Son My Solar Farm,Solar,PV,PP,Vietnam,50.0,,2019.0,,,10.6587,107.6686,,0.0,0.0,0.0,{nan},{'GSPT': {'G801620'}}
+857,Sp Infra Solar Farm,Solar,PV,PP,Vietnam,50.0,,2019.0,,,11.5624,108.8804,,0.0,0.0,0.0,{nan},{'GSPT': {'G801631'}}
+858,Srepok Solar Farm,Solar,PV,PP,Vietnam,50.0,,2019.0,,,12.8789,107.7124,,0.0,0.0,0.0,{nan},{'GSPT': {'G801632'}}
+859,Subic New Pv Solar,Solar,PV,PP,Philippines,100.0,,2019.0,,,14.8089,120.364,,0.0,0.0,0.0,{nan},{'GSPT': {'G801634'}}
+860,Sungai Petani Solar Farm,Solar,PV,PP,Malaysia,29.0,,2018.0,,,5.6135,100.4524,,0.0,0.0,0.0,{nan},{'GSPT': {'G801642'}}
+861,Sungai Siput Solar Farm,Solar,PV,PP,Malaysia,49.0,,2019.0,,,4.8714,101.0774,,0.0,0.0,0.0,{nan},{'GSPT': {'G801643'}}
+862,Suria Sungai Petani Solar Farm,Solar,PV,PP,Malaysia,116.0,,,,,5.6503,100.6094,,0.0,0.0,0.0,{nan},{'GSPT': {'G801647'}}
+863,Tam Bo Lake Solar Farm,Solar,PV,PP,Vietnam,35.0,,2021.0,,,10.7011,107.2687,,0.0,0.0,0.0,{nan},{'GSPT': {'G801671'}}
+864,Tarlac Solar,Solar,PV,PP,Philippines,50.0,,2016.0,,,15.4482,120.6428,,0.0,0.0,0.0,{nan},{'GSPT': {'G801679'}}
+865,Tarlac Solar Farm,Solar,PV,PP,Philippines,150.0,,2019.0,,,16.6422,121.3149,,0.0,0.0,0.0,{nan},{'GSPT': {'G811000'}}
+866,Tay Ninh Hcg Solar Farm,Solar,PV,PP,Vietnam,50.0,,,,,11.1288,106.1413,,0.0,0.0,0.0,{nan},{'GSPT': {'G801682'}}
+867,Tengeh Resevoir Solar Farm,Solar,PV,PP,Singapore,60.0,,2021.0,,,1.3493,103.6395,,0.0,0.0,0.0,{nan},{'GSPT': {'G801686'}}
+868,Terasu Solar Farm,Solar,PV,PP,Philippines,40.0,,,,,5.3783,120.6129,,0.0,0.0,0.0,{nan},{'GSPT': {'G811001'}}
+869,Thac Mo Solar Farm,Solar,PV,PP,Vietnam,50.0,,2020.0,,,11.8331,106.9873,,0.0,0.0,0.0,{nan},{'GSPT': {'G801688'}}
+870,Thanh Hoa Bcg Solar Farm,Solar,PV,PP,Vietnam,100.0,,2019.0,,,10.9287,106.8773,,0.0,0.0,0.0,{nan},{'GSPT': {'G801689'}}
+871,Thapyaywa Cpe Solar Farm,Solar,PV,PP,Myanmar,30.0,,2021.0,,,20.7925,95.8189,,0.0,0.0,0.0,{nan},{'GSPT': {'G810916'}}
+872,Thien Tan Solar,Solar,PV,PP,Vietnam,250.0,,2020.0,,,11.601,108.801,,0.0,0.0,0.0,"{nan, nan, nan}","{'GSPT': {'G811116', 'G811118', 'G811117'}}"
+873,Thinh Long Solar Farm,Solar,PV,PP,Vietnam,50.0,,2019.0,,,12.9682,109.0941,,0.0,0.0,0.0,{nan},{'GSPT': {'G801699'}}
+874,Thuan Nam Duc Long Solar Farm,Solar,PV,PP,Vietnam,50.0,,2020.0,,,12.2544,109.1953,,0.0,0.0,0.0,{nan},{'GSPT': {'G801707'}}
+875,Tinh Bien Sao Mai Solar Farm,Solar,PV,PP,Vietnam,210.0,,2019.0,,,10.5579,104.9915,,0.0,0.0,0.0,"{nan, nan}","{'GSPT': {'G801710', 'G801709'}}"
+876,Toek Phos Solar Farm,Solar,PV,PP,Cambodia,60.0,,2020.0,,,13.5066,104.8694,,0.0,0.0,0.0,{nan},{'GSPT': {'G801711'}}
+877,Tri Viet Solar Farm,Solar,PV,PP,Vietnam,30.0,,2019.0,,,11.5802,106.3028,,0.0,0.0,0.0,{nan},{'GSPT': {'G801719'}}
+878,Trung Nam Solar Farm,Solar,PV,PP,Vietnam,255.0,,2019.0,,,11.7439,109.0589,,0.0,0.0,0.0,{nan},{'GSPT': {'G801721'}}
+879,Ttc No Solar Farm,Solar,PV,PP,Vietnam,119.0,,2019.0,,,11.0311,106.3618,,0.0,0.0,0.0,"{nan, nan}","{'GSPT': {'G801725', 'G801724'}}"
+880,Ttciz Solar Farm,Solar,PV,PP,Vietnam,119.0,,2019.0,,,11.3765,106.1286,,0.0,0.0,0.0,"{nan, nan}","{'GSPT': {'G801727', 'G801726'}}"
+881,Ubon Ratchathani Solar Farm,Solar,PV,PP,Thailand,59.0,,2021.0,,,14.4492,105.0427,,0.0,0.0,0.0,{nan},{'GSPT': {'G801734'}}
+882,Uitm Solar Farm,Solar,PV,PP,Malaysia,61.0,,2019.0,,,3.7136,103.0817,,0.0,0.0,0.0,{nan},{'GSPT': {'G801735'}}
+883,Uitm Solar Farm,Solar,PV,PP,Malaysia,31.0,,2020.0,,,1.5283,103.876,,0.0,0.0,0.0,{nan},{'GSPT': {'G801736'}}
+884,Van Giao Solar Farm,Solar,PV,PP,Vietnam,100.0,,2019.0,,,10.5922,104.9583,,0.0,0.0,0.0,"{nan, nan}","{'GSPT': {'G801742', 'G801743'}}"
+885,Van Ninh Kn Solar Farm,Solar,PV,PP,Vietnam,100.0,,2020.0,,,12.7157,109.1866,,0.0,0.0,0.0,{nan},{'GSPT': {'G801744'}}
+886,Vietnam Solar Park,Solar,PV,PP,Vietnam,1025.0,,2019.0,,,10.764000000000001,106.3157,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan}","{'GSPT': {'G801758', 'G801753', 'G801748', 'G801747', 'G801752', 'G801757', 'G801754', 'G801751', 'G801755', 'G801750', 'G801749', 'G801756'}}"
+887,Vinh Hao Solar Farm,Solar,PV,PP,Vietnam,89.0,,2019.0,,,11.302900000000001,108.74565000000001,,0.0,0.0,0.0,"{nan, nan}","{'GSPT': {'G801759', 'G811123'}}"
+888,Vinh Long Vneco Solar Farm,Solar,PV,PP,Vietnam,49.0,,2020.0,,,9.7705,106.3564,,0.0,0.0,0.0,{nan},{'GSPT': {'G801760'}}
+889,Vinh Tan Solar Farm,Solar,PV,PP,Vietnam,43.0,,2019.0,,,11.317,108.8098,,0.0,0.0,0.0,{nan},{'GSPT': {'G801761'}}
+890,Xuan Tho Solar Farm,Solar,PV,PP,Vietnam,100.0,,2019.0,,,13.4594,109.2208,,0.0,0.0,0.0,"{nan, nan}","{'GSPT': {'G801775', 'G801774'}}"
+891,Zec Solar Farm,Solar,PV,PP,Malaysia,29.0,,2019.0,,,1.6711,103.7404,,0.0,0.0,0.0,{nan},{'GSPT': {'G801793'}}
+892,Bac Lieu Kosy Offshore Wind Farm,Wind,offshore hard mount,PP,Vietnam,41.0,,2021.0,,,9.1718,105.671,,0.0,0.0,0.0,{nan},{'GWPT': {'G901412'}}
+893,Balaoi Caunayan Wind Farm,Wind,onshore,PP,Philippines,160.0,,2022.0,,,16.0417,120.3418,,0.0,0.0,0.0,{nan},{'GWPT': {'G901214'}}
+894,Ben Tre Binh Dai Offshore Wind Farm,Wind,offshore hard mount,PP,Vietnam,49.0,,,,,10.1507,106.801,,0.0,0.0,0.0,{nan},{'GWPT': {'G900990'}}
+895,Ben Tre Binh Dai Offshore Wind Farm,Wind,offshore hard mount,PP,Vietnam,79.0,,2022.0,,,10.1025,106.80600000000001,,0.0,0.0,0.0,"{nan, nan}","{'GWPT': {'G900989', 'G900988'}}"
+896,Ben Tre Nexif Energy Offshore Wind Farm,Wind,offshore hard mount,PP,Vietnam,30.0,,2020.0,,,9.8301,106.711,,0.0,0.0,0.0,{nan},{'GWPT': {'G901000'}}
+897,Ben Tre Offshore Wind Farm,Wind,offshore hard mount,PP,Vietnam,29.0,,2021.0,,,9.9742,106.681,,0.0,0.0,0.0,{nan},{'GWPT': {'G901635'}}
+898,Ben Tre Thanh Hai Offshore Wind Farm,Wind,offshore hard mount,PP,Vietnam,64.0,,2022.0,,,9.92,106.721,,0.0,0.0,0.0,"{nan, nan}","{'GWPT': {'G901178', 'G901184'}}"
+899,Burgos Wind,Wind,onshore,PP,Philippines,150.0,,2014.0,,,18.5339,120.6479,,0.0,0.0,0.0,"{nan, nan}","{'GWPT': {'G920820', 'G920821'}}"
+900,Ca Mau Wind Farm,Wind,offshore hard mount,PP,Vietnam,352.0,,2022.0,,,8.5377,105.2491,,0.0,0.0,0.0,"{nan, nan, nan, nan}","{'GWPT': {'G901559', 'G901560', 'G901562', 'G901561'}}"
+901,Caparispisan Wind Farm,Wind,onshore,PP,Philippines,81.0,,2014.0,,,18.6148,120.8051,,0.0,0.0,0.0,{nan},{'GWPT': {'G901006'}}
+902,Cau Dat Wind Farm,Wind,onshore,PP,Vietnam,50.0,,,,,11.8845,108.5511,,0.0,0.0,0.0,{nan},{'GWPT': {'G900914'}}
+903,Chaiyaphum Ecgo Wind Farm,Wind,onshore,PP,Thailand,80.0,,2016.0,,,15.5992,101.5087,,0.0,0.0,0.0,{nan},{'GWPT': {'G901030'}}
+904,Chinh Thang Wind Farm,Wind,onshore,PP,Vietnam,282.0,,2021.0,,,11.6063,109.1463,,0.0,0.0,0.0,"{nan, nan, nan, nan}","{'GWPT': {'G901667', 'G901347', 'G900912', 'G900832'}}"
+905,Chu Pu Wind Farm,Wind,onshore,PP,Vietnam,200.0,,,,,13.7964,108.2608,,0.0,0.0,0.0,{nan},{'GWPT': {'G901504'}}
+906,Chu Se Wind Farm,Wind,onshore,PP,Vietnam,700.0,,,,,12.6874,108.0549,,0.0,0.0,0.0,{nan},{'GWPT': {'G901647'}}
+907,Cu An Wind Farm,Wind,onshore,PP,Vietnam,200.0,,,,,13.9569,107.9828,,0.0,0.0,0.0,{nan},{'GWPT': {'G901648'}}
+908,Dai Phong Wind Farm,Wind,onshore,PP,Vietnam,40.0,,2019.0,,,10.9797,108.297,,0.0,0.0,0.0,"{nan, nan}","{'GWPT': {'G901649', 'G901650'}}"
+909,Dam Nai Wind Farm,Wind,onshore,PP,Vietnam,34.0,,2018.0,,,11.6685,109.0455,,0.0,0.0,0.0,{nan},{'GWPT': {'G901203'}}
+910,Dam Nai Wind Farm,Wind,onshore,PP,Vietnam,39.0,,2018.0,,,11.6063,109.1463,,0.0,0.0,0.0,{nan},{'GWPT': {'G901204'}}
+911,Dong Hai Offshore Wind Farm,Wind,offshore mount unknown,PP,Vietnam,100.0,,2021.0,,,9.101,105.601,,0.0,0.0,0.0,"{nan, nan}","{'GWPT': {'G901631', 'G901630'}}"
+912,Dong Hai Tra Vinh Offshore Wind Farm,Wind,offshore hard mount,PP,Vietnam,100.0,,2021.0,,,9.4901,106.4801,,0.0,0.0,0.0,{nan},{'GWPT': {'G901521'}}
+913,Gelex Wind Farm,Wind,onshore,PP,Vietnam,87.0,,2021.0,,,16.7044,106.7341,,0.0,0.0,0.0,"{nan, nan, nan}","{'GWPT': {'G921064', 'G921063', 'G921065'}}"
+914,Gia Lai Wind Farm,Wind,onshore,PP,Vietnam,100.0,,2021.0,,,13.8854,108.0441,,0.0,0.0,0.0,"{nan, nan}","{'GWPT': {'G901491', 'G901490'}}"
+915,Had Kanghan Wind Farm,Wind,onshore,PP,Thailand,45.0,,2017.0,,,8.0363,100.2814,,0.0,0.0,0.0,{nan},{'GWPT': {'G901033'}}
+916,Had Kanghan Wind Farm,Wind,onshore,PP,Thailand,36.0,,2017.0,,,7.7627,100.3217,,0.0,0.0,0.0,{nan},{'GWPT': {'G901032'}}
+917,Had Kanghan Wind Farm,Wind,onshore,PP,Thailand,45.0,,2017.0,,,8.2029,100.2655,,0.0,0.0,0.0,{nan},{'GWPT': {'G901034'}}
+918,Hanuman Wind Farm,Wind,onshore,PP,Thailand,815.0,,2019.0,,,15.5382,101.5644,,0.0,0.0,0.0,"{nan, nan, nan, nan, nan}","{'GWPT': {'G901039', 'G901036', 'G901038', 'G901037', 'G901035'}}"
+919,Hiep Thanh Offshore Wind Farm,Wind,offshore hard mount,PP,Vietnam,78.0,,2022.0,,,9.7516,106.581,,0.0,0.0,0.0,{nan},{'GWPT': {'G901176'}}
+920,Hoa Binh Offshore Wind Farm,Wind,offshore hard mount,PP,Vietnam,100.0,,2021.0,,,9.1324,105.716,,0.0,0.0,0.0,"{nan, nan}","{'GWPT': {'G901457', 'G901458'}}"
+921,Hoa Binh Offshore Wind Farm,Wind,offshore hard mount,PP,Vietnam,50.0,,2021.0,,,9.0595,105.4893,,0.0,0.0,0.0,{nan},{'GWPT': {'G901641'}}
+922,Hoa Dong Wind Farm,Wind,onshore,PP,Vietnam,72.0,,2021.0,,,9.5664,105.8764,,0.0,0.0,0.0,{nan},{'GWPT': {'G900945'}}
+923,Hoa Dong Wind Farm,Wind,onshore,PP,Vietnam,30.0,,2022.0,,,9.394,106.0079,,0.0,0.0,0.0,{nan},{'GWPT': {'G901215'}}
+924,Hoa Thang Wind Farm,Wind,onshore,PP,Vietnam,203.0,,2021.0,,,11.2637,108.3599,,0.0,0.0,0.0,"{nan, nan}","{'GWPT': {'G901179', 'G901177'}}"
+925,Hoang Hai Wind Farm,Wind,onshore,PP,Vietnam,50.0,,,,,16.5845,106.7694,,0.0,0.0,0.0,{nan},{'GWPT': {'G921070'}}
+926,Huay Bong Wind Farm,Wind,onshore,PP,Thailand,154.0,,2013.0,,,15.13955,101.4735,,0.0,0.0,0.0,"{nan, nan}","{'GWPT': {'G900972', 'G901049'}}"
+927,Hung Hai Wind Farm,Wind,onshore,PP,Vietnam,100.0,,,,,13.8904,108.414,,0.0,0.0,0.0,{nan},{'GWPT': {'G901651'}}
+928,Huong Linh Wind Farm,Wind,onshore,PP,Vietnam,90.0,,2019.0,,,16.7177,106.7744,,0.0,0.0,0.0,"{nan, nan, nan}","{'GWPT': {'G921072', 'G901499', 'G901500'}}"
+929,Huong Linh Wind Farm,Wind,onshore,PP,Vietnam,73.0,,2021.0,,,16.6995,106.69235,,0.0,0.0,0.0,"{nan, nan}","{'GWPT': {'G921073', 'G901663'}}"
+930,Huong Phung Wind Farm,Wind,onshore,PP,Vietnam,80.0,,2019.0,,,16.7238,106.6253,,0.0,0.0,0.0,"{nan, nan, nan}","{'GWPT': {'G921077', 'G921076', 'G921075'}}"
+931,Ia Bang Wind Farm,Wind,onshore,PP,Vietnam,50.0,,2021.0,,,13.5086,108.0791,,0.0,0.0,0.0,{nan},{'GWPT': {'G901348'}}
+932,Ia Pet Dak Doa Wind Farm,Wind,onshore,PP,Vietnam,200.0,,2022.0,,,13.8885,108.106,,0.0,0.0,0.0,"{nan, nan}","{'GWPT': {'G921078', 'G901507'}}"
+933,Khai Long Offshore Wind Farm,Wind,offshore hard mount,PP,Vietnam,100.0,,2021.0,,,8.7656,105.2884,,0.0,0.0,0.0,{nan},{'GWPT': {'G901287'}}
+934,Khao Kor Wind Farm,Wind,onshore,PP,Thailand,60.0,,2016.0,,,16.7257,101.0213,,0.0,0.0,0.0,{nan},{'GWPT': {'G901192'}}
+935,Lac Hoa Wind Farm,Wind,onshore,PP,Vietnam,130.0,,,,,9.3686,106.0731,,0.0,0.0,0.0,{nan},{'GWPT': {'G901656'}}
+936,Lac Hoa Wind Farm,Wind,onshore,PP,Vietnam,23.0,,2022.0,,,9.4174,106.1024,,0.0,0.0,0.0,{nan},{'GWPT': {'G901539'}}
+937,Lien Lap Wind Farm,Wind,onshore,PP,Vietnam,48.0,,2021.0,,,16.6715,106.6825,,0.0,0.0,0.0,{nan},{'GWPT': {'G900983'}}
+938,Loi Hai Wind Farm,Wind,onshore,PP,Vietnam,30.0,,2021.0,,,11.7157,109.0598,,0.0,0.0,0.0,{nan},{'GWPT': {'G901508'}}
+939,Lomligor Wind Farm,Wind,onshore,PP,Thailand,10.0,,2019.0,,,8.3017,100.2379,,0.0,0.0,0.0,{nan},{'GWPT': {'G900984'}}
+940,Mindoro Island Wind Farm,Wind,onshore,PP,Philippines,16.0,,,,,12.8692,121.1345,,0.0,0.0,0.0,{nan},{'GWPT': {'G901151'}}
+941,Mittrahap Wind Farm,Wind,onshore,PP,Thailand,50.0,,2018.0,,,14.9458,101.4454,,0.0,0.0,0.0,{nan},{'GWPT': {'G901048'}}
+942,Mui Dinh Wind Farm,Wind,onshore,PP,Vietnam,65.0,,2019.0,,,11.4509,108.8861,,0.0,0.0,0.0,"{nan, nan}","{'GWPT': {'G900870', 'G901666'}}"
+943,Mui Ne Wind Farm,Wind,onshore,PP,Vietnam,80.0,,2019.0,,,10.9494,108.2058,,0.0,0.0,0.0,"{nan, nan}","{'GWPT': {'G901200', 'G901201'}}"
+944,Nabas Wind Farm,Wind,onshore,PP,Philippines,36.0,,2015.0,,,11.8794,121.9859,,0.0,0.0,0.0,{nan},{'GWPT': {'G901149'}}
+945,Nam Binh Wind Farm,Wind,onshore,PP,Vietnam,30.0,,2021.0,,,12.7842,108.0746,,0.0,0.0,0.0,{nan},{'GWPT': {'G901659'}}
+946,Nhon Hoa Wind Farm,Wind,onshore,PP,Vietnam,100.0,,,,,13.7964,108.2608,,0.0,0.0,0.0,"{nan, nan}","{'GWPT': {'G901456', 'G901455'}}"
+947,Nhon Hoi Wind Farm,Wind,onshore,PP,Vietnam,86.0,,2021.0,,,13.7761,109.2325,,0.0,0.0,0.0,"{nan, nan, nan}","{'GWPT': {'G901342', 'G901341', 'G901356'}}"
+948,Ninh Thuan No Wind Farm,Wind,onshore,PP,Vietnam,46.0,,2021.0,,,11.5624,108.8804,,0.0,0.0,0.0,{nan},{'GWPT': {'G901524'}}
+949,Nks Wind Farms,Wind,onshore,PP,Thailand,90.0,,2018.0,,,15.0901,101.5101,,0.0,0.0,0.0,{nan},{'GWPT': {'G901125'}}
+950,Pagudpud Wind Farm,Wind,onshore,PP,Philippines,160.0,,2022.0,,,18.5877,120.8732,,0.0,0.0,0.0,{nan},{'GWPT': {'G920832'}}
+951,Pak Phanang Wind Farm,Wind,onshore,PP,Thailand,10.0,,2015.0,,,8.3412,100.2506,,0.0,0.0,0.0,{nan},{'GWPT': {'G901057'}}
+952,Phong Huy Wind Farm,Wind,onshore,PP,Vietnam,96.0,,2021.0,,,16.6724,107.1454,,0.0,0.0,0.0,"{nan, nan}","{'GWPT': {'G901155', 'G901154'}}"
+953,Phu Lac Wind Farm,Wind,onshore,PP,Vietnam,24.0,,2016.0,,,11.2213,108.685,,0.0,0.0,0.0,{nan},{'GWPT': {'G901509'}}
+954,Phu Lac Wind Farm,Wind,onshore,PP,Vietnam,26.0,,2021.0,,,11.3405,108.7446,,0.0,0.0,0.0,{nan},{'GWPT': {'G901510'}}
+955,Phu Yen Hbre Wind Farm,Wind,onshore,PP,Vietnam,200.0,,2019.0,,,13.2548,109.2106,,0.0,0.0,0.0,{nan},{'GWPT': {'G901492'}}
+956,Phuoc Huu Duyen Wind Farm,Wind,onshore,PP,Vietnam,30.0,,2021.0,,,11.6063,109.1463,,0.0,0.0,0.0,{nan},{'GWPT': {'G901665'}}
+957,Pililla Wind Farm,Wind,onshore,PP,Philippines,54.0,,2015.0,,,14.4753,121.3485,,0.0,0.0,0.0,{nan},{'GWPT': {'G901216'}}
+958,Quang Binh Province Wind Farm,Wind,onshore,PP,Vietnam,252.0,,2021.0,,,17.2541,106.4938,,0.0,0.0,0.0,{nan},{'GWPT': {'G901259'}}
+959,Rom Klao Wind Farm,Wind,onshore,PP,Thailand,45.0,,2019.0,,,16.3751,104.4145,,0.0,0.0,0.0,{nan},{'GWPT': {'G901124'}}
+960,San Lorenzo Wind Farm Philippines,Wind,onshore,PP,Philippines,54.0,,2015.0,,,10.5906,122.6923,,0.0,0.0,0.0,{nan},{'GWPT': {'G901208'}}
+961,Sarahnlom Wind Farm,Wind,onshore,PP,Thailand,68.0,,2018.0,,,15.1739,101.4892,,0.0,0.0,0.0,"{nan, nan}","{'GWPT': {'G901046', 'G901047'}}"
+962,Sidrap Wind Farm,Wind,onshore,PP,Indonesia,75.0,,2018.0,,,-3.9873,119.7115,,0.0,0.0,0.0,{nan},{'GWPT': {'G901160'}}
+963,Soc Trang Offshore Wind Farm,Wind,offshore hard mount,PP,Vietnam,119.0,,2021.0,,,9.302,106.131,,0.0,0.0,0.0,"{nan, nan}","{'GWPT': {'G901566', 'G901565'}}"
+964,Soc Trang Offshore Wind Farm,Wind,offshore hard mount,PP,Vietnam,30.0,,2022.0,,,9.2367,105.911,,0.0,0.0,0.0,{nan},{'GWPT': {'G901493'}}
+965,Tan An Offshore Wind Farm,Wind,offshore hard mount,PP,Vietnam,100.0,,2021.0,,,8.678033333333333,105.1701,,0.0,0.0,0.0,"{nan, nan, nan}","{'GWPT': {'G921104', 'G921106', 'G921105'}}"
+966,Tan Linh Wind Farm,Wind,onshore,PP,Vietnam,48.0,,,,,16.621,106.7122,,0.0,0.0,0.0,{nan},{'GWPT': {'G901670'}}
+967,Tan Nhat Wind Farm,Wind,onshore,PP,Vietnam,50.0,,,,,15.0864,107.7358,,0.0,0.0,0.0,{nan},{'GWPT': {'G901501'}}
+968,Tan Phu Dong Nearshore Wind,Wind,offshore hard mount,PP,Vietnam,50.0,,2021.0,,,10.4673,107.4384,,0.0,0.0,0.0,{nan},{'GWPT': {'G921108'}}
+969,Tan Thuan Pecc Offshore Wind Farm,Wind,offshore hard mount,PP,Vietnam,75.0,,2021.0,,,8.981,105.416,,0.0,0.0,0.0,"{nan, nan}","{'GWPT': {'G901174', 'G901175'}}"
+970,Tay Nguyen Wind Farm,Wind,onshore,PP,Vietnam,29.0,,2020.0,,,13.232,108.1992,,0.0,0.0,0.0,{nan},{'GWPT': {'G900940'}}
+971,Tha Phaya Wind Farm,Wind,onshore,PP,Thailand,20.0,,,,,8.4299,99.9615,,0.0,0.0,0.0,{nan},{'GWPT': {'G901103'}}
+972,Thanh Hai No Offshore Wind Farm,Wind,offshore hard mount,PP,Vietnam,127.0,,2021.0,,,9.915,106.6806,,0.0,0.0,0.0,"{nan, nan, nan, nan}","{'GWPT': {'G901180', 'G901181', 'G901183', 'G901182'}}"
+973,Thi Tran Rach Goc Vien An Offshore Wind Farm,Wind,offshore hard mount,PP,Vietnam,50.0,,,,,8.5663,104.931,,0.0,0.0,0.0,{nan},{'GWPT': {'G921109'}}
+974,Thien Phu Offshore Wind Farm,Wind,offshore hard mount,PP,Vietnam,30.0,,,,,9.8501,106.6844,,0.0,0.0,0.0,{nan},{'GWPT': {'G901466'}}
+975,Tolo Wind Farm,Wind,onshore,PP,Indonesia,72.0,,2019.0,,,-5.6515,119.7615,,0.0,0.0,0.0,{nan},{'GWPT': {'G901159'}}
+976,Tra Vinh Offshore Wind Farm,Wind,offshore hard mount,PP,Vietnam,48.0,,2021.0,,,9.6324,106.5044,,0.0,0.0,0.0,{nan},{'GWPT': {'G901480'}}
+977,Tra Vinh Truong Long Hoa Offshore Wind Farm,Wind,offshore hard mount,PP,Vietnam,96.0,,2021.0,,,9.6,106.57,,0.0,0.0,0.0,"{nan, nan}","{'GWPT': {'G921111', 'G921112'}}"
+978,Truong Long Hoa Offshore Wind Farm,Wind,offshore hard mount,PP,Vietnam,48.0,,2021.0,,,9.7695,106.5644,,0.0,0.0,0.0,{nan},{'GWPT': {'G921113'}}
+979,Vinh Chau Wind Farm,Wind,onshore,PP,Vietnam,59.0,,2020.0,,,9.3239,105.9806,,0.0,0.0,0.0,"{nan, nan}","{'GWPT': {'G901273', 'G901272'}}"
+980,Vpl Nearshore Wind,Wind,offshore hard mount,PP,Vietnam,30.0,,2021.0,,,10.1417,106.9257,,0.0,0.0,0.0,{nan},{'GWPT': {'G921121'}}
+981,Wind Farm,Wind,onshore,PP,Vietnam,50.0,,2021.0,,,11.3031,106.3116,,0.0,0.0,0.0,{nan},{'GWPT': {'G901646'}}
+982,Wind Farms,Wind,onshore,PP,Thailand,180.0,,2018.0,,,15.35465,101.46455,,0.0,0.0,0.0,"{nan, nan}","{'GWPT': {'G901128', 'G901127'}}"
+983,Wind Farms,Wind,onshore,PP,Thailand,90.0,,2018.0,,,15.2801,101.4701,,0.0,0.0,0.0,{nan},{'GWPT': {'G901126'}}
+984,Wind Farms,Wind,onshore,PP,Thailand,90.0,,2019.0,,,15.2216,101.5101,,0.0,0.0,0.0,{nan},{'GWPT': {'G901129'}}
+985,Wtb Wind Farms,Wind,onshore,PP,Thailand,60.0,,2016.0,,,15.4323,101.4921,,0.0,0.0,0.0,{nan},{'GWPT': {'G901130'}}
+986,Yang Trung Wind Farm,Wind,onshore,PP,Vietnam,145.0,,,,,13.7624,108.5907,,0.0,0.0,0.0,{nan},{'GWPT': {'G901672'}}
+987,Asahan,Hydro,Run-Of-River,PP,Indonesia,174.0,,2024.0,,,-2.6767,100.0985,,0.0,0.0,0.0,{nan},{'GHPT': {'G602126'}}
+988,Bac Ai,Hydro,Pumped Storage,PP,Vietnam,1200.0,,2028.0,,,11.8873,108.7884,,0.0,0.0,0.0,{nan},{'GHPT': {'G604036'}}
+989,Bakun,Hydro,Reservoir,PP,Malaysia,2400.0,,2027.0,,,2.7634,114.0551,,0.0,0.0,0.0,{nan},{'GHPT': {'G602465'}}
+990,Baleh,Hydro,Reservoir,PP,Malaysia,1285.0,,2027.0,,,1.8058,113.7724,,0.0,0.0,0.0,{nan},{'GHPT': {'G602466'}}
+991,Baluchung,Hydro,Run-Of-River,PP,Myanmar,168.0,,1960.0,,,19.6737,97.2119,,0.0,0.0,0.0,{nan},{'GHPT': {'G602545'}}
+992,Batang Toru,Hydro,Run-Of-River,PP,Indonesia,510.0,,2022.0,,,1.623,99.1832,,0.0,0.0,0.0,{nan},{'GHPT': {'G602130'}}
+993,Chipwi Nge,Hydro,Reservoir,PP,Myanmar,99.0,,2013.0,,,25.8318,98.0801,,0.0,0.0,0.0,{nan},{'GHPT': {'G602549'}}
+994,Dak Mi,Hydro,Reservoir,PP,Vietnam,98.0,,,,,15.2954,107.8192,,0.0,0.0,0.0,{nan},{'GHPT': {'G604048'}}
+995,Dak Tih,Hydro,Reservoir,PP,Vietnam,144.0,,2011.0,,,11.9359,107.6565,,0.0,0.0,0.0,{nan},{'GHPT': {'G604050'}}
+996,Don Sahong,Hydro,Run-Of-River,PP,Laos,260.0,,2019.0,,,13.944,105.956,,0.0,0.0,0.0,{nan},{'GHPT': {'G602390'}}
+997,Hoi Xuan,Hydro,Run-Of-River,PP,Vietnam,102.0,,2023.0,,,20.4459,105.0531,,0.0,0.0,0.0,{nan},{'GHPT': {'G604059'}}
+998,Houay Lamphan Gnai,Hydro,Reservoir,PP,Laos,88.0,,2015.0,,,15.3564,106.5865,,0.0,0.0,0.0,{nan},{'GHPT': {'G602392'}}
+999,Jatigede,Hydro,Reservoir,PP,Indonesia,110.0,,2021.0,,,-6.8568,108.0969,,0.0,0.0,0.0,{nan},{'GHPT': {'G602137'}}
+1000,Karebbe,Hydro,Reservoir,PP,Indonesia,90.0,,2011.0,,,-3.0661,100.3663,,0.0,0.0,0.0,{nan},{'GHPT': {'G602140'}}
+1001,Khe Bo,Hydro,Reservoir,PP,Vietnam,100.0,,2013.0,,,19.1812,104.6633,,0.0,0.0,0.0,{nan},{'GHPT': {'G604064'}}
+1002,Lower Nam Pawn,Hydro,Reservoir,PP,Myanmar,105.0,,2023.0,,,19.6758,97.2113,,0.0,0.0,0.0,{nan},{'GHPT': {'G602566'}}
+1003,Lower Sesan,Hydro,Reservoir,PP,Cambodia,400.0,,2017.0,,,13.5531,106.256,,0.0,0.0,0.0,{nan},{'GHPT': {'G600377'}}
+1004,Malea,Hydro,Run-Of-River,PP,Indonesia,90.0,,,,,-3.106,119.8529,,0.0,0.0,0.0,{nan},{'GHPT': {'G602154'}}
+1005,Middle Paunglaung,Hydro,Reservoir,PP,Myanmar,152.0,,2026.0,,,19.8601,96.508,,0.0,0.0,0.0,{nan},{'GHPT': {'G602570'}}
+1006,Murum,Hydro,Reservoir,PP,Malaysia,944.0,,2013.0,,,2.6493,114.3675,,0.0,0.0,0.0,{nan},{'GHPT': {'G602476'}}
+1007,Nam Chiane,Hydro,Reservoir,PP,Laos,104.0,,2018.0,,,19.0652,103.5212,,0.0,0.0,0.0,{nan},{'GHPT': {'G602395'}}
+1008,Nam Emoun,Hydro,Reservoir,PP,Laos,129.0,,2023.0,,,15.5744,106.9694,,0.0,0.0,0.0,{nan},{'GHPT': {'G602396'}}
+1009,Nam Khan,Hydro,Reservoir,PP,Laos,130.0,,2015.0,,,19.6844,102.3682,,0.0,0.0,0.0,{nan},{'GHPT': {'G602400'}}
+1010,Nam Kong,Hydro,Reservoir,PP,Laos,160.0,,2021.0,,,14.575,106.736,,0.0,0.0,0.0,{nan},{'GHPT': {'G602401'}}
+1011,Nam Mo,Hydro,Reservoir,PP,Laos,120.0,,2022.0,,,19.0412,104.0,,0.0,0.0,0.0,{nan},{'GHPT': {'G602403'}}
+1012,Nam Ngiep,Hydro,Reservoir,PP,Laos,290.0,,2019.0,,,18.647,103.542,,0.0,0.0,0.0,{nan},{'GHPT': {'G602405'}}
+1013,Nam Ngiep,Hydro,Reservoir,PP,Laos,180.0,,2015.0,,,19.1262,103.3186,,0.0,0.0,0.0,{nan},{'GHPT': {'G602406'}}
+1014,Nam Ngum,Hydro,Reservoir,PP,Laos,480.0,,2022.0,,,19.083,102.878,,0.0,0.0,0.0,{nan},{'GHPT': {'G602409'}}
+1015,Nam Ngum,Hydro,Reservoir,PP,Laos,240.0,,2023.0,,,19.3531,102.6058,,0.0,0.0,0.0,{nan},{'GHPT': {'G602410'}}
+1016,Nam Ngum,Hydro,Reservoir,PP,Laos,120.0,,2012.0,,,19.3601,102.7122,,0.0,0.0,0.0,{nan},{'GHPT': {'G602411'}}
+1017,Nam Ou,Hydro,Reservoir,PP,Laos,180.0,,2016.0,,,21.769,102.195,,0.0,0.0,0.0,{nan},{'GHPT': {'G602417'}}
+1018,Nam Ou,Hydro,Reservoir,PP,Laos,240.0,,2016.0,,,21.411,102.344,,0.0,0.0,0.0,{nan},{'GHPT': {'G602416'}}
+1019,Nam Ou,Hydro,Reservoir,PP,Laos,180.0,,2019.0,,,20.1494,102.3174,,0.0,0.0,0.0,{nan},{'GHPT': {'G602412'}}
+1020,Nam Ou,Hydro,Reservoir,PP,Laos,120.0,,2015.0,,,20.387,102.451,,0.0,0.0,0.0,{nan},{'GHPT': {'G602413'}}
+1021,Nam Ou,Hydro,Reservoir,PP,Laos,210.0,,2020.0,,,20.724,102.668,,0.0,0.0,0.0,{nan},{'GHPT': {'G602414'}}
+1022,Nam Ou,Hydro,Reservoir,PP,Laos,132.0,,2020.0,,,21.104,102.498,,0.0,0.0,0.0,{nan},{'GHPT': {'G602415'}}
+1023,Nam Ou,Hydro,Reservoir,PP,Laos,210.0,,2021.0,,,22.088,102.258,,0.0,0.0,0.0,{nan},{'GHPT': {'G602418'}}
+1024,Nam Phay,Hydro,Reservoir,PP,Laos,86.0,,2017.0,,,19.0977,102.7147,,0.0,0.0,0.0,{nan},{'GHPT': {'G602421'}}
+1025,Nam Sum,Hydro,Reservoir,PP,Laos,156.0,,2023.0,,,20.1499,104.509,,0.0,0.0,0.0,{nan},{'GHPT': {'G602423'}}
+1026,Nam Tha,Hydro,Reservoir,PP,Laos,168.0,,2018.0,,,20.267,100.869,,0.0,0.0,0.0,{nan},{'GHPT': {'G602424'}}
+1027,Nam Theun,Hydro,Reservoir,PP,Laos,650.0,,2022.0,,,18.357,104.148,,0.0,0.0,0.0,{nan},{'GHPT': {'G602425'}}
+1028,Nenggiri,Hydro,Reservoir,PP,Malaysia,300.0,,2027.0,,,4.1501,101.934,,0.0,0.0,0.0,{nan},{'GHPT': {'G602477'}}
+1029,Peusanga,Hydro,Run-Of-River,PP,Indonesia,88.0,,2023.0,,,4.4495,96.8839,,0.0,0.0,0.0,{nan},{'GHPT': {'G602164'}}
+1030,Peusangan,Hydro,Run-Of-River,PP,Indonesia,85.0,,2023.0,,,4.6242,96.8501,,0.0,0.0,0.0,{nan},{'GHPT': {'G602165'}}
+1031,Poso,Hydro,Run-Of-River,PP,Indonesia,195.0,,2012.0,,,-1.6438,120.6472,,0.0,0.0,0.0,{nan},{'GHPT': {'G602166'}}
+1032,Shweli,Hydro,Reservoir,PP,Myanmar,1050.0,,2023.0,,,23.315,96.769,,0.0,0.0,0.0,{nan},{'GHPT': {'G602588'}}
+1033,Sigura Gura,Hydro,Reservoir,PP,Indonesia,286.0,,1982.0,,,2.5202,99.2798,,0.0,0.0,0.0,{nan},{'GHPT': {'G602170'}}
+1034,Stung Atay,Hydro,Reservoir,PP,Cambodia,120.0,,2013.0,,,11.9722,103.1453,,0.0,0.0,0.0,{nan},{'GHPT': {'G600381'}}
+1035,Stung Pursat,Hydro,Reservoir,PP,Cambodia,80.0,,2026.0,,,12.542,103.9197,,0.0,0.0,0.0,{nan},{'GHPT': {'G600382'}}
+1036,Stung Tatay,Hydro,Reservoir,PP,Cambodia,246.0,,2015.0,,,11.5897,103.1697,,0.0,0.0,0.0,{nan},{'GHPT': {'G600384'}}
+1037,Sultan Idris Woh,Hydro,Reservoir,PP,Malaysia,300.0,,1967.0,,,4.234249999999999,101.32465,,0.0,0.0,0.0,"{nan, nan}","{'GHPT': {'G602481', 'G602480'}}"
+1038,Tha Htay,Hydro,Reservoir,PP,Myanmar,111.0,,2024.0,,,19.5213,94.0072,,0.0,0.0,0.0,{nan},{'GHPT': {'G602593'}}
+1039,Thai An,Hydro,Reservoir,PP,Vietnam,82.0,,2011.0,,,22.9992,105.0659,,0.0,0.0,0.0,{nan},{'GHPT': {'G604083'}}
+1040,Thaukyegat,Hydro,Reservoir,PP,Myanmar,120.0,,2013.0,,,18.9113,96.6166,,0.0,0.0,0.0,{nan},{'GHPT': {'G602595'}}
+1041,Trung Son,Hydro,Reservoir,PP,Vietnam,260.0,,2016.0,,,20.6102,104.8397,,0.0,0.0,0.0,{nan},{'GHPT': {'G604086'}}
+1042,Ulu Jelai,Hydro,Reservoir,PP,Malaysia,372.0,,2016.0,,,4.4351,101.5438,,0.0,0.0,0.0,{nan},{'GHPT': {'G602490'}}
+1043,Upper Paung Laung,Hydro,Reservoir,PP,Myanmar,140.0,,2015.0,,,19.756,96.5932,,0.0,0.0,0.0,{nan},{'GHPT': {'G602598'}}
+1044,Upper Yeywa,Hydro,Reservoir,PP,Myanmar,280.0,,,,,22.6243,97.3011,,0.0,0.0,0.0,{nan},{'GHPT': {'G602599'}}
+1045,Xayaburi,Hydro,Run-Of-River,PP,Laos,1285.0,,2019.0,,,19.2438,101.8178,,0.0,0.0,0.0,{nan},{'GHPT': {'G602432'}}
+1046,Xe Pian Xe Namnoy,Hydro,Reservoir,PP,Laos,410.0,,2019.0,,,15.026,106.606,,0.0,0.0,0.0,{nan},{'GHPT': {'G602433'}}
+1047,Xekaman,Hydro,Reservoir,PP,Laos,322.0,,2016.0,,,14.9601,107.1555,,0.0,0.0,0.0,{nan},{'GHPT': {'G602434'}}
+1048,Xekong,Hydro,Reservoir,PP,Laos,147.0,,,,,15.1199,106.8233,,0.0,0.0,0.0,{nan},{'GHPT': {'G602439'}}
+1049,Xekong,Hydro,Reservoir,PP,Laos,140.0,,,,,15.3845,106.7789,,0.0,0.0,0.0,{nan},{'GHPT': {'G602438'}}
+1050,Xekong,Hydro,Reservoir,PP,Laos,330.0,,2022.0,,,15.975,106.931,,0.0,0.0,0.0,{nan},{'GHPT': {'G602442'}}
+1051,Xekong Downstream,Hydro,Run-Of-River,PP,Laos,86.0,,2023.0,,,14.5992,106.5542,,0.0,0.0,0.0,{nan},{'GHPT': {'G602437'}}
