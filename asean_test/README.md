@@ -1,10 +1,10 @@
-Once you have installed anacondaa or mamba you can run the following command: 
+Once you have installed anaconda or mamba you can run the following command: 
 
 ```bash
 mamba env create -f requirements.yaml
 ```
 
-This will create a new conda environment called `powerplantmatchin-feo` with all the required packages.
+This will create a new conda environment called `powerplantmatching-feo` with all the required packages.
 
 ## Usage
 
