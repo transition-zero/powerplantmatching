@@ -32,23 +32,12 @@ import pycountry
 import requests
 from deprecation import deprecated
 
-from .cleaning import (
-    clean_name,
-    gather_fueltype_info,
-    gather_set_info,
-    gather_specifications,
-    gather_technology_info,
-)
+from .cleaning import (clean_name, gather_fueltype_info, gather_set_info,
+                       gather_specifications, gather_technology_info)
 from .core import _data_in, _package_data, get_config
 from .heuristics import scale_to_net_capacities
-from .utils import (
-    config_filter,
-    convert_to_short_name,
-    correct_manually,
-    fill_geoposition,
-    get_raw_file,
-    set_column_name,
-)
+from .utils import (config_filter, convert_to_short_name, correct_manually,
+                    fill_geoposition, get_raw_file, set_column_name)
 
 logger = logging.getLogger(__name__)
 cget = pycountry.countries.get
@@ -1499,6 +1488,19 @@ def OPSD_VRE_country(country, raw=False, update=False, config=None):
         .pipe(set_column_name, f"OPSD_VRE_{country}")
         .pipe(config_filter, config)
     )
+
+def GEM(raw=False, update=False, config=None):
+    """Importer for cleaned GEM data (except hydro)."""
+    config = get_config() if config is None else config
+
+    fn = get_raw_file("GEM", update=update, config=config)
+    df = pd.read_csv(fn)
+
+    if raw:
+        return df
+
+    df = df.pipe(set_column_name, "GEM")
+    return df
 
 
 def IRENASTAT(raw=False, update=False, config=None):
