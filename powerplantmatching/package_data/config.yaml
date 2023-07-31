@@ -31,6 +31,7 @@ matching_sources:
   - GSPT
   - GWPT
   - GHPT
+  - GEM
 
 # fully_included_sources, these sources are included even without match to the final dataset
 fully_included_sources:
@@ -49,6 +50,7 @@ fully_included_sources:
   - GSPT
   - GWPT
   - GHPT
+  - GEM
 
 parallel_duke_processes: false
 process_limit: 4
@@ -59,7 +61,11 @@ matched_data_url: https://raw.githubusercontent.com/FRESNA/powerplantmatching/{t
 # ---------------------------------------------------------------------------- #
 
 opsd_vres_base_year: 2020
-
+GEM:
+  net_capacity: true
+  reliability_score: 6
+  aggregated_units: false
+  url: https://raw.githubusercontent.com/transition-zero/gem-clean-pypsa/main/GEM.csv?token=GHSAT0AAAAAACBHLJJLAKZVHXVEHMMAWH6MZGHTGJQ
 BNETZA:
   reliability_score: 3
   fn: Kraftwerksliste_2017_2.xlsx
