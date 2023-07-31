@@ -16,40 +16,15 @@ main_query: "Name != '' and (DateOut >= 2020 or DateOut != DateOut) and (lat >= 
 matching_sources:
   # Make individual queries for the datasets as done in `fully_included_sources`
   # Queries are combined with `main_query` with an `and` operator
-  - ENTSOE
   - GEO
   - GPD
-  - JRC
-  - OPSD: Country != "Spain" and Fueltype != 'Hard Coal'
-  - BEYONDCOAL
-  - WIKIPEDIA
-  - GBPT
-  - GGPT
-  - GCPT
-  - GGTPT
-  - GNPT
-  - GSPT
-  - GWPT
-  - GHPT
   - GEM
 
 # fully_included_sources, these sources are included even without match to the final dataset
 fully_included_sources:
   # Make individual queries for the datasets
-  - ENTSOE: (Country not in ['Switzerland', 'Ireland', 'Albania', 'Greece', 'Czech Republic', 'Bulgaria', 'United Kingdom', 'Italy', 'Serbia'] and not (Country == 'Spain' and Fueltype == 'Hydro')) or (Fueltype == 'Geothermal')
-  - GEO: (Country == 'Spain' and Fueltype == 'Natural Gas')
-  - GPD: Country in ['Finland', 'Spain']
-  - JRC: Country not in ['Switzerland', 'Albania', 'United Kingdom', 'Norway']
-  - OPSD: Country not in ['Switzerland', 'Italy', 'Spain', 'Norway', 'Austria']
-  - BEYONDCOAL
-  - GBPT
-  - GGPT
-  - GCPT
-  - GGTPT
-  - GNPT
-  - GSPT
-  - GWPT
-  - GHPT
+  - GEO
+  - GPD
   - GEM
 
 parallel_duke_processes: false
@@ -66,6 +41,7 @@ GEM:
   reliability_score: 6
   aggregated_units: false
   url: https://raw.githubusercontent.com/transition-zero/gem-clean-pypsa/main/GEM.csv?token=GHSAT0AAAAAACBHLJJLAKZVHXVEHMMAWH6MZGHTGJQ
+  fn: GEM.csv
 BNETZA:
   reliability_score: 3
   fn: Kraftwerksliste_2017_2.xlsx
