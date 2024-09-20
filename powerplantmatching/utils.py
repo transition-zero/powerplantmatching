@@ -88,7 +88,8 @@ def get_raw_file(name, update=False, config=None, skip_retrieve=False):
     if config is None:
         config = get_config()
     df_config = config[name]
-    path = _data_in(df_config["fn"])
+    # path = _data_in(df_config["fn"])
+    path = df_config["fn"]
 
     if (not os.path.exists(path) or update) and not skip_retrieve:
         url = df_config["url"]
@@ -100,6 +101,7 @@ def get_raw_file(name, update=False, config=None, skip_retrieve=False):
     return path
 
 
+# not using this
 def config_filter(df, config):
     """
     Convenience function to filter data source according to the config.yaml
@@ -119,7 +121,7 @@ def config_filter(df, config):
     name = df.powerplant.get_name()
     assert name is not None, "No name given for data source"
 
-    countries = config["target_countries"]
+    countries = config["target_admin_1s"]
     fueltypes = config["target_fueltypes"]
     cols = config["target_columns"]
 
@@ -221,20 +223,20 @@ def read_csv_if_string(df):
     return df
 
 
-def to_categorical_columns(df):
-    """
-    Helper function to set datatype of columns 'Fueltype', 'Country', 'Set',
-    'File', 'Technology' to categorical.
-    """
-    cols = ["Fueltype", "Country", "Set", "File"]
-    cats = {
-        "Fueltype": get_config()["target_fueltypes"],
-        "Country": get_config()["target_countries"],
-        "Set": get_config()["target_sets"],
-    }
-    return df.assign(**{c: df[c].astype("category") for c in cols}).assign(
-        **{c: lambda df: df[c].cat.set_categories(v) for c, v in cats.items()}
-    )
+# def to_categorical_columns(df):
+#     """
+#     Helper function to set datatype of columns 'Fueltype', 'Country', 'Set',
+#     'File', 'Technology' to categorical.
+#     """
+#     cols = ["Fueltype", "Country", "Set", "File"]
+#     cats = {
+#         "Fueltype": get_config()["target_fueltypes"],
+#         "Country": get_config()["target_admin_1s"],
+#         "Set": get_config()["target_sets"],
+#     }
+#     return df.assign(**{c: df[c].astype("category") for c in cols}).assign(
+#         **{c: lambda df: df[c].cat.set_categories(v) for c, v in cats.items()}
+#     )
 
 
 def set_column_name(df, name):
@@ -395,30 +397,30 @@ def country_alpha2(country):
         return ""
 
 
-def convert_alpha2_to_country(df):
-    df = get_obj_if_Acc(df)
-    # codes that are not conform to ISO 3166-1 alpha2.
-    dic = {"EL": "GR", "UK": "GB"}
-    return convert_to_short_name(df.assign(Country=df.Country.replace(dic)))
+# def convert_alpha2_to_country(df):
+#     df = get_obj_if_Acc(df)
+#     # codes that are not conform to ISO 3166-1 alpha2.
+#     dic = {"EL": "GR", "UK": "GB"}
+#     return convert_to_short_name(df.assign(Country=df.Country.replace(dic)))
 
 
-def convert_to_short_name(df):
-    df = get_obj_if_Acc(df)
-    countries = df.Country.dropna().unique()
+# def convert_to_short_name(df):
+#     df = get_obj_if_Acc(df)
+#     countries = df.Country.dropna().unique()
 
-    kwargs = dict(to="name_short", not_found=None)
-    short_name = dict(zip(countries, atleast_1d(cc.convert(countries, **kwargs))))
+#     kwargs = dict(to="name_short", not_found=None)
+#     short_name = dict(zip(countries, atleast_1d(cc.convert(countries, **kwargs))))
 
-    return df.assign(Country=df.Country.replace(short_name))
+#     return df.assign(Country=df.Country.replace(short_name))
 
 
-def convert_country_to_alpha2(df):
-    df = get_obj_if_Acc(df)
-    countries = df.Country.dropna().unique()
-    kwargs = dict(to="iso2", not_found=None)
-    iso2 = dict(zip(countries, atleast_1d(cc.convert(countries, **kwargs))))
+# def convert_country_to_alpha2(df):
+#     df = get_obj_if_Acc(df)
+#     countries = df.Country.dropna().unique()
+#     kwargs = dict(to="iso2", not_found=None)
+#     iso2 = dict(zip(countries, atleast_1d(cc.convert(countries, **kwargs))))
 
-    return df.assign(Country=df.Country.replace(iso2).where(lambda ds: ds != "nan"))
+#     return df.assign(Country=df.Country.replace(iso2).where(lambda ds: ds != "nan"))
 
 
 def breakdown_matches(df):
@@ -507,11 +509,11 @@ def restore_blocks(df, mode=2, config=None):
         )
     elif mode == 2:
         sources = df.projectID.apply(list).explode().unique()
-        rel_scores = pd.Series(
+        rel_ = pd.Series(
             {s: config[s]["reliability_score"] for s in sources}
         ).sort_values(ascending=False)
         res = pd.DataFrame().rename_axis(index="id")
-        for s in rel_scores.index:
+        for s in rel_.index:
             subset = bd.reindex(index=[s], level="source")
             subset_i = subset.index.unique("id").difference(res.index.unique("id"))
             res = pd.concat([res, subset.reindex(index=subset_i, level="id")])
@@ -623,7 +625,7 @@ def fill_geoposition(
         locs = locs[~locs.index.duplicated()]
         df = df.where(
             df[["lat", "lon"]].notnull().all(1),
-            df.drop(columns=["lat", "lon"]).join(locs, on=["Name", "Country"]),
+            df.drop(columns=["lat", "lon"]).join(locs, on=["Name", "admin_1"]),
         )
     if saved_only:
         return df
@@ -634,17 +636,17 @@ def fill_geoposition(
     if "postalcode" not in missing.columns:
         missing["postalcode"] = ""
 
-    cols = ["Name", "Country", "lat", "lon"]
+    cols = ["Name", "admin_1", "lat", "lon"]
     geodata = pd.DataFrame(index=missing.index, columns=cols)
     for i in tqdm(missing.index):
         geodata.loc[i, :] = parse_Geoposition(
             location=missing.at[i, "Name"],
             zipcode=missing.at[i, "postalcode"],
-            country=missing.at[i, "Country"],
+            country=missing.at[i, "admin_1"],
         )
 
-    geodata.drop_duplicates(subset=["Name", "Country"]).set_index(
-        ["Name", "Country"]
+    geodata.drop_duplicates(subset=["Name", "admin_1"]).set_index(
+        ["Name", "admin_1"]
     ).to_csv(fn, mode="a", header=False)
 
     df.loc[geodata.index, ["lat", "lon"]] = geodata

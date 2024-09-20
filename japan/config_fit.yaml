@@ -1,0 +1,160 @@
+# Config for macthing Japan assets
+
+gcp_project: tz-data-dev
+
+scores_output_file: /Users/adminuser/Documents/powerplantmatching/japan/ppm_links_output.csv
+
+comparison_xml: /Users/adminuser/Documents/powerplantmatching/japan/Comparison_kitamoto_fit.xml
+deduplication_xml: /Users/adminuser/Documents/powerplantmatching/japan/Deleteduplicates_kitamoto_fit.xml
+# ---------------------------------------------------------------------------- #
+#                                  Data Source Config                          #
+# ---------------------------------------------------------------------------- #
+
+KITAMOTO:
+  bq_table: tz_assets.japan_kitamoto_lab
+  aggregate_data: false
+  reliability_score: 5
+  technology_map:
+    biomass: biomass
+    solar: solar
+    hydro: hydropower
+    pumped_hydro: hydropower
+    thermal: thermal
+    wind: onshore_wind
+    geothermal: geothermal
+    nuclear: nuclear
+FIT:
+  bq_table: japan.fit_portal_above_20kw
+  aggregate_data: false
+  reliability_score: 5
+  technology_map:
+    biomass: biomass
+    solar: solar
+    onshore_wind: onshore_wind
+    offshore_wind: offshore_wind
+    hydropower: hydropower
+    geothermal: geothermal
+    other: other
+
+target_technologies:
+  - biomass
+  # - solar
+  - onshore_wind
+  - hydropower
+  - geothermal
+
+target_columns:
+  - Name
+  - Technology
+  - Capacity
+  - lat
+  - lon
+  - admin_1
+  - projectID
+
+
+target_admin_1s:
+ - 'JPN-AI'
+ - 'JPN-AK'
+ - 'JPN-AO'
+ - 'JPN-CH'
+ - 'JPN-EH'
+ - 'JPN-FI'
+ - 'JPN-FO'
+ - 'JPN-FS'
+ - 'JPN-GF'
+ - 'JPN-GM'
+ - 'JPN-HG'
+ - 'JPN-HK'
+ - 'JPN-HS'
+ - 'JPN-IB'
+ - 'JPN-IS'
+ - 'JPN-IW'
+ - 'JPN-KC'
+#  - 'JPN-KG'
+#  - 'JPN-KM'
+#  - 'JPN-KN'
+#  - 'JPN-KS'
+#  - 'JPN-KY'
+#  - 'JPN-ME'
+#  - 'JPN-MG'
+#  - 'JPN-MZ'
+#  - 'JPN-NI'
+#  - 'JPN-NN'
+#  - 'JPN-NR'
+#  - 'JPN-NS'
+#  - 'JPN-ON'
+#  - 'JPN-OS'
+#  - 'JPN-OT'
+#  - 'JPN-OY'
+#  - 'JPN-SG'
+#  - 'JPN-SH'
+#  - 'JPN-SM'
+#  - 'JPN-ST'
+#  - 'JPN-SZ'
+#  - 'JPN-TC'
+#  - 'JPN-TK'
+#  - 'JPN-TS'
+#  - 'JPN-TT'
+#  - 'JPN-TY'
+#  - 'JPN-WK'
+#  - 'JPN-YC'
+#  - 'JPN-YN'
+#  - 'JPN-YT'
+
+
+# ---------------------------------------------------------------------------- #
+#                                Matching Config                               #
+# ---------------------------------------------------------------------------- #
+
+# matching_sources, only the matched powerplants are added to the final dataset
+matching_sources:
+  # Make individual queries for the datasets as done in `fully_included_sources`
+  # Queries are combined with `main_query` with an `and` operator
+  - KITAMOTO
+  - FIT
+
+# # fully_included_sources, these sources are included even without match to the final dataset
+fully_included_sources:
+  - KITAMOTO
+  - FIT
+
+hash: "matchingjapan"
+
+
+# ---- settings ----
+remove_matched_data: true
+aggregated_units: false
+clean_name_before_aggregation: false
+aggregate_country_wise: false
+
+parallel_duke_processes: false
+process_limit: 4
+
+# ---------------------------------------------------------------------------- #
+#                                  Extra Filepaths                             #
+# ---------------------------------------------------------------------------- #
+
+current_mappings: /Users/adminuser/Documents/powerplantmatching/japan/kitamoto_fit_validated_matches.csv
+
+
+# ---------------------------------------------------------------------------- #
+#                             Data Structure Config                            #
+# ---------------------------------------------------------------------------- #
+
+target_countries:
+  - JPN
+target_fueltypes:
+  []
+
+clean_name:
+  remove_common_words: false # remove words which appear more that 20 times in all entries
+  remove_duplicated_words: false
+  replace:
+    " ": "[^a-zA-Z]" # non-alphabetical symbols
+    "":
+      # This should be a list, if remove_common_words is true.
+      [power, ltd, co, limited]
+      # [
+      #   # \w, #remove single letters
+      # ]

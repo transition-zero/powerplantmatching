@@ -31,7 +31,7 @@ from .utils import (
     parmap,
     projectID_to_dict,
     set_column_name,
-    set_uncommon_fueltypes_to_other,
+    # set_uncommon_fueltypes_to_other,
     to_dict_if_string,
 )
 
@@ -71,11 +71,16 @@ def collect(
         conf = config[name]
         get_df = getattr(data, name)
         df = get_df(config=config)
-
-        if not conf.get("aggregated_units", False):
+        aggregated_units = config.get("aggregated_units")
+        print(f"aggregating units == {aggregated_units}")
+        if aggregated_units:
+            # if not conf.get("aggregated_units", False):
+            print("aggregating units!")
             return aggregate_units(df, dataset_name=name, config=config)
         else:
+            print("Not aggregating units!")
             return df.assign(projectID=df.projectID.map(lambda x: {x}))
+
 
     # Deal with the case that only one dataset is requested
     if isinstance(datasets, str):
@@ -86,9 +91,11 @@ def collect(
 
     fn = "_".join(map(str.upper, datasets))
     outfn_matched = _data_out(f"Matched_{fn}.csv", config)
+    print(outfn_matched)
 
     fn = "_".join(map(str.upper, datasets))
     outfn_reduced = _data_out(f"Matched_{fn}_reduced.csv", config)
+    print(outfn_reduced)
 
     if not update and not os.path.exists(outfn_reduced if reduced else outfn_matched):
         logger.warning("Forcing update since the cache file is missing")
@@ -97,6 +104,7 @@ def collect(
     if update:
         dfs = parmap(df_by_name, datasets)
         matched = combine_multiple_datasets(dfs, datasets, config=config, **dukeargs)
+    
         (
             matched.assign(projectID=lambda df: df.projectID.astype(str)).to_csv(
                 outfn_matched, index_label="id"
@@ -108,6 +116,7 @@ def collect(
 
         return reduced_df if reduced else matched
     else:
+
         if reduced:
             df = pd.read_csv(outfn_reduced, index_col=0)
         else:
@@ -218,10 +227,10 @@ def powerplants(
             .pipe(projectID_to_dict)
             .pipe(set_column_name, "Matched Data")
         )
-        if extend_by_vres:
-            return df.pipe(
-                extend_by_VRE, config=config, base_year=config["opsd_vres_base_year"]
-            )
+        # if extend_by_vres:
+        #     return df.pipe(
+        #         extend_by_VRE, config=config, base_year=config["opsd_vres_base_year"]
+        #     )
         return df
 
     matching_sources = [
@@ -244,14 +253,14 @@ def powerplants(
     if filter_missing_geopositions:
         matched = matched[matched.lat.notnull()]
 
-    matched.drop_duplicates(["Name", "Fueltype", "Country"])
+    # matched.drop_duplicates(["Name", "Fueltype", "admin_1"])  # ??
 
     matched.reset_index(drop=True).to_csv(fn, index_label="id", encoding="utf-8")
 
-    if extend_by_vres:
-        matched = extend_by_VRE(
-            matched, config=config, base_year=config["opsd_vres_base_year"]
-        )
+    # if extend_by_vres:
+    #     matched = extend_by_VRE(
+    #         matched, config=config, base_year=config["opsd_vres_base_year"]
+    #     )
     return matched.pipe(set_column_name, "Matched Data")
 
 

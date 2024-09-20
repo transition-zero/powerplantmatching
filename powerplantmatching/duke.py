@@ -54,6 +54,7 @@ def duke(
     showmatches=False,
     keepfiles=False,
     showoutput=False,
+    config=None
 ):
     """
     Run duke in different modes (Deduplication or Record Linkage Mode) to
@@ -87,10 +88,12 @@ def duke(
     dedup = isinstance(datasets, pd.DataFrame)
     if dedup:
         # Deduplication mode
-        duke_config = "Deleteduplicates.xml"
+        # duke_config = "Deleteduplicates.xml"
+        duke_config = config["deduplication_xml"]
         datasets = [datasets]
     else:
-        duke_config = "Comparison.xml"
+        # duke_config = "Comparison.xml"
+        duke_config = config["comparison_xml"]
 
     duke_bin_dir = _package_data("duke_binaries")
 
@@ -107,14 +110,13 @@ def duke(
         logger.debug("Comparing files: %s", ", ".join(labels))
 
         for n, df in enumerate(datasets):
-            df = add_geoposition_for_duke(df)
+            if "lat" in df.columns:
+                df = add_geoposition_for_duke(df)
             #            due to index unity (see https://github.com/larsga/Duke/issues/236)
             if n == 1:
                 shift_by = datasets[0].index.max() + 1
                 df.index += shift_by
-            df.to_csv(
-                os.path.join(tmpdir, "file{}.csv".format(n + 1)), index_label="id"
-            )
+            df.to_csv(os.path.join(tmpdir, "file{}.csv".format(n + 1)), index_label="id")
             if n == 1:
                 df.index -= shift_by
 
@@ -168,6 +170,7 @@ def duke(
 
     finally:
         if keepfiles:
+            print(tmpdir)
             logger.debug("Files of the duke run are kept in {}".format(tmpdir))
         else:
             shutil.rmtree(tmpdir)

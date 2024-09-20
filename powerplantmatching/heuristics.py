@@ -79,6 +79,8 @@ def extend_by_non_matched(
     is_included = isin(extend_by, df, label=label)
     extend_by = extend_by[~is_included]
 
+    aggregate_added_data = config['aggregated_units']
+
     if aggregate_added_data and not extend_by.empty:
         extend_by = aggregate_units(
             extend_by, dataset_name=label, config=config, **aggkwargs
@@ -90,12 +92,11 @@ def extend_by_non_matched(
         )
 
     if df.columns.nlevels > 1:
-        return df.append(
+        return pd.concat([df,
             # , ignore_index=True ??
             pd.concat([extend_by], keys=[label], axis=1)
             .swaplevel(axis=1)
-            .reindex(columns=df.columns),
-            ignore_index=True,
+            .reindex(columns=df.columns)], ignore_index=True
         )
     else:
         return pd.concat([df, extend_by.reindex(columns=df.columns)], ignore_index=True)
@@ -275,59 +276,59 @@ def fill_missing_decommissioning_years(df, config=None):
     return df
 
 
-def aggregate_VRE_by_commissioning_year(df, target_fueltypes=None, agg_geo_by=None):
-    """
-    Aggregate the vast number of VRE (e.g. vom data.OPSD_VRE()) units to one
-    specific (Fueltype + Technology) cohorte per commissioning year.
+# def aggregate_VRE_by_commissioning_year(df, target_fueltypes=None, agg_geo_by=None):
+#     """
+#     Aggregate the vast number of VRE (e.g. vom data.OPSD_VRE()) units to one
+#     specific (Fueltype + Technology) cohorte per commissioning year.
 
-    Parameters
-    ----------
-    df : pd.DataFrame
-        DataFrame containing the data to aggregate
-    target_fueltypes : list
-        list of fueltypes to be aggregated (Others are cut!)
-    agg_by_geo : str
-        How to deal with lat/lon positions. Allowed:
-            NoneType : Do not show geoposition at all
-            'mean'   : Average geoposition
-            'wm'     : Average geoposition weighted by capacity
-    """
-    df = df.copy()
-    if agg_geo_by is None:
-        f = {"Capacity": ["sum"]}
-    elif agg_geo_by == "mean":
-        f = {"Capacity": ["sum"], "lat": ["mean"], "lon": ["mean"]}
-    elif agg_geo_by == "wm":
-        # TODO: This does not work yet, when NaNs are in lat/lon columns.
-        def wm(x):
-            return np.average(x, weights=df.loc[x.index, "Capacity"])
+#     Parameters
+#     ----------
+#     df : pd.DataFrame
+#         DataFrame containing the data to aggregate
+#     target_fueltypes : list
+#         list of fueltypes to be aggregated (Others are cut!)
+#     agg_by_geo : str
+#         How to deal with lat/lon positions. Allowed:
+#             NoneType : Do not show geoposition at all
+#             'mean'   : Average geoposition
+#             'wm'     : Average geoposition weighted by capacity
+#     """
+#     df = df.copy()
+#     if agg_geo_by is None:
+#         f = {"Capacity": ["sum"]}
+#     elif agg_geo_by == "mean":
+#         f = {"Capacity": ["sum"], "lat": ["mean"], "lon": ["mean"]}
+#     elif agg_geo_by == "wm":
+#         # TODO: This does not work yet, when NaNs are in lat/lon columns.
+#         def wm(x):
+#             return np.average(x, weights=df.loc[x.index, "Capacity"])
 
-        f = {
-            "Capacity": ["sum"],
-            "lat": {"weighted mean": wm},
-            "lon": {"weighted mean": wm},
-        }
-    else:
-        raise TypeError(
-            "Value given for `agg_geo_by` is '{}' but must be either \
-                        'NoneType' or 'mean' or 'wm'.".format(
-                agg_geo_by
-            )
-        )
+#         f = {
+#             "Capacity": ["sum"],
+#             "lat": {"weighted mean": wm},
+#             "lon": {"weighted mean": wm},
+#         }
+#     else:
+#         raise TypeError(
+#             "Value given for `agg_geo_by` is '{}' but must be either \
+#                         'NoneType' or 'mean' or 'wm'.".format(
+#                 agg_geo_by
+#             )
+#         )
 
-    if target_fueltypes is None:
-        target_fueltypes = ["Wind", "Solar", "Bioenergy"]
-    df = df[df.Fueltype.isin(target_fueltypes)]
-    df = fill_missing_commissioning_years(df)
-    df.Technology.fillna("-", inplace=True)
-    df = (
-        df.groupby(["Country", "DateIn", "Fueltype", "Technology"])
-        .agg(f)
-        .reset_index()
-        .replace({"-": np.NaN})
-    )
-    df.columns = df.columns.droplevel(level=1)
-    return df.assign(Set="PP", DateRetrofit=df.DateIn)
+    # if target_fueltypes is None:
+    #     target_fueltypes = ["Wind", "Solar", "Bioenergy"]
+    # df = df[df.Fueltype.isin(target_fueltypes)]
+    # df = fill_missing_commissioning_years(df)
+    # df.Technology.fillna("-", inplace=True)
+    # df = (
+    #     df.groupby(["Country", "DateIn", "Fueltype", "Technology"])
+    #     .agg(f)
+    #     .reset_index()
+    #     .replace({"-": np.NaN})
+    # )
+    # df.columns = df.columns.droplevel(level=1)
+    # return df.assign(Set="PP", DateRetrofit=df.DateIn)
 
 
 @deprecated(
@@ -348,13 +349,13 @@ def fill_missing_decommyears(df, config=None):
     return fill_missing_decommissioning_years(df, config=config)
 
 
-@deprecated(
-    deprecated_in="0.5.0",
-    removed_in="0.6.0",
-    details="This function was renamed to `aggregate_VRE_by_commissioning_year`",
-)
-def aggregate_VRE_by_commyear(df, config=None):
-    return aggregate_VRE_by_commissioning_year(df, config=config)
+# @deprecated(
+#     deprecated_in="0.5.0",
+#     removed_in="0.6.0",
+#     details="This function was renamed to `aggregate_VRE_by_commissioning_year`",
+# )
+# def aggregate_VRE_by_commyear(df, config=None):
+#     return aggregate_VRE_by_commissioning_year(df, config=config)
 
 
 @deprecated(
@@ -524,64 +525,64 @@ def remove_oversea_areas(df, lat=[36, 72], lon=[-10.6, 31]):
     return df
 
 
-def gross_to_net_factors(reference="opsd", aggfunc="median", return_entire_data=False):
-    """ """
-    from .cleaning import gather_technology_info
+# def gross_to_net_factors(reference="opsd", aggfunc="median", return_entire_data=False):
+#     """ """
+#     from .cleaning import gather_technology_info
 
-    if reference == "opsd":
-        from .data import OPSD
+#     if reference == "opsd":
+#         from .data import OPSD
 
-        reference = OPSD(raw=True)["DE"]
-    df = reference.copy()
-    df = df[df.capacity_gross_uba.notnull() & df.capacity_net_bnetza.notnull()]
-    df["ratio"] = df.capacity_net_bnetza / df.capacity_gross_uba
-    df = df[df.ratio <= 1.0]  # drop obvious data errors
-    if return_entire_data:
-        return df
-    else:
-        df.energy_source_level_2.fillna(value=df.energy_source, inplace=True)
-        df.replace(
-            dict(
-                energy_source_level_2={
-                    "Biomass and biogas": "Bioenergy",
-                    "Fossil fuels": "Other",
-                    "Mixed fossil fuels": "Other",
-                    "Natural gas": "Natural Gas",
-                    "Non-renewable waste": "Waste",
-                    "Other bioenergy and renewable waste": "Bioenergy",
-                    "Other or unspecified energy sources": "Other",
-                    "Other fossil fuels": "Other",
-                    "Other fuels": "Other",
-                }
-            ),
-            inplace=True,
-        )
-        df.rename(columns={"technology": "Technology"}, inplace=True)
-        df = gather_technology_info(df, ["Technology", "energy_source_level_2"])
-        df = df.assign(
-            energy_source_level_2=lambda df: df.energy_source_level_2.str.title()
-        )
-        ratios = df.groupby(["energy_source_level_2", "Technology"]).ratio.mean()
-        return ratios
+#         reference = OPSD(raw=True)["DE"]
+    # df = reference.copy()
+    # df = df[df.capacity_gross_uba.notnull() & df.capacity_net_bnetza.notnull()]
+    # df["ratio"] = df.capacity_net_bnetza / df.capacity_gross_uba
+    # df = df[df.ratio <= 1.0]  # drop obvious data errors
+    # if return_entire_data:
+    #     return df
+    # else:
+    #     df.energy_source_level_2.fillna(value=df.energy_source, inplace=True)
+    #     df.replace(
+    #         dict(
+    #             energy_source_level_2={
+    #                 "Biomass and biogas": "Bioenergy",
+    #                 "Fossil fuels": "Other",
+    #                 "Mixed fossil fuels": "Other",
+    #                 "Natural gas": "Natural Gas",
+    #                 "Non-renewable waste": "Waste",
+    #                 "Other bioenergy and renewable waste": "Bioenergy",
+    #                 "Other or unspecified energy sources": "Other",
+    #                 "Other fossil fuels": "Other",
+    #                 "Other fuels": "Other",
+    #             }
+    #         ),
+    #         inplace=True,
+    #     )
+    #     df.rename(columns={"technology": "Technology"}, inplace=True)
+    #     df = gather_technology_info(df, ["Technology", "energy_source_level_2"])
+    #     df = df.assign(
+    #         energy_source_level_2=lambda df: df.energy_source_level_2.str.title()
+    #     )
+    #     ratios = df.groupby(["energy_source_level_2", "Technology"]).ratio.mean()
+    #     return ratios
 
 
-def scale_to_net_capacities(df, is_gross=True, catch_all=True):
-    df = get_obj_if_Acc(df)
-    if is_gross:
-        factors = gross_to_net_factors()
-        for ftype, tech in factors.index.values:
-            df.loc[
-                (df.Fueltype == ftype) & (df.Technology == tech), "Capacity"
-            ] *= factors.loc[(ftype, tech)]
-        if catch_all:
-            for ftype in factors.index.levels[0]:
-                techs = factors.loc[ftype].index.tolist()
-                df.loc[
-                    (df.Fueltype == ftype) & (~df.Technology.isin(techs)), "Capacity"
-                ] *= factors.loc[ftype].mean()
-        return df
-    else:
-        return df
+# def scale_to_net_capacities(df, is_gross=True, catch_all=True):
+#     df = get_obj_if_Acc(df)
+#     if is_gross:
+#         factors = gross_to_net_factors()
+#         for ftype, tech in factors.index.values:
+#             df.loc[
+#                 (df.Fueltype == ftype) & (df.Technology == tech), "Capacity"
+#             ] *= factors.loc[(ftype, tech)]
+#         if catch_all:
+#             for ftype in factors.index.levels[0]:
+#                 techs = factors.loc[ftype].index.tolist()
+#                 df.loc[
+#                     (df.Fueltype == ftype) & (~df.Technology.isin(techs)), "Capacity"
+#                 ] *= factors.loc[ftype].mean()
+#         return df
+#     else:
+#         return df
 
 
 def PLZ_to_LatLon_map():

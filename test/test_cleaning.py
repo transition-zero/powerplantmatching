@@ -6,7 +6,7 @@ from powerplantmatching.cleaning import (
     clean_name,
     gather_and_replace,
     gather_specifications,
-    gather_technology_info,
+    # gather_technology_info,
 )
 from powerplantmatching.data import OPSD
 

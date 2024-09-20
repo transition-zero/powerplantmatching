@@ -48,7 +48,7 @@ AGGREGATION_FUNCTIONS = {
     "Fueltype": mode,
     "Technology": mode,
     "Set": mode,
-    "Country": mode,
+    # "Country": mode,
     "Capacity": "sum",
     "lat": "mean",
     "lon": "mean",
@@ -64,6 +64,7 @@ AGGREGATION_FUNCTIONS = {
     "DamHeight_m": "sum",
     "StorageCapacity_MWh": "sum",
     "Efficiency": "sum",  # note this is weighted mean
+    'admin_1': mode,
 }
 
 
@@ -169,6 +170,7 @@ def gather_and_replace(df, mapping):
         func = lambda ds: ds.str.contains(pattern)
         where = df.astype(str).apply(func).any(axis=1)
         res = res.where(~where, key)
+
     return res
 
 
@@ -217,94 +219,92 @@ def gather_specifications(
     return df.assign(**cols)
 
 
-def gather_fueltype_info(
-    df, search_col=["Name", "Fueltype", "Technology"], config=None
-):
-    """
-    Parses in a set of columns for distinct fueltype specifications.
+# def gather_fueltype_info(df, search_col=["Name", "Fueltype", "Technology"], config=None):
+#     """
+#     Parses in a set of columns for distinct fueltype specifications.
 
-    This function uses the mappings (key -> regex pattern) given
-    by the `config` under the section `target_technologies`.
-    The representative keys are set if any of the columns
-    in `search_col` matches the regex pattern.
+#     This function uses the mappings (key -> regex pattern) given
+#     by the `config` under the section `target_technologies`.
+#     The representative keys are set if any of the columns
+#     in `search_col` matches the regex pattern.
 
-    Parameter
-    ---------
-    df : pandas.DataFrame
-        DataFrame to be parsed.
-    search_col : list, default is ["Name", "Fueltype", "Technology", "Set"]
-        Set of columns to be parsed. Must be in `df`.
-    config : dict, default None
-        Custom configuration, defaults to
-        `powerplantmatching.config.get_config()`.
-    """
-    if config is None:
-        config = get_config()
+#     Parameter
+#     ---------
+#     df : pandas.DataFrame
+#         DataFrame to be parsed.
+#     search_col : list, default is ["Name", "Fueltype", "Technology", "Set"]
+#         Set of columns to be parsed. Must be in `df`.
+#     config : dict, default None
+#         Custom configuration, defaults to
+#         `powerplantmatching.config.get_config()`.
+#     """
+#     if config is None:
+#         config = get_config()
 
-    keys = config["target_fueltypes"]
-    fueltype = gather_and_replace(df[search_col], keys)
-    return df.assign(Fueltype=fueltype)
+#     keys = config["target_fueltypes"]
+#     fueltype = gather_and_replace(df[search_col], keys)
+#     return df.assign(Fueltype=fueltype)
 
 
-@deprecated(
-    deprecated_in="0.5",
-    removed_in="0.6",
-    details="Use `gather_specifications` instead.",
-)
-def gather_technology_info(
-    df, search_col=["Name", "Fueltype", "Technology", "Set"], config=None
-):
-    """
-    Parses in a set of columns for distinct technology specifications.
+# @deprecated(
+#     deprecated_in="0.5",
+#     removed_in="0.6",
+#     details="Use `gather_specifications` instead.",
+# )
+# def gather_technology_info(
+#     df, search_col=["Name", "Fueltype", "Technology", "Set"], config=None
+# ):
+#     """
+#     Parses in a set of columns for distinct technology specifications.
 
-    This function uses the mappings (key -> regex pattern) given
-    by the `config` under the section `target_technologies`.
-    The representative keys are set if any of the columns
-    in `search_col` matches the regex pattern.
+#     This function uses the mappings (key -> regex pattern) given
+#     by the `config` under the section `target_technologies`.
+#     The representative keys are set if any of the columns
+#     in `search_col` matches the regex pattern.
 
-    Parameter
-    ---------
-    df : pandas.DataFrame
-        DataFrame to be parsed.
-    search_col : list, default is ["Name", "Fueltype", "Technology", "Set"]
-        Set of columns to be parsed. Must be in `df`.
-    config : dict, default None
-        Custom configuration, defaults to
-        `powerplantmatching.config.get_config()`.
-    """
-    if config is None:
-        config = get_config()
+#     Parameter
+#     ---------
+#     df : pandas.DataFrame
+#         DataFrame to be parsed.
+#     search_col : list, default is ["Name", "Fueltype", "Technology", "Set"]
+#         Set of columns to be parsed. Must be in `df`.
+#     config : dict, default None
+#         Custom configuration, defaults to
+#         `powerplantmatching.config.get_config()`.
+#     """
+#     if config is None:
+#         config = get_config()
 
-    keys = config["target_technologies"]
-    technology = gather_and_replace(df[search_col], keys)
-    return df.assign(Technology=technology)
+#     keys = config["target_technologies"]
+#     technology = gather_and_replace(df[search_col], keys)
+#     return df.assign(Technology=technology)
 
 
-def gather_set_info(df, search_col=["Name", "Fueltype", "Technology"], config=None):
-    """
-    Parses in a set of columns for distinct Set specifications.
+# def gather_set_info(df, search_col=["Name", "Fueltype", "Technology"], config=None):
+#     """
+#     Parses in a set of columns for distinct Set specifications.
 
-    This function uses the mappings (key -> regex pattern) given
-    by the `config` under the section `target_sets`.
-    The representative keys are set if any of the columns
-    in `search_col` matches the regex pattern.
+#     This function uses the mappings (key -> regex pattern) given
+#     by the `config` under the section `target_sets`.
+#     The representative keys are set if any of the columns
+#     in `search_col` matches the regex pattern.
 
-    Parameter
-    ---------
-    df : pandas.DataFrame
-        DataFrame to be parsed.
-    search_col : list, default is ["Name", "Fueltype", "Technology", "Set"]
-        Set of columns to be parsed. Must be in `df`.
-    config : dict, default None
-        Custom configuration, defaults to
-        `powerplantmatching.config.get_config()`.
-    """
-    if config is None:
-        config = get_config()
+#     Parameter
+#     ---------
+#     df : pandas.DataFrame
+#         DataFrame to be parsed.
+#     search_col : list, default is ["Name", "Fueltype", "Technology", "Set"]
+#         Set of columns to be parsed. Must be in `df`.
+#     config : dict, default None
+#         Custom configuration, defaults to
+#         `powerplantmatching.config.get_config()`.
+#     """
+#     if config is None:
+#         config = get_config()
 
-    keys = config["target_sets"]
-    Set = gather_and_replace(df[search_col], keys)
-    return df.assign(Set=Set)
+#     keys = config["target_sets"]
+#     Set = gather_and_replace(df[search_col], keys)
+#     return df.assign(Set=Set)
 
 
 @deprecated(
@@ -427,23 +427,29 @@ def aggregate_units(
 
     cols = config["target_columns"]
     weighted_cols = list({"Efficiency", "Duration"} & set(cols))
-    str_cols = list({"Name", "Country", "Fueltype", "Technology", "Set"} & set(cols))
+    str_cols = list({"Name", "admin_1", "Technology"} & set(cols))  # "Technology", "Set"
     props_for_groups = {k: v for k, v in AGGREGATION_FUNCTIONS.items() if k in cols}
 
-    df = df.assign(
-        lat=df.lat.astype(float),
-        lon=df.lon.astype(float),
-        **df[weighted_cols].mul(df.Capacity, axis=0),
-        **df[str_cols].fillna("").astype(str),
-    )
+    if "lat" in cols:
+        df = df.assign(
+            lat=df.lat.astype(float),
+            lon=df.lon.astype(float),
+            **df[weighted_cols].mul(df.Capacity, axis=0),
+            **df[str_cols].fillna("").astype(str),
+        )
+    else:
+        df = df.assign(
+            **df[weighted_cols].mul(df.Capacity, axis=0),
+            **df[str_cols].fillna("").astype(str),
+        )
     if pre_clean_name:
         df = clean_name(df)
 
     logger.info(f"Aggregating blocks in data source '{ds_name}'.")
-
+    country_wise = config["aggregate_country_wise"]
     if country_wise:
-        countries = df.Country.unique()
-        duplicates = pd.concat([duke(df.query("Country == @c")) for c in countries])
+        countries = df.admin_1.unique()
+        duplicates = pd.concat([duke(df.query("admin_1 == @c"), config=config) for c in countries])
     else:
         duplicates = duke(df)
 

@@ -1,0 +1,126 @@
+<!--
+  For more information, see
+    https://github.com/larsga/Duke/wiki/
+
+  Improvements needed:
+   - some area numbers have spaces in them
+   - not stripping accents from names
+-->
+<duke> 
+
+
+
+  <object class="no.priv.garshol.duke.comparators.GeopositionComparator"
+          name="GeoComparator">
+    <param name="max-distance" value="5000"/>
+  </object>
+
+  <schema>
+    <threshold>0.8</threshold>
+
+    <property type="id">
+      <name>ID</name>
+    </property>
+    <property>
+      <name>NAME</name> 
+      <comparator>no.priv.garshol.duke.comparators.JaroWinklerTokenized</comparator>
+      <low>0.05</low>
+      <high>0.85</high>
+    </property>
+    <!-- <property>
+      <name>OTHERNAMES</name> 
+      <comparator>no.priv.garshol.duke.comparators.JaroWinklerTokenized</comparator>
+      <low>0.3</low>
+      <high>0.90</high>
+    </property> -->
+    <!-- <property>
+      <name>UNITNAME</name> 
+      <comparator>no.priv.garshol.duke.comparators.JaroWinklerTokenized</comparator>
+      <low>0.1</low>
+      <high>0.7</high>
+    </property> -->
+    <property>
+      <name>TECHNOLOGY</name> 
+      <comparator>no.priv.garshol.duke.comparators.QGramComparator</comparator>
+      <low>0.01</low>
+      <high>0.6</high>
+    </property>
+    <property>
+      <name>ADMIN1</name> 
+      <comparator>no.priv.garshol.duke.comparators.QGramComparator</comparator>
+      <low>0.0</low>
+      <high>0.53</high>
+    </property>   
+    <property>
+      <name>CAPACITY</name> 
+      <comparator>no.priv.garshol.duke.comparators.NumericComparator</comparator>
+      <low>0.12</low>
+      <high>0.85</high>
+    </property>
+    <property>
+      <name>GEOPOSITION</name> 
+      <comparator>GeoComparator</comparator>
+      <low>0.15</low>
+      <high>0.87</high>
+    </property>  
+  </schema>
+
+  <database class="no.priv.garshol.duke.databases.InMemoryDatabase">    
+  </database>
+  
+  <group>
+    <csv>
+      <param name="input-file" value="file2.csv"/>
+
+      <column name="id" property="ID"/>
+      <column name="Name" 
+              property="NAME"
+              cleaner="no.priv.garshol.duke.cleaners.LowerCaseNormalizeCleaner"/>
+      <!-- <column name="Othernames" 
+              property="OTHERNAMES"
+              cleaner="no.priv.garshol.duke.cleaners.LowerCaseNormalizeCleaner"/> -->
+
+      <!-- <column name="Fueltype"
+              property="FUELTYPE"
+              cleaner="no.priv.garshol.duke.cleaners.LowerCaseNormalizeCleaner"/> -->
+      <column name="Technology"
+              property="TECHNOLOGY"
+              cleaner="no.priv.garshol.duke.cleaners.LowerCaseNormalizeCleaner"/>
+      <column name="admin_1"
+              property="ADMIN1"/>
+      <column name="Capacity"
+              property="CAPACITY"/>
+      <column name="Geoposition"
+              property="GEOPOSITION"/>
+    </csv>
+  </group>
+
+  <group>
+    <csv>
+      <param name="input-file" value="file1.csv"/>
+
+      <column name="id" property="ID"/>
+      <column name="Name" 
+              property="NAME"
+              cleaner="no.priv.garshol.duke.cleaners.LowerCaseNormalizeCleaner"/>
+      <!-- <column name="Othernames" 
+              property="OTHERNAMES"
+              cleaner="no.priv.garshol.duke.cleaners.LowerCaseNormalizeCleaner"/> -->
+
+      <!-- <column name="Fueltype"
+              property="FUELTYPE"
+              cleaner="no.priv.garshol.duke.cleaners.LowerCaseNormalizeCleaner"/> -->
+      <column name="Technology"
+              property="TECHNOLOGY"
+              cleaner="no.priv.garshol.duke.cleaners.LowerCaseNormalizeCleaner"/>
+      <column name="admin_1"
+              property="ADMIN1"/>
+      <column name="Capacity"
+              property="CAPACITY"/>
+      <column name="Geoposition"
+              property="GEOPOSITION"/>
+    </csv>
+  </group>
+
+  
+</duke>

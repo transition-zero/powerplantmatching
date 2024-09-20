@@ -46,6 +46,7 @@ def best_matches(links):
         Links as returned by duke
     """
     labels = links.columns.difference({"scores"})
+
     if links.empty:
         return pd.DataFrame(columns=labels)
     else:
@@ -94,25 +95,32 @@ def compare_two_datasets(dfs, labels, country_wise=True, config=None, **dukeargs
 
     def country_link(dfs, country):
         # country_selector for both dataframes
-        sel_country_b = [df["Country"] == country for df in dfs]
+        sel_country_b = [df["admin_1"] == country for df in dfs]
         # only append if country appears in both dataframse
         if all(sel.any() for sel in sel_country_b):
             return duke(
-                [df[sel] for df, sel in zip(dfs, sel_country_b)], labels, **dukeargs
+                [df[sel] for df, sel in zip(dfs, sel_country_b)], labels, config=config, **dukeargs
             )
         else:
             return pd.DataFrame(columns=[*labels, "scores"])
 
     if country_wise:
-        countries = config["target_countries"]
+        countries = config["target_admin_1s"]
         links = pd.concat([country_link(dfs, c) for c in countries], ignore_index=True)
     else:
-        links = duke(dfs, labels=labels, **dukeargs)
+        links = duke(dfs, labels=labels, config=config, **dukeargs)
 
     if links.empty:
         matches = pd.DataFrame(columns=labels)
     else:
+
         matches = best_matches(links)
+
+        matches = matches.merge(links, on=labels, how="left")
+        matches.to_csv(
+            config["scores_output_file"],
+            index=False,
+        )
 
     return matches
 
@@ -136,6 +144,9 @@ def cross_matches(sets_of_pairs, labels=None):
 
     """
     m_all = sets_of_pairs
+
+    labels += ["scores"]
+
     if labels is None:
         labels = np.unique([x.columns for x in m_all])
     matches = pd.DataFrame(columns=labels)
@@ -150,7 +161,7 @@ def cross_matches(sets_of_pairs, labels=None):
 
     if matches.isnull().all().any():
         cols = ", ".join(matches.columns[matches.isnull().all()])
-        raise ValueError(f"No matches found for data source {cols}")
+        logger.warn(f"No matches found for data source {cols}")
 
     matches = matches.drop_duplicates().reset_index(drop=True)
     for i in labels:
@@ -162,6 +173,7 @@ def cross_matches(sets_of_pairs, labels=None):
                 matches[matches[i].isnull()],
             ]
         ).reset_index(drop=True)
+
     return (
         matches.assign(length=matches.notna().sum(axis=1))
         .sort_values(by="length", ascending=False)
@@ -205,6 +217,7 @@ def link_multiple_datasets(
         return compare_two_datasets(dfs_lbs[:2], dfs_lbs[2:], config=config, **dukeargs)
 
     mapargs = [[dfs[c], dfs[d], labels[c], labels[d]] for c, d in combs]
+
     all_matches = parmap(comp_dfs, mapargs)
 
     return cross_matches(all_matches, labels=labels)
@@ -248,19 +261,26 @@ def combine_multiple_datasets(datasets, labels=None, config=None, **dukeargs):
             order as in cross_matches
         """
         datasets = list(map(read_csv_if_string, datasets))
+
         for i, data in enumerate(datasets):
             datasets[i] = data.reindex(cross_matches.iloc[:, i]).reset_index(drop=True)
+
         return (
-            pd.concat(datasets, axis=1, keys=cross_matches.columns.tolist())
+            pd.concat(datasets+[cross_matches[['scores']]], axis=1, keys=cross_matches.columns.tolist())
             .reorder_levels([1, 0], axis=1)
-            .reindex(columns=config["target_columns"], level=0)
+            .reindex(columns=config["target_columns"]+["scores"], level=0)
             .reset_index(drop=True)
         )
 
     crossmatches = link_multiple_datasets(datasets, labels, config=config, **dukeargs)
-    return combined_dataframe(crossmatches, datasets, config).reindex(
-        columns=config["target_columns"], level=0
+
+    df = combined_dataframe(crossmatches, datasets, config)
+
+    df = df.reindex(
+        columns=config["target_columns"]+["scores"], level=0
     )
+
+    return df
 
 
 def reduce_matched_dataframe(df, show_orig_names=False, config=None):
@@ -281,35 +301,54 @@ def reduce_matched_dataframe(df, show_orig_names=False, config=None):
 
     # define which databases are present and get their reliability_score
     sources = df.columns.levels[1]
-    rel_scores = pd.Series(
-        {s: config[s]["reliability_score"] for s in sources}, dtype=float
-    ).sort_values(ascending=False)
+    # rel_scores = pd.Series(
+    #     {s: config[s]["reliability_score"] for s in sources}, dtype=float
+    # ).sort_values(ascending=False)
     cols = config["target_columns"]
     props_for_groups = {col: "first" for col in cols}
+    if "DataIn" in cols:
+        props_for_groups["DataIn"] = "min"
+    if "DateRetrofit" in cols:
+        props_for_groups["DateRetrofit"] = "max"
+    if "DataOut" in cols:
+        props_for_groups["DataOut"] = "max"
+
     props_for_groups.update(
         {
-            "DataIn": "min",
-            "DateRetrofit": "max",
-            "DataOut": "max",
             "projectID": lambda x: dict(x.droplevel(0).dropna()),
             "eic_code": set,
         }
     )
     props_for_groups = pd.Series(props_for_groups)[cols].to_dict()
 
-    # set low priority on Fueltype 'Other' and Set 'PP'
-    # turn it since aggregating only possible for axis=0
-    sdf = (
-        df.assign(Set=lambda df: df.Set.where(df.Set != "PP"))
-        .assign(Fueltype=lambda df: df.Fueltype.where(df.Set != "Other"))
-        .stack(1)
-        .reindex(rel_scores.index, level=1)
-        .groupby(level=0)
-        .agg(props_for_groups)
-        .assign(Set=lambda df: df.Set.fillna("PP"))
-        .assign(Fueltype=lambda df: df.Fueltype.fillna("Other"))
-    )
+    # # set low priority on Fueltype 'Other' and Set 'PP'
+    # # turn it since aggregating only possible for axis=0
+    # if "Set" in cols:
+    #     sdf = (
+    #         df.assign(Set=lambda df: df.Set.where(df.Set != "PP"))
+    #         .assign(Fueltype=lambda df: df.Fueltype.where(df.Set != "Other"))
+    #         .stack(1)
+    #         .reindex(rel_scores.index, level=1)
+    #         .groupby(level=0)
+    #         .agg(props_for_groups)
+    #         .assign(Set=lambda df: df.Set.fillna("PP"))
+    #         .assign(Fueltype=lambda df: df.Fueltype.fillna("Other"))
+    #     )
+    # else:
+    #     df["Set"] = "PP"
+    #     sdf = (
+    #         df.assign(Set=lambda df: df.Set.where(df.Set != "PP"))
+    #         .assign(Fueltype=lambda df: df.Fueltype.where(df.Set != "Other"))
+    #         .stack(1)
+    #         .reindex(rel_scores.index, level=1)
+    #         .groupby(level=0)
+    #         .agg(props_for_groups)
+    #         .assign(Fueltype=lambda df: df.Fueltype.fillna("Other"))
+    #     )
+    sdf = df.copy()
 
     if show_orig_names:
         sdf = sdf.assign(**dict(df.Name))
-    return sdf.pipe(clean_technology).reset_index(drop=True)
+    # if "Technology" in cols:
+    #     sdf = sdf.pipe(clean_technology)
+    return sdf.reset_index(drop=True)
