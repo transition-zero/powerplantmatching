@@ -79,7 +79,7 @@ def extend_by_non_matched(
     is_included = isin(extend_by, df, label=label)
     extend_by = extend_by[~is_included]
 
-    aggregate_added_data = config['aggregated_units']
+    aggregate_added_data = False # config['aggregated_units']
 
     if aggregate_added_data and not extend_by.empty:
         extend_by = aggregate_units(
@@ -122,11 +122,17 @@ def isin(df, matched, label=None):
     df = get_obj_if_Acc(df)
 
     if not isinstance(df.projectID.iat[0], str):
-        raise TypeError(
-            "`projectID` contains multiple values per row. This is likely "
+        # raise TypeError(
+        #     "`projectID` contains multiple values per row. This is likely "
+        #     "because the powerplants are already aggregated, please use a "
+        #     "non-aggregated dataset."
+        # )
+        print("`projectID` contains multiple values per row. This is likely "
             "because the powerplants are already aggregated, please use a "
-            "non-aggregated dataset."
-        )
+            "non-aggregated dataset.")
+        print(df.projectID.iat[0])
+        df['projectID'] = df['projectID'].apply(lambda x: '; '.join(list(x)))
+        print(df.projectID.iat[0])
 
     if label is None:
         label = df.powerplant.get_name()

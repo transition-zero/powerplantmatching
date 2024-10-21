@@ -104,6 +104,7 @@ def compare_two_datasets(dfs, labels, country_wise=True, config=None, **dukeargs
         else:
             return pd.DataFrame(columns=[*labels, "scores"])
 
+    country_wise = config['country_wise']
     if country_wise:
         countries = config["target_admin_1s"]
         links = pd.concat([country_link(dfs, c) for c in countries], ignore_index=True)
@@ -115,17 +116,14 @@ def compare_two_datasets(dfs, labels, country_wise=True, config=None, **dukeargs
     else:
 
         matches = best_matches(links)
+        print("compare_two_datasets", len(matches))
 
         matches = matches.merge(links, on=labels, how="left")
-        matches.to_csv(
-            config["scores_output_file"],
-            index=False,
-        )
 
     return matches
 
 
-def cross_matches(sets_of_pairs, labels=None):
+def cross_matches(sets_of_pairs, labels=None, return_cross_matches=True):
     """
     Combines multiple sets of pairs and returns one consistent
     dataframe. Identifiers of two datasets can appear in one row even
@@ -149,30 +147,47 @@ def cross_matches(sets_of_pairs, labels=None):
 
     if labels is None:
         labels = np.unique([x.columns for x in m_all])
-    matches = pd.DataFrame(columns=labels)
-    for i in labels:
-        base = [m.set_index(i) for m in m_all if i in m]
-        match_base = pd.concat(base, axis=1).reset_index()
-        matches = pd.concat([matches, match_base], sort=True)
 
-    if matches.empty:
-        logger.warn("No matches found")
-        return pd.DataFrame(columns=labels)
+    if not return_cross_matches:
+        matches = pd.concat(m_all, axis=0)
+    else:
+        matches = pd.DataFrame(columns=labels)
+        for i in labels:
+            base = [m.set_index(i) for m in m_all if i in m]
 
-    if matches.isnull().all().any():
-        cols = ", ".join(matches.columns[matches.isnull().all()])
-        logger.warn(f"No matches found for data source {cols}")
+            if len([s for s in base if "scores" in s]) > 1:  # new
+                for b in range(len(base)):
+                    if b != 0:
+                        base[b] = base[b].rename(columns={"scores": f"scores_{b}"})
 
-    matches = matches.drop_duplicates().reset_index(drop=True)
-    for i in labels:
-        matches = pd.concat(
-            [
-                matches.groupby(i, as_index=False, sort=False).apply(
-                    lambda x: x.loc[x.isnull().sum(axis=1).idxmin()]
-                ),
-                matches[matches[i].isnull()],
-            ]
-        ).reset_index(drop=True)
+            if i == "scores":  # new. if matching across multiple datasets
+                match_base = pd.concat(base, axis=0).reset_index()
+            else:
+                match_base = pd.concat(base, axis=1).reset_index()
+
+            matches = pd.concat([matches, match_base], sort=True)
+
+        if matches.empty:
+            logger.warn("No matches found")
+            return pd.DataFrame(columns=labels)
+
+        if matches.isnull().all().any():
+            cols = ", ".join(matches.columns[matches.isnull().all()])
+            logger.warn(f"No matches found for data source {cols}")
+
+        matches = matches.drop_duplicates().reset_index(drop=True)
+
+        matches.to_csv("japan/check_matches.csv", index=False)
+
+        for i in [i for i in labels if i != "scores"]:
+            matches = pd.concat(
+                [
+                    matches.groupby(i, as_index=False, sort=False).apply(
+                        lambda x: x.loc[x.isnull().sum(axis=1).idxmin()]
+                    ),
+                    matches[matches[i].isnull()],
+                ]
+            ).reset_index(drop=True)
 
     return (
         matches.assign(length=matches.notna().sum(axis=1))
@@ -184,7 +199,7 @@ def cross_matches(sets_of_pairs, labels=None):
 
 
 def link_multiple_datasets(
-    datasets, labels, use_saved_matches=False, config=None, **dukeargs
+    datasets, labels, use_saved_matches=False, config=None, return_cross_matches=True, **dukeargs
 ):
     """
     Duke-based horizontal match of multiple databases. Returns the
@@ -220,10 +235,10 @@ def link_multiple_datasets(
 
     all_matches = parmap(comp_dfs, mapargs)
 
-    return cross_matches(all_matches, labels=labels)
+    return cross_matches(all_matches, labels=labels, return_cross_matches=return_cross_matches)
 
 
-def combine_multiple_datasets(datasets, labels=None, config=None, **dukeargs):
+def combine_multiple_datasets(datasets, labels=None, config=None, return_cross_matches=True, **dukeargs):
     """
     Duke-based horizontal match of multiple databases. Returns the
     matched dataframe including only the matched entries in a
@@ -272,7 +287,7 @@ def combine_multiple_datasets(datasets, labels=None, config=None, **dukeargs):
             .reset_index(drop=True)
         )
 
-    crossmatches = link_multiple_datasets(datasets, labels, config=config, **dukeargs)
+    crossmatches = link_multiple_datasets(datasets, labels, config=config, return_cross_matches=return_cross_matches, **dukeargs)
 
     df = combined_dataframe(crossmatches, datasets, config)
 

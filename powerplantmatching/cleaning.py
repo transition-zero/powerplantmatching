@@ -45,10 +45,11 @@ def mode(x):
 
 AGGREGATION_FUNCTIONS = {
     "Name": mode,
+    "power_company": mode,
     "Fueltype": mode,
     "Technology": mode,
     "Set": mode,
-    # "Country": mode,
+    "Country": mode,
     "Capacity": "sum",
     "lat": "mean",
     "lon": "mean",
@@ -57,7 +58,7 @@ AGGREGATION_FUNCTIONS = {
     "DateMothball": "min",
     "DateOut": "min",
     "File": mode,
-    "projectID": set,
+    "projectID": lambda set_obj: set([x for xs in set_obj for x in xs]) if isinstance(set_obj, set) or isinstance(set_obj, list) else set_obj,
     "EIC": set,
     "Duration": "sum",  # note this is weighted sum
     "Volume_Mm3": "sum",
@@ -65,6 +66,7 @@ AGGREGATION_FUNCTIONS = {
     "StorageCapacity_MWh": "sum",
     "Efficiency": "sum",  # note this is weighted mean
     'admin_1': mode,
+    'grid_region': mode,
 }
 
 
@@ -446,12 +448,12 @@ def aggregate_units(
         df = clean_name(df)
 
     logger.info(f"Aggregating blocks in data source '{ds_name}'.")
-    country_wise = config["aggregate_country_wise"]
+    country_wise = config["country_wise"]
     if country_wise:
         countries = df.admin_1.unique()
         duplicates = pd.concat([duke(df.query("admin_1 == @c"), config=config) for c in countries])
     else:
-        duplicates = duke(df)
+        duplicates = duke(df, config=config)
 
     df = cliques(df, duplicates)
     df = df.groupby("grouped").agg(props_for_groups)

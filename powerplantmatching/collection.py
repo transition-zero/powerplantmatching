@@ -38,11 +38,102 @@ from .utils import (
 logger = logging.getLogger(__name__)
 
 
+# def collect(
+#     datasets,
+#     update=False,
+#     reduced=True,
+#     config=None,
+#     **dukeargs,
+# ):
+#     """
+#     Return the collection for a given list of datasets in matched or
+#     reduced form.
+
+#     Parameters
+#     ----------
+#     datasets : list or str
+#         list containing the dataset identifiers as str, or single str
+#     update : bool
+#         Do an horizontal update (True) or read from the cache file (False)
+#     reduced : bool
+#         Switch as to return the reduced (True) or matched (False) dataset.
+#     config : dict
+#         Configuration file of powerplantmatching
+#     **dukeargs : keyword-args for duke
+#     """
+
+#     from . import data
+
+#     if config is None:
+#         config = get_config()
+
+#     def df_by_name(name):
+#         conf = config[name]
+#         get_df = getattr(data, name)
+#         df = get_df(config=config)
+#         aggregated_units = config.get('aggregated_units') # conf.get("aggregate_units")
+#         print(f"aggregating units == {aggregated_units}")
+#         if aggregated_units:
+#             # if not conf.get("aggregated_units", False):
+#             print("aggregating units!")
+#             return aggregate_units(df, dataset_name=name, config=config)
+#         else:
+#             print("Not aggregating units!")
+#             return df.assign(projectID=df.projectID.map(lambda x: {x} if not isinstance(x, set) else x))
+
+
+#     # Deal with the case that only one dataset is requested
+#     if isinstance(datasets, str):
+#         return df_by_name(datasets)
+
+#     datasets = sorted(datasets)
+#     logger.info("Create combined dataset for {}".format(", ".join(datasets)))
+
+#     fn = "_".join(map(str.upper, datasets))
+#     outfn_matched = _data_out(f"Matched_{fn}.csv", config)
+#     print(outfn_matched)
+
+#     fn = "_".join(map(str.upper, datasets))
+#     outfn_reduced = _data_out(f"Matched_{fn}_reduced.csv", config)
+#     print(outfn_reduced)
+
+#     if not update and not os.path.exists(outfn_reduced if reduced else outfn_matched):
+#         logger.warning("Forcing update since the cache file is missing")
+#         update = True
+
+#     if update:
+#         dfs = parmap(df_by_name, datasets)
+#         matched = combine_multiple_datasets(dfs, datasets, config=config, **dukeargs)
+#         print(f"matched: {len(matched)}")
+    
+#         (
+#             matched.assign(projectID=lambda df: df.projectID.astype(str)).to_csv(
+#                 outfn_matched, index_label="id"
+#             )
+#         )
+
+#         reduced_df = reduce_matched_dataframe(matched, config=config)
+#         reduced_df.to_csv(outfn_reduced, index_label="id")
+
+#         return reduced_df if reduced else matched
+#     else:
+
+#         if reduced:
+#             df = pd.read_csv(outfn_reduced, index_col=0)
+#         else:
+#             df = pd.read_csv(
+#                 outfn_matched, index_col=0, header=[0, 1], low_memory=False
+#             )
+#         return df.pipe(projectID_to_dict)
+
+
 def collect(
     datasets,
     update=False,
     reduced=True,
     config=None,
+    dfs=None,
+    return_cross_matches=True,
     **dukeargs,
 ):
     """
@@ -68,18 +159,19 @@ def collect(
         config = get_config()
 
     def df_by_name(name):
-        conf = config[name]
+        # conf = config[name]
         get_df = getattr(data, name)
         df = get_df(config=config)
-        aggregated_units = config.get("aggregated_units")
-        print(f"aggregating units == {aggregated_units}")
-        if aggregated_units:
-            # if not conf.get("aggregated_units", False):
-            print("aggregating units!")
-            return aggregate_units(df, dataset_name=name, config=config)
-        else:
-            print("Not aggregating units!")
-            return df.assign(projectID=df.projectID.map(lambda x: {x}))
+        # aggregated_units = config.get('aggregated_units') # conf.get("aggregate_units")
+        # print(f"aggregating units == {aggregated_units}")
+        # if aggregated_units:
+        #     # if not conf.get("aggregated_units", False):
+        #     print("aggregating units!")
+        #     return aggregate_units(df, dataset_name=name, config=config)
+        # else:
+        #     print("Not aggregating units!")
+        #     return df.assign(projectID=df.projectID.map(lambda x: {x} if not isinstance(x, set) else x))
+        return df.assign(projectID=df.projectID.map(lambda x: {x} if not isinstance(x, set) else x))
 
 
     # Deal with the case that only one dataset is requested
@@ -102,8 +194,11 @@ def collect(
         update = True
 
     if update:
-        dfs = parmap(df_by_name, datasets)
-        matched = combine_multiple_datasets(dfs, datasets, config=config, **dukeargs)
+        if dfs is None:
+            dfs = parmap(df_by_name, datasets)
+
+        matched = combine_multiple_datasets(dfs, datasets, config=config, return_cross_matches=return_cross_matches, **dukeargs)
+        print(f"matched: {len(matched)}")
     
         (
             matched.assign(projectID=lambda df: df.projectID.astype(str)).to_csv(
@@ -136,6 +231,8 @@ def powerplants(
     extend_by_kwargs={},
     fill_geopositions=True,
     filter_missing_geopositions=True,
+    dfs=None,
+    return_cross_matches=True,
     **collection_kwargs,
 ):
     """
@@ -236,16 +333,16 @@ def powerplants(
     matching_sources = [
         list(to_dict_if_string(a))[0] for a in config["matching_sources"]
     ]
-    matched = collect(matching_sources, config=config, **collection_kwargs)
+    matched = collect(matching_sources, config=config, dfs=dfs, return_cross_matches=return_cross_matches, **collection_kwargs)
 
-    if isinstance(config["fully_included_sources"], list):
-        for source in config["fully_included_sources"]:
-            source = to_dict_if_string(source)
-            (name,) = list(source)
-            extend_by_kwargs.update({"query": source[name]})
-            matched = extend_by_non_matched(
-                matched, name, config=config, **extend_by_kwargs
-            )
+    # if isinstance(config["fully_included_sources"], list):
+    #     for source in config["fully_included_sources"]:
+    #         source = to_dict_if_string(source)
+    #         (name,) = list(source)
+    #         extend_by_kwargs.update({"query": source[name]})
+    #         matched = extend_by_non_matched(
+    #             matched, name, config=config, **extend_by_kwargs
+    #         )
 
     if fill_geopositions:
         matched = matched.powerplant.fill_geoposition()

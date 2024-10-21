@@ -35,7 +35,7 @@ __copyright__ = "Copyright 2017-2022 Technical University of Berlin"
 # from . import collection
 # Commonly used sub-modules. Imported here to provide end-user
 # convenience.
-from . import core, data, heuristics, plot, utils
+from . import core, data, heuristics, utils#, plot,
 from .accessor import PowerPlantAccessor
 from .collection import powerplants
 from .core import get_config, package_config

@@ -89,11 +89,15 @@ def duke(
     if dedup:
         # Deduplication mode
         # duke_config = "Deleteduplicates.xml"
+        print("dedupe config: ", config["deduplication_xml"])
         duke_config = config["deduplication_xml"]
         datasets = [datasets]
     else:
         # duke_config = "Comparison.xml"
         duke_config = config["comparison_xml"]
+
+    print(os.path.exists(duke_config), duke_config)
+    print(os.path.exists(_package_data(duke_config)), _package_data(duke_config))
 
     duke_bin_dir = _package_data("duke_binaries")
 
@@ -104,7 +108,8 @@ def duke(
 
     try:
         shutil.copyfile(
-            os.path.join(_package_data(duke_config)), os.path.join(tmpdir, "config.xml")
+            # os.path.join(_package_data(duke_config)), os.path.join(tmpdir, "config.xml")
+            os.path.join(duke_config), os.path.join(tmpdir, "config.xml")
         )
 
         logger.debug("Comparing files: %s", ", ".join(labels))
