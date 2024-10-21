@@ -16,7 +16,7 @@
   </object>
 
   <schema>
-    <threshold>0.55</threshold>
+    <threshold>0.80</threshold>
 
     <property type="id">
       <name>ID</name>
@@ -30,26 +30,26 @@
     <property>
       <name>TECHNOLOGY</name> 
       <comparator>no.priv.garshol.duke.comparators.QGramComparator</comparator>
-      <low>0.45</low>
+      <low>0.05</low>
       <high>0.55</high>
     </property>
     <property>
       <name>ADMIN1</name> 
       <comparator>no.priv.garshol.duke.comparators.ExactComparator</comparator>
-      <low>0.4</low>
-      <high>0.53</high>
+      <low>0.05</low>
+      <high>0.55</high>
     </property>   
     <property>
       <name>CAPACITY</name> 
       <comparator>no.priv.garshol.duke.comparators.NumericComparator</comparator>
       <low>0.12</low>
-      <high>0.87</high>
+      <high>0.88</high>
     </property>
     <property>
       <name>GEOPOSITION</name> 
       <comparator>GeoComparator</comparator>
-      <low>0.4</low>
-      <high>0.84</high>
+      <low>0.1</low>
+      <high>0.89</high>
     </property>  
   </schema>
 

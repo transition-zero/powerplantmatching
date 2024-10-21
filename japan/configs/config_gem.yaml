@@ -2,7 +2,7 @@
 
 gcp_project: tz-data-dev
 
-current_mappings: japan/matches/kitamoto_gem_validated_matches_hash.csv
+current_mappings: japan/matches/example_matches.csv # kitamoto_gem_validated_matches_hash.csv
 comparison_xml: japan/duke_configs/Comparison_kitamoto_gem.xml
 deduplication_xml: japan/duke_configs/Deleteduplicates_kitamoto_gem.xml
 
