@@ -16,8 +16,7 @@ cget = pycountry.countries.get
 
 
 def GEM(raw=False, update=True, config=None):
-    """for matching with __ data"""
-    config = get_config() if config is None else config
+    # config = get_config() if config is None else config  # Don't ever use default config from PPM
     data_config = config["GEM"]
 
     target_admin1s = config["target_admin_1s"]
@@ -106,8 +105,6 @@ def GEM(raw=False, update=True, config=None):
 
 
 def KITAMOTOGEM(raw=False, update=True, config=None):
-    """for matching with HJKS data"""
-    config = get_config() if config is None else config
     data_config = config["KITAMOTOGEM"]
 
     df = pd_gbq.read_gbq(
@@ -178,4 +175,149 @@ def KITAMOTOGEM(raw=False, update=True, config=None):
 
     logger.info(f"KITAMOTOGEM: {len(df)} projects")
 
+    return df
+
+
+def HJKS(raw=False, update=True, config=None):
+    data_config = config["HJKS"]
+
+    df = pd_gbq.read_gbq(
+        f"""SELECT plant_code, plant_name, unit_name, power_company, asset_class,
+    capacity_mw, grid_region
+    FROM {data_config['bq_table']}""",
+        project_id=config["gcp_project"],
+    )
+
+    if raw:
+        return df
+
+    # plant code is not a unique ID
+    df["unit_code"] = df.plant_code + "<SEP>" + df.unit_name
+    project_id = "plant_code" if data_config["aggregate_units"] else "unit_code"
+
+    df = df.rename(
+        columns={
+            project_id: "projectID",
+            "plant_name": "Name",
+            "capacity_mw": "Capacity",
+            "power_company": "power_company",
+            "grid_region": "grid_region",
+        }
+    )
+
+    df["asset_class"] = df["asset_class"].fillna("unknown")
+    df["Technology"] = df.asset_class.map(data_config["technology_map"])
+
+    if data_config["remove_matched_data"]:
+        path = config["current_mappings"]
+        if os.path.exists(path):
+            logger.info("Removing already matched data from HJKS")
+            current_mappings = pd.read_csv(path)
+            df = df[~df["projectID"].isin(current_mappings.HJKS)]
+        else:
+            logger.info(f"Current mappings do not exist: {path}")
+
+    if data_config["aggregate_units"]:
+        logger.info("Aggregating HJKS units")
+        df["Name"] = df["Name"].apply(
+            lambda x: re.split(r"\d", x)[0].strip()
+            if isinstance(x, str)
+            else [re.split(r"\d", x)[0].strip() for x in x]
+        )
+
+        df = (
+            df.groupby("projectID")
+            .agg(
+                {
+                    "Capacity": "sum",
+                    "unit_name": list,
+                    "Name": pd.Series.mode,
+                    "power_company": pd.Series.mode,
+                    "grid_region": pd.Series.mode,
+                    "Technology": "first",
+                }
+            )
+            .reset_index()
+        )
+        df["Name"] = df["Name"].apply(
+            lambda x: "; ".join(x) if not isinstance(x, str) else x
+        )
+        # df = (df.groupby('Name')
+        #         .agg({'Capacity': 'sum', 'power_company': pd.Series.mode, 'grid_region': pd.Series.mode, 'Technology': 'first', 'projectID': set})
+        #         .reset_index())
+
+    # filter to target techs
+    df = df[df.Technology.isin(config["target_technologies"])]
+    # filter to target admin_1s
+    df = df[df.grid_region.isin(config["target_grid_regions"])]
+
+    if data_config["clean_name"]:
+        logger.info("Cleaning HJKS names")
+        df = df.pipe(lambda x: clean_name(x, config))
+
+    df = df[config["target_columns"]]
+    df = df.pipe(set_column_name, "HJKS")
+    logger.info(f"HJKS: {len(df)} projects")
+    return df
+
+
+def FIT(raw=False, update=False, config=None):
+    data_config = config["FIT"]
+
+    df = pd_gbq.read_gbq(
+        f"""SELECT facility_id, power_company, asset_class, power_output_mw, admin_1,
+    latitude, longitude, location_type, operation_start_report_date, is_replacement, procurement_period_end_date
+    FROM {data_config['bq_table']}""",
+        project_id=config["gcp_project"],
+    )
+
+    if raw:
+        return df
+
+    df = df.rename(
+        columns={
+            "facility_id": "projectID",
+            "power_company": "Name",
+            "power_output_mw": "Capacity",
+            "latitude": "lat",
+            "longitude": "lon",
+        }
+    )
+
+    df["Technology"] = df.asset_class.map(data_config["technology_map"])
+
+    # filter to target techs
+    df = df[df.Technology.isin(config["target_technologies"])]
+    # filter to target admin_1s
+    if config["filter_to_target_admin_1s"]:
+        df = df[df.admin_1.isin(config["target_admin_1s"])]
+
+    if config["only_operating_fit_projects"]:
+        df = df[df.operation_start_report_date.notna()]
+
+    if data_config["remove_matched_data"]:
+        path = config["current_mappings"]
+        if os.path.exists(path):
+            logger.info("Removing already matched data from FIT")
+            current_mappings = pd.read_csv(path)
+            df = df[~df["projectID"].isin(current_mappings.FIT)]
+        else:
+            logger.info(f"Current mappings do not exist: {path}")
+
+    if data_config["clean_name"]:
+        logger.info("Cleaning FIT names")
+        df = df.pipe(lambda x: clean_name(x, config))
+
+    if data_config["aggregate_units"]:
+        logger.info("Aggregating FIT units")
+        df = (
+            df.groupby(["Name", "lat", "lon", "Technology", "admin_1"])
+            .agg({"Capacity": "sum", "projectID": set})
+            .reset_index()
+        )
+
+    df = df[config["target_columns"]]
+    df = df.pipe(set_column_name, "FIT")
+
+    logger.info(f"FIT: {len(df)} projects")
     return df
