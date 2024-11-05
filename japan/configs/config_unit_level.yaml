@@ -2,8 +2,8 @@
 
 gcp_project: tz-data-dev
 
-current_mappings: japan/matches/all_four_example.csv
-comparison_xml: japan/duke_configs/Comparison_all_four_sources.xml
+current_mappings: japan/matches/units_example.csv
+comparison_xml: japan/duke_configs/Comparison_unit_level.xml
 deduplication_xml: japan/duke_configs/Deleteduplicates_units.xml
 # ---------------------------------------------------------------------------- #
 #                                  Data Soursce Config                          #
@@ -104,16 +104,16 @@ target_technologies:
 target_columns:
   - Name
   - owner
-  # - unit_name
-  # - unit_number
+  - unit_name
+  - unit_number
   - Technology
   - Capacity
   - lat
   - lon
   - grid_region
   - admin_1
-  # - start_date
-  # - retire_date
+  - start_date
+  - retire_date
   - projectID
 
 target_gem_operating_status:
@@ -205,7 +205,7 @@ fully_included_sources:
   - GEM
   - HJKS
 
-hash: "matchingjapanunits3"
+hash: "matchingjapanunits4"
 
 
 # ---- settings ----

@@ -388,11 +388,13 @@ def FIT_ALL(raw=False, update=False, config=None):
     data_config = config["FIT"]
     df = pd_gbq.read_gbq(
         f"""SELECT facility_id, power_company, asset_class, power_output_mw, admin_1,
-        latitude, longitude, location_type, facility_location, operation_start_report_date, is_replacement, procurement_period_end_date, power_company_ja, grid_region
+        latitude, longitude, location_type, facility_location, operation_start_report_date as start_date, is_replacement, procurement_period_end_date, power_company_ja, grid_region
         FROM {config['FIT']['bq_table']}
         WHERE asset_class IN ('biomass','hydropower','geothermal')""",
         project_id=config["gcp_project"],
     )
+    df.start_date = np.where(df.start_date.notna(), df.start_date.astype(str), None)
+
     df = df.rename(
         columns={
             "facility_id": "projectID",
@@ -438,9 +440,18 @@ def HJKS_ALL(raw=False, update=False, config=None):
         FROM {config['HJKS']['bq_table']}""",
         project_id=config["gcp_project"],
     )
+    # Add unit number: 1-1, 1-2, 2-1, etc. string
+    df["unit_number"] = df.unit_name.apply(
+        lambda x: "-".join(re.findall(r"\d+", x)) if pd.notna(x) else None
+    ).replace("", None)
 
     df["unit_code"] = df.plant_code + "<SEP>" + df.unit_name
     project_id = "plant_code" if data_config["aggregate_units"] else "unit_code"
+
+    # clean up dates
+    df.start_date = np.where(df.start_date.notna(), df.start_date.astype(str), None)
+    df.retire_date = np.where(df.retire_date.notna(), df.retire_date.astype(str), None)
+    df.start_date = np.where((df.start_date == "1900-01-01"), None, df.start_date)
 
     df = df.rename(
         columns={
@@ -504,13 +515,21 @@ def GEM_ALL(raw=False, update=True, config=None):
     df = pd_gbq.read_gbq(
         f"""SELECT plant_id, unit_name, plant_name, admin_1, latitude, longitude,
         capacity, technology, unit_id, primary_fuel, secondary_fuel, tertiary_fuel, quaternary_fuel, quinary_fuel,
-        start_date, retired_date, planned_retire_date, operating_status, operating_status_detail, location_accuracy, river, has_ccs, is_captive, captive_use, coal_source,
+        start_date, retired_date as retire_date, planned_retire_date, operating_status, operating_status_detail, location_accuracy, river, has_ccs, is_captive, captive_use, coal_source,
         FROM {config['GEM']['bq_table']}
         WHERE admin_0 = 'JPN'""",
         project_id=config["gcp_project"],
     )
+    # Add unit number: 1-1, 1-2, 2-1, etc. string
+    df["unit_number"] = df.unit_name.apply(
+        lambda x: "-".join(re.findall(r"\d+", x)) if pd.notna(x) else None
+    ).replace("", None)
 
-    project_id = "plant_code" if data_config["aggregate_units"] else "unit_code"
+    project_id = "plant_id" if data_config["aggregate_units"] else "unit_id"
+
+    # clean up dates
+    df.start_date = np.where(df.start_date.notna(), df.start_date.astype(str), None)
+    df.retire_date = np.where(df.retire_date.notna(), df.retire_date.astype(str), None)
 
     df = df.rename(
         columns={
